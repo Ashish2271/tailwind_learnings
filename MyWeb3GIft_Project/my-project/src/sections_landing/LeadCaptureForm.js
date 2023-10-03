@@ -1,7 +1,25 @@
 
+
+
 const LeadCaptureForm = () => {
+
+
+
+
+
+
   return (
-    <div>LeadCaptureForm</div>
+
+
+<>
+
+LeadCapture Form
+
+</>
+
+   
+
+   
   )
 }
 

@@ -1,6 +1,7 @@
 import React from 'react'
-import { BenefitsandFeatures,ContactInformation,CountDownTimer, CtaSection, ExitIntendPopup, FaqSection, Footer, HeroSection, LeadCaptureForm, SocialProof, TrustSymbols, ValueProposition, VisualContent, Blog } from './index.js'
+import {Testimonials,  Cards, LogoSlider,  BenefitsandFeatures,ContactInformation,CountDownTimer, CtaSection, ExitIntendPopup, FaqSection, Footer, HeroSection, LeadCaptureForm,  TrustSymbols, ValueProposition, VisualContent, Blog } from './index.js'
 import Nav from '../Components/Nav.js'
+
 
 
 
@@ -10,7 +11,7 @@ const Main = () => {
 
 
   return (
-    <main className='relative'>
+    <main >
 
     <Nav/>
 
@@ -30,21 +31,36 @@ const Main = () => {
 <SocialProof/>
 </section> */}
 
+
+
+
+
+<section>
+  <Cards/>
+</section>
+
+
 <section>
 <VisualContent/>
 </section>
 
+{/* <section>
+<Testimonial_slider/>
+</section> */}
+
+
+
 <section>
-<LeadCaptureForm/>
+  <LogoSlider/>
 </section>
+
 
 <section>
 <ValueProposition/>
 </section>
 
-<section>
-<FaqSection/>
-</section>
+
+
 
 <section>
 <ContactInformation/>
@@ -54,24 +70,40 @@ const Main = () => {
 <TrustSymbols/>
 </section>
 
+
+<section>
+  <Testimonials/>
+</section>
+
+
 <section  className=' flex justify-center' >
   <Blog/>
 </section>
 
 
-
-
-
 <section>
-<CountDownTimer/>
+<FaqSection/>
 </section>
 
 <section>
 <CtaSection/>
 </section>
 
+
+<section>
+<CountDownTimer/>
+</section>
+
+
+
 <section>
 <ExitIntendPopup/>
+</section>
+
+
+
+<section>
+<LeadCaptureForm/>
 </section>
 
 <section>

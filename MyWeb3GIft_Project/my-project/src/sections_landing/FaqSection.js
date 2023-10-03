@@ -5,7 +5,7 @@ const FaqSection = () => {
 
 
 
-<div class="max-w-screen-xl mx-auto px-5 bg-white min-h-sceen">
+<div class=" w-full mx-auto px-5 bg-gray-50 dark:bg-gray-800 dark:text-white min-h-sceen">
 	<div class="flex flex-col items-center">
 		<h2 class="font-bold text-5xl mt-5 tracking-tight">
 			FAQ
@@ -14,7 +14,7 @@ const FaqSection = () => {
 			Frequenty asked questions
 		</p>
 	</div>
-	<div class="grid divide-y divide-neutral-200 max-w-xl mx-auto mt-8">
+	<div class="grid divide-y divide-neutral-200 max-w-4xl mx-auto mt-8">
 		<div class="py-5">
 			<details class="group">
 				<summary class="flex justify-between items-center font-medium cursor-pointer list-none">

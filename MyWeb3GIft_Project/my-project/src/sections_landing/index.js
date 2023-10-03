@@ -12,5 +12,11 @@ import TrustSymbols from "./TrustSymbols";
 import ValueProposition from "./ValueProposition";
 import VisualContent from "./VisualContent";
 import Blog from './Blog'
+import ConnectWallet from "./ConnectWallet";
+import Testimonials from "./Testimonials";
+import Testimonial_slider from "./Testimonial_slider";
+import Cards from "./Cards";
+import LogoSlider from "./LogoSlider";
 
-export { Blog, BenefitsandFeatures,ContactInformation,CountDownTimer, CtaSection, ExitIntendPopup, FaqSection, Footer, HeroSection, LeadCaptureForm, SocialProof, TrustSymbols, ValueProposition, VisualContent }
+
+export {Cards, Testimonial_slider, LogoSlider, Testimonials,  ConnectWallet, Blog, BenefitsandFeatures,ContactInformation,CountDownTimer, CtaSection, ExitIntendPopup, FaqSection, Footer, HeroSection, LeadCaptureForm, SocialProof, TrustSymbols, ValueProposition, VisualContent }

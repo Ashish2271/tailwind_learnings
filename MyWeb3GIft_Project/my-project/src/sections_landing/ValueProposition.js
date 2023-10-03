@@ -4,8 +4,8 @@ const ValueProposition = () => {
     <div>
 
 
-<section class="max-w-screen-xl px-4 py-12 mx-auto bg-green-500 dark:bg-gray-800 sm:py-16 sm:px-6 lg:px-8 lg:py-20">
-    <div class="max-w-4xl mx-auto text-center">
+<section class=" w-full  px-4 py-12 mx-auto bg-red-500 dark:bg-gray-800 sm:py-16 sm:px-6 lg:px-8 lg:py-20">
+    <div class=" w-full mx-auto text-center">
         <h2 class="text-3xl font-extrabold leading-9 text-white sm:text-4xl sm:leading-10">
             Used by leading architects, home builders renovators.
         </h2>
@@ -40,7 +40,7 @@ const ValueProposition = () => {
         </div>
     </div>
     <div class="flex p-4 mx-auto mt-4 w-52">
-        <button type="button" class="w-full px-4 py-2 text-base font-semibold text-center text-white transition duration-200 ease-in shadow-md bg-gradient-to-r from-green-400 to-green-400 focus:outline-none focus:ring-2 focus:ring-offset-2 ">
+        <button type="button" class="w-full px-4 py-2 text-base font-semibold text-center text-white transition duration-200 ease-in shadow-md bg-gradient-to-r from-yellow-400 to-yellow-600 hover:scale-110 rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 ">
             Buy the kit
         </button>
     </div>
