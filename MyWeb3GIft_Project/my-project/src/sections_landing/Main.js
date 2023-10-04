@@ -1,5 +1,5 @@
 import React from 'react'
-import {Testimonials,  Cards, LogoSlider,  BenefitsandFeatures,ContactInformation,CountDownTimer, CtaSection, ExitIntendPopup, FaqSection, Footer, HeroSection, LeadCaptureForm,  TrustSymbols, ValueProposition, VisualContent, Blog } from './index.js'
+import {Testimonials,  Cards, LogoSlider,  BenefitsandFeatures,CountDownTimer, CtaSection, FaqSection, Footer, HeroSection,  ValueProposition, VisualContent, Blog } from './index.js'
 import Nav from '../Components/Nav.js'
 
 
@@ -62,13 +62,13 @@ const Main = () => {
 
 
 
-<section>
+{/* <section>
 <ContactInformation/>
 </section>
 
 <section>
 <TrustSymbols/>
-</section>
+</section> */}
 
 
 <section>
@@ -96,7 +96,7 @@ const Main = () => {
 
 
 
-<section>
+{/* <section>
 <ExitIntendPopup/>
 </section>
 
@@ -104,7 +104,7 @@ const Main = () => {
 
 <section>
 <LeadCaptureForm/>
-</section>
+</section> */}
 
 <section>
 <Footer/>
