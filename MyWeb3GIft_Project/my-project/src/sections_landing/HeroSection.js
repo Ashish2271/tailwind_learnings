@@ -1,7 +1,7 @@
 
 import { birthday, fukubukuro1, graduation, wedding, calendar1, final_tittle } from "../assets/Images"
 // import { WeddingModel } from "../assets/Images/3d_models"
-import {  Gift_Video } from "../assets/Videos"
+// import {  Gift_Video } from "../assets/Videos"
 import "./Styles/Hero.css"
 
 
@@ -10,22 +10,22 @@ const HeroSection = () => {
 
 
   const overlayStyle = {
-    backgroundColor: 'rgba(0.4, 0.4, 1, 0.8)',
+    // backgroundColor: 'rgba(0.4, 0.4, 1, 0.8)',
   };
 
   return (
-    // <div className=" bg-slate-50  dark:bg-gray-800"  >
+    <div className=" bg-white  "  >
 
-    <div className="overflow-x-hidden ">
+    {/* <div className="overflow-x-hidden "> */}
       {/* 
 <video src={Christmas_banner} loop autoPlay muted  className="object-cover absolute h-screen w-screen -z-10 top-0 left-0 " ></video> */}
 
 
+      <section className=" rounded-t-[50px] bg-white text-gray-700  dark:text-white demo relative top-0 ">
 
 
 
-      <section className="dark:bg-rose-500 rounded-t-[50px]   dark:text-white demo relative top-0 ">
-        <video src={Gift_Video} loop autoPlay muted className="object-cover absolute h-screen w-screen -z-10 top-0 left-0 " ></video>
+        {/* <video src={Gift_Video} loop autoPlay muted className="object-cover absolute h-screen w-screen -z-10 top-0 left-0 " ></video> */}
 
 
         <div
@@ -41,7 +41,7 @@ const HeroSection = () => {
 
             {/* <h1 class="text-6xl md:text-7xl font-bold mb-5 dark:text-gray-50 text-slate-50">MyWeb3Gift </h1> */}
 
-            <p className="mt-4 animate-fade-right text-gray-100 sm:text-xl/relaxed">
+            <p className="mt-4 animate-fade-right text-gray-500 sm:text-xl/relaxed">
               Get our gift calendar for your friends and family.
               Stand out from the mass with a new kind of gift.
 

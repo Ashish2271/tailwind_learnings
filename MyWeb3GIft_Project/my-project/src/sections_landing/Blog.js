@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const Blog = () => {
   return (
     <>
@@ -25,20 +26,20 @@ const Blog = () => {
           <div className="flex flex-wrap -mx-4">
             <BlogCard
               date="Dec 22, 2023"
-              CardTitle="Meet AutoManage, the best AI management tools"
-              CardDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+              CardTitle="Navigating the Crypto Maze: A Beginner's Guide"
+              CardDescription="Discover the fundamentals of blockchain and cryptocurrencies in this comprehensive guide, perfect for crypto newcomers."
               image="https://i.ibb.co/Cnwd4q6/image-01.jpg"
             />
             <BlogCard
               date="Dec 22, 2023"
-              CardTitle="Meet AutoManage, the best AI management tools"
-              CardDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+              CardTitle="The Art of Gifting Crypto: A Unique Experience"
+              CardDescription="Explore the world of crypto gifts and learn how to surprise your loved ones with personalized digital assets."
               image="https://i.ibb.co/Y23YC07/image-02.jpg"
             />
             <BlogCard
               date="Dec 22, 2023"
-              CardTitle="Meet AutoManage, the best AI management tools"
-              CardDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+              CardTitle="Behind the Scenes: Crafting MyWeb3Gift's Crypto Calendars"
+              CardDescription="Take a peek into the creative process and technology that powers our engaging Crypto Christmas Calendars."
               image="https://i.ibb.co/7jdcnwn/image-03.jpg"
             />
           </div>
