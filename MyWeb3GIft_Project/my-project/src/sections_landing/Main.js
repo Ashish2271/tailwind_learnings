@@ -1,6 +1,7 @@
 import React from 'react'
-import {Testimonials,  Cards, LogoSlider,  BenefitsandFeatures,CountDownTimer, CtaSection, FaqSection, Footer, HeroSection,  ValueProposition, VisualContent, Blog } from './index.js'
-import Nav from '../Components/Nav.js'
+import {Testimonials,  Cards, LogoSlider, TextAnimation ,  BenefitsandFeatures,CountDownTimer, CtaSection, FaqSection, Footer, HeroSection,  ValueProposition, VisualContent, Blog } from './index.js'
+// import Nav from '../Components/Nav.js'
+import Nav01 from '../Components/Nav01.js'
 
 
 
@@ -13,7 +14,7 @@ const Main = () => {
   return (
     <main >
 
-    <Nav/>
+    <Nav01/>
 
 
 
@@ -95,6 +96,9 @@ const Main = () => {
 </section>
 
 
+{/* <section className='max-md:hidden md:scale-50 dark:bg-gray-800 rounded-full dark:text-white'>
+  <TextAnimation/>
+</section> */}
 
 {/* <section>
 <ExitIntendPopup/>

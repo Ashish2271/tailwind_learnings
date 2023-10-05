@@ -1,8 +1,9 @@
 
-import { birthday, fukubukuro1, graduation, wedding, calendar1, final_tittle } from "../assets/Images"
+import { birthday, fukubukuro1, graduation, wedding, calendar1 } from "../assets/Images"
 // import { WeddingModel } from "../assets/Images/3d_models"
 // import {  Gift_Video } from "../assets/Videos"
 import "./Styles/Hero.css"
+// import TextAnimation from "./TextAnimation";
 
 
 
@@ -31,21 +32,29 @@ const HeroSection = () => {
         <div
           className="mx-auto max-w-full flex relative flex-col  px-4 py-32 lg:flex lg:flex-col lg:h-screen lg:items-center"
           style={overlayStyle}>
-          <div className="mx-auto max-w-xl text-center  ">
-            <h1 className=" md:scale-125 lg:scale-150  text-3xl font-extrabold  text-red-700 sm:text-5xl">
+          <div className="mx-auto max-w-xl text-center   ">
+            <h1 className=" md:scale-125 lg:scale-150 mb-20  text-3xl  font-extrabold  sm:text-5xl">
 
-              <strong className="font-extrabold text-red-700 sm:block hover:ease-in  ">
-                <span className="  text-9xl">  <img src={final_tittle} alt="" /> </span>
+              <strong className="font-extrabold text-gray-200 sm:block hover:ease-in  ">
+                <span className=" animate-charcter max-sm:text-4xl text-8xl"> 
+
+
+                <span >My</span><span>Web3</span><span>Gift</span>
+                
+                 {/* <img src={final_tittle} alt="" /> */}
+                
+                 </span>
               </strong>
             </h1>
 
             {/* <h1 class="text-6xl md:text-7xl font-bold mb-5 dark:text-gray-50 text-slate-50">MyWeb3Gift </h1> */}
 
-            <p className="mt-4 animate-fade-right text-gray-500 sm:text-xl/relaxed">
+            <p className=" animate-fade-right max-sm:px-20  text-gray-500 sm:text-xl/relaxed">
               Get our gift calendar for your friends and family.
               Stand out from the mass with a new kind of gift.
-
             </p>
+
+             {/* <TextAnimation  /> */}
 
             <div className="mt-8 animate-fade-right flex flex-wrap justify-center gap-4">
               <a
@@ -70,7 +79,7 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <div className="flex relative justify-evenly mt-[200px] flex-row   ">
+          <div className="flex relative justify-evenly mt-[50px] flex-row   ">
 
             <div className="hover:animate-bounce max-sm:scale-75   lg:mx-14 ">  <img src={calendar1} width={150} height={10} alt="calendar " /> </div>
             <div className=" hover:animate-bounce max-sm:scale-75 lg:mx-14 ">   <img src={birthday} width={150} height={10} alt="Birthday " /> </div>

@@ -7,7 +7,7 @@ const Cards = () => {
 
 
       <div className="">
-        <div class="sticky top-1 sm:px-20 py-4 bg-gradient-to-r to-red-500  from-red-700 text-slate-100 text-6xl md:text-4xl    font-bold ...">  Unlock the World of Crypto and Blockchain</div>
+        <div class="sticky top-1 sm:px-20 py-4 bg-gradient-to-r to-red-500  from-red-700 text-slate-100 text-6xl md:text-4xl  max-sm:text-2xl  font-bold ...">  Unlock the World of Crypto and Blockchain</div>
         <div class="min-h-screen flex flex-col md:flex-row sm:flex-row justify-between gap-6 mx-4 md:mx-28 sm:mx-24">
           <div class="flex-1 md:w-3/5 lg:w-2/5 md:py-20 sm:py-16">
             <img src={BitcoinBoy} class="rounded-3xl shadow-inner w-full" alt="Boys Smiling" />
@@ -27,7 +27,7 @@ const Cards = () => {
 
 
       <div className="">
-        <div class="sticky top-1 sm:px-20 py-4 bg-gradient-to-r to-red-500  from-red-700  text-slate-100 text-6xl md:text-4xl    font-bold ..."> Unique Crypto Gifting Experience</div>
+        <div class="sticky top-1 sm:px-20 py-4 bg-gradient-to-r to-red-500  from-red-700  text-slate-100 text-6xl md:text-4xl max-sm:text-2xl   font-bold ..."> Unique Crypto Gifting Experience</div>
         <div class="min-h-screen flex flex-col md:flex-row sm:flex-row justify-between gap-6 mx-4 md:mx-28 sm:mx-24">
         
           <div class="flex-1 py-8 md:py-16 xl:py-16  my-10  ">
@@ -48,7 +48,7 @@ const Cards = () => {
       </div>
 
       <div className="">
-        <div class="sticky top-1 sm:px-20 py-4 bg-gradient-to-r to-red-500  from-red-700 text-slate-100 text-6xl md:text-4xl    font-bold ...">  Personalization.</div>
+        <div class="sticky top-1 sm:px-20 py-4 bg-gradient-to-r to-red-500  from-red-700 text-slate-100 text-6xl md:text-4xl  max-sm:text-2xl  font-bold ...">  Personalization.</div>
         <div class="min-h-screen flex flex-col md:flex-row sm:flex-row justify-between gap-6 mx-4 md:mx-28 sm:mx-24">
           <div class="flex-1 md:w-3/5 lg:w-2/5 md:py-20 sm:py-16">
      
@@ -69,7 +69,7 @@ const Cards = () => {
       </div>
 
          <div className="">
-        <div class="sticky top-1 sm:px-20 py-4 bg-gradient-to-r to-red-500  from-red-700 text-slate-100 text-6xl md:text-4xl    font-bold ..."> Multiple Gift Formats</div>
+        <div class="sticky top-1 sm:px-20 py-4 bg-gradient-to-r to-red-500  from-red-700 text-slate-100 text-6xl md:text-4xl  max-sm:text-2xl  font-bold ..."> Multiple Gift Formats</div>
         <div class="min-h-screen flex flex-col md:flex-row sm:flex-row justify-between gap-6 mx-4 md:mx-28 sm:mx-24">
         
           <div class="flex-1 py-8 md:py-16 xl:py-16  my-10  ">
@@ -92,7 +92,7 @@ const Cards = () => {
       </div>
 
       <div className="">
-        <div class="sticky top-1 sm:px-20 py-4 bg-gradient-to-r to-red-500  from-red-700 text-slate-100 text-6xl md:text-4xl    font-bold ...">  Secure Payment Options</div>
+        <div class="sticky top-1 sm:px-20 py-4 bg-gradient-to-r to-red-500  from-red-700 text-slate-100 text-6xl md:text-4xl max-sm:text-2xl   font-bold ...">  Secure Payment Options</div>
         <div class="min-h-screen flex flex-col md:flex-row sm:flex-row justify-between gap-6 mx-4 md:mx-28 sm:mx-24">
           <div class="flex-1 md:w-3/5 lg:w-2/5 md:py-20 sm:py-16">
             <img src={SecurePayment1} class="rounded-3xl shadow-inner w-full" alt="Boys Smiling" />
@@ -110,7 +110,7 @@ const Cards = () => {
       </div>
 
       <div className="">
-        <div class="sticky top-1  sm:px-20 py-4 bg-gradient-to-r to-red-500  from-red-700 text-slate-100 text-6xl md:text-4xl    font-bold ...">  Interactive Learning</div>
+        <div class="sticky top-1  sm:px-20 py-4 bg-gradient-to-r to-red-500  from-red-700 text-slate-100 text-6xl md:text-4xl max-sm:text-2xl   font-bold ...">  Interactive Learning</div>
         <div class="min-h-screen flex flex-col md:flex-row sm:flex-row justify-between gap-6 mx-4 md:mx-28 sm:mx-24">
         
           <div class="flex-1 py-8 md:py-16 xl:py-16  my-10  ">
@@ -133,7 +133,7 @@ const Cards = () => {
 
 
       <div className="">
-        <div class="sticky top-1  sm:px-20  py-4 bg-gradient-to-r to-red-500  from-red-700 text-slate-100 text-6xl md:text-4xl    font-bold ..."> NFTs and Digital Assets</div>
+        <div class="sticky top-1  sm:px-20  py-4 bg-gradient-to-r to-red-500  from-red-700 text-slate-100 text-6xl md:text-4xl  max-sm:text-2xl  font-bold ..."> NFTs and Digital Assets</div>
         <div class="min-h-screen flex flex-col md:flex-row sm:flex-row justify-between gap-6 mx-4 md:mx-28 sm:mx-24">
           <div class="flex-1 md:w-3/5 lg:w-2/5 md:py-20 sm:py-16">
             <img src={NFT_Token} class="rounded-3xl shadow-inner w-full" alt="Boys Smiling" />
