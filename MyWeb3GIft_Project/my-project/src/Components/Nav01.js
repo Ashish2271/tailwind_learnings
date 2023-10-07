@@ -3,7 +3,7 @@ import { GiftBitcoin } from "../assets/Images/MyWeb3Gift-red2";
 
 import React, { useState } from "react";
 
-import "./Style.css/Nav01.css"
+import "./Style/Nav01.css"
 
 const Nav01 = () => {
 

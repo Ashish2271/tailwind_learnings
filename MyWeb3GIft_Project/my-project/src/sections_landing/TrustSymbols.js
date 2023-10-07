@@ -1,17 +1,13 @@
 
 const TrustSymbols = () => {
+
+
   return (
-    <div>TrustSymbols
-
-
-
-
-
-
-
+    <div>
 
     </div>
-  )
-}
+  );
+};
+
 
 export default TrustSymbols

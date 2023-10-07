@@ -1,12 +1,17 @@
-import React from 'react'
-import {Testimonials,  Cards, LogoSlider, TextAnimation ,  BenefitsandFeatures,CountDownTimer, CtaSection, FaqSection, Footer, HeroSection,  ValueProposition, VisualContent, Blog } from './index.js'
+import React from 'react';
+import {Testimonials,  Cards, LogoSlider,   TrustSymbols,  BenefitsandFeatures,CountDownTimer, CtaSection, FaqSection, Footer, HeroSection,  ValueProposition, VisualContent, Blog } from './index.js'
 // import Nav from '../Components/Nav.js'
 import Nav01 from '../Components/Nav01.js'
 
 
 
 
+
+
 const Main = () => {
+
+
+
 
 
 
@@ -56,6 +61,10 @@ const Main = () => {
 </section>
 
 
+
+
+
+
 <section>
 <ValueProposition/>
 </section>
@@ -65,11 +74,11 @@ const Main = () => {
 
 {/* <section>
 <ContactInformation/>
-</section>
+</section> */}
 
 <section>
 <TrustSymbols/>
-</section> */}
+</section>
 
 
 <section>
@@ -89,6 +98,8 @@ const Main = () => {
 <section>
 <CtaSection/>
 </section>
+
+
 
 
 <section>

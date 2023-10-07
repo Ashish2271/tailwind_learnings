@@ -1,10 +1,10 @@
 
-import { birthday, fukubukuro1, graduation, wedding, calendar1 } from "../assets/Images"
+// import { birthday, fukubukuro1, graduation, wedding, calendar1 } from "../assets/Images"
 // import { WeddingModel } from "../assets/Images/3d_models"
 // import {  Gift_Video } from "../assets/Videos"
 import "./Styles/Hero.css"
 // import TextAnimation from "./TextAnimation";
-
+import IconsDetails from '../Components/IconsDetails.js';
 
 
 const HeroSection = () => {
@@ -33,10 +33,10 @@ const HeroSection = () => {
           className="mx-auto max-w-full flex relative flex-col  px-4 py-32 lg:flex lg:flex-col lg:h-screen lg:items-center"
           style={overlayStyle}>
           <div className="mx-auto max-w-xl text-center   ">
-            <h1 className=" md:scale-125 lg:scale-150 mb-20  text-3xl  font-extrabold  sm:text-5xl">
+            <h1 className="  md:scale-125 lg:scale-150 mb-20  text-3xl  font-extrabold  sm:text-5xl">
 
-              <strong className="font-extrabold text-gray-200 sm:block hover:ease-in  ">
-                <span className=" animate-charcter max-sm:text-4xl text-8xl"> 
+              <strong className="font-extrabold animate-charcter text-gray-200 sm:block hover:ease-in  ">
+                <span className="  max-sm:text-4xl text-8xl"> 
 
 
                 <span >My</span><span>Web3</span><span>Gift</span>
@@ -79,15 +79,17 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <div className="flex relative justify-evenly mt-[50px] flex-row   ">
+          {/* <div className="flex relative justify-evenly mt-[50px] flex-row   ">
 
             <div className="hover:animate-bounce max-sm:scale-75   lg:mx-14 ">  <img src={calendar1} width={150} height={10} alt="calendar " /> </div>
             <div className=" hover:animate-bounce max-sm:scale-75 lg:mx-14 ">   <img src={birthday} width={150} height={10} alt="Birthday " /> </div>
             <div className=" hover:animate-bounce max-sm:scale-75 lg:mx-14 ">   <img src={wedding} width={150} height={10} alt="Wedding " /> </div>
             <div className=" hover:animate-bounce max-sm:scale-75 lg:mx-14 ">   <img src={graduation} width={150} height={10} alt="Graduation " /> </div>
             <div className=" hover:animate-bounce max-sm:scale-75 lg:mx-14 ">   <img src={fukubukuro1} width={150} height={10} alt=" Fukubukuro" /> </div>
-            {/* <div className=" hover:animate-bounce scale-150 max-sm:scale-75 lg:mx-14 ">   <img src={WeddingModel} width={100} height={10} alt=" Fukubukuro" /> </div> */}
-          </div>
+          
+          </div> */}
+
+          <IconsDetails/>
 
         </div>
 
