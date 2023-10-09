@@ -5,12 +5,14 @@ const GiftDetails = () => {
   return (
     <div className="flex flex-col md:flex-row justify-center items-center p-6 bg-gray-100 rounded-lg shadow-lg">
     {/* Left Section */}
-    <div className="md:w-1/2 mb-4 md:mb-0">
+    <div className="md:w-1/2 md:py-5 md:mx-20  mb-4 md:mb-0">
       {/* Insert Unsplash Images */}
       <img
         src={ReceiverGift}
         alt="Gift Box"
-        className="w-full rounded-3xl h-auto "
+        width={550}
+        height={550}
+        className=" rounded-3xl  h-auto "
       />
     </div>
     {/* Right Section */}
