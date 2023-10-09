@@ -17,13 +17,13 @@ const IconsDetails = () => {
 
       <div class="containerIcon flex flex-1 flex-row flex-wrap min-h-[70vh] ">
 
-        <div class="card my-14 special-card">
+        <div class="card my-14  special-card">
           <div class="image rounded-full">
             <img className=' ' href="#" src={calendar} />
           </div>
           <div class="content">
-            <h3 className='font-bold sm:text-2xl text-gray-100 mb-5'>Christmas Calender</h3>
-            <p>  <button className='hover:bg-red-700 bg-red-600 py-4 max-sm:text-1xl px-8 rounded-2xl shadow-sm hover:ring-4 text-gray-100 hover:text-gray-50 text-bold text-2xl'>Buy Now</button> </p>
+            <h3 className=' sm:text-2xl text-gray-500 mb-5'>Christmas Calender</h3>
+            <p>  <button className='hover:bg-red-700 bg-red-600 py-2 max-sm:text-1xl px-8 rounded-xl shadow-sm  text-gray-100 hover:text-gray-50 text-bold text-2xl'>Buy Now</button> </p>
           </div>
         </div>
 
@@ -32,8 +32,8 @@ const IconsDetails = () => {
             <img className='' href="#" src={ChristmasGift} />
           </div>
           <div class="content">
-            <h3 className='font-bold sm:text-2xl text-gray-100 mb-5'>Christmas Gift</h3>
-            <p>  <button className='hover:bg-red-700 bg-red-600 py-4 max-sm:text-1xl px-8 rounded-2xl shadow-sm hover:ring-4 text-gray-100 hover:text-gray-50 text-bold text-2xl'>Buy Now</button> </p>
+            <h3 className=' sm:text-2xl text-gray-500 mb-5'>Christmas Gift</h3>
+            <p>  <button className='hover:bg-red-700 bg-red-600 py-2 max-sm:text-1xl px-8 rounded-xl shadow-sm  text-gray-100 hover:text-gray-50 text-bold text-2xl'>Buy Now</button> </p>
           </div>
         </div>
 
@@ -42,8 +42,8 @@ const IconsDetails = () => {
             <img className='bg-transparent  ' href="#" src={ChallengeCalender} />
           </div>
           <div class="content">
-            <h3 className='font-bold sm:text-2xl text-gray-100 mb-5'>Challenge Calender</h3>
-            <p>  <button className='hover:bg-red-700 bg-red-600 py-4 max-sm:text-1xl px-8 rounded-2xl shadow-sm hover:ring-4 text-gray-100 hover:text-gray-50 text-bold text-2xl'>Buy Now</button> </p>
+            <h3 className=' sm:text-2xl text-gray-500 mb-5'>Challenge Calender</h3>
+            <p>  <button className='hover:bg-red-700 bg-red-600 py-2 max-sm:text-1xl px-8 rounded-xl shadow-sm  text-gray-100 hover:text-gray-50 text-bold text-2xl'>Buy Now</button> </p>
           </div>
         </div>
 
@@ -52,8 +52,8 @@ const IconsDetails = () => {
             <img className='' href="#" src={SurpriseGift} />
           </div>
           <div class="content">
-            <h3 className='font-bold sm:text-2xl text-gray-100 mb-5'>Surprise Gift</h3>
-            <p>  <button className='hover:bg-red-700 bg-red-600 py-4 max-sm:text-1xl px-8 rounded-2xl shadow-sm hover:ring-4 text-gray-100 hover:text-gray-50 text-bold text-2xl'>Buy Now</button> </p>
+            <h3 className=' sm:text-2xl text-gray-500 mb-5'>Surprise Gift</h3>
+            <p>  <button className='hover:bg-red-700 bg-red-600 py-2 max-sm:text-1xl px-8 rounded-xl shadow-sm  text-gray-100 hover:text-gray-50 text-bold text-2xl'>Buy Now</button> </p>
           </div>
         </div>
 

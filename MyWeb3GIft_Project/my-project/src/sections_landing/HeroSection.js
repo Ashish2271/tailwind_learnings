@@ -1,5 +1,5 @@
 
-import {  Background, } from "../assets/Images"
+import { Background, } from "../assets/Images"
 // import { WeddingModel } from "../assets/Images/3d_models"
 // import {  Gift_Video, hexagonal, watercolor } from "../assets/Videos"
 import "./Styles/Hero.css"
@@ -12,25 +12,25 @@ const HeroSection = () => {
 
 
   const overlayStyle = {
-    // backgroundColor: 'rgba(0, 0, 0, 0.5)',
-  
+    backgroundColor: 'rgba(0, 0, 0, 0.3)',
+
   };
 
   return (
-    <div className="  "  >
+    <div className=" "  >
 
-    {/* <div className="overflow-x-hidden "> */}
+      {/* <div className="overflow-x-hidden "> */}
       {/* 
 <video src={Christmas_banner} loop autoPlay muted  className="object-cover absolute h-screen w-screen -z-10 top-0 left-0 " ></video> */}
 
 
-      <section className=" rounded-t-[50px] text-gray-700  dark:text-white demo relative top-0 ">
+      <section className="  rounded-t-[50px] text-gray-700  dark:text-white demo relative top-0 ">
 
 
 
         {/* <video src={watercolor} loop autoPlay muted className="object-cover absolute h-screen w-screen -z-10 top-0 left-0 " ></video> */}
 
-<img src={Background} className="object-cover absolute h-screen w-screen -z-10 top-0 left-0 " alt="Background Hero" />
+        <img src={Background} className="object-cover absolute h-screen w-screen -z-10 top-0 left-0 " alt="Background Hero" />
         <div
           className="mx-auto max-w-screen max-h-screen flex relative flex-col  px-4 py-32 lg:flex lg:flex-col lg:h-screen lg:items-center"
           style={overlayStyle}>
@@ -38,14 +38,14 @@ const HeroSection = () => {
             <h1 className="  md:scale-125 lg:scale-150 mb-20  text-3xl  font-extrabold  sm:text-5xl">
 
               <strong className="font-extrabold animate-charcter text-gray-100 sm:block hover:ease-in  ">
-                <span className="  max-sm:text-6xl text-8xl"> 
+                <span className="  max-sm:text-6xl text-8xl">
 
 
-                <span className="text-yellow-500" >My</span><span className="text-gray-800">Web3</span><span className="text-red-600">Gift</span>
-                
-                 {/* <img src={final_tittle} alt="" /> */}
-                
-                 </span>
+                  <span className="text-yellow-500" >My</span><span className="text-gray-800">Web3</span><span className="text-red-600">Gift</span>
+
+                  {/* <img src={final_tittle} alt="" /> */}
+
+                </span>
               </strong>
             </h1>
 
@@ -56,7 +56,7 @@ const HeroSection = () => {
               Stand out from the mass with a new kind of gift.
             </p>
 
-             {/* <TextAnimation  /> */}
+            {/* <TextAnimation  /> */}
 
             <div className="mt-8 animate-fade-right flex flex-wrap justify-center gap-4">
               <a

@@ -3,25 +3,13 @@ import {Testimonials,  Cards, LogoSlider, VideoUSP,  GiftDetails, TrustSymbols, 
 // import Nav from '../Components/Nav.js' 
 import Nav01 from '../Components/Nav01.js'
 
-
-
-
-
-
 const Main = () => {
-
-
-
-
-
 
 
   return (
     <main >
 
     <Nav01/>
-
-
 
 <section>
 < HeroSection />

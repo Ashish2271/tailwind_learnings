@@ -23,7 +23,7 @@ const Nav01 = () => {
     return (
         <div className=" z-100  ">
             <div>
-                <div className="relative  ">
+                <div className="  ">
                     {/* For md screen size */}
                     <div id="md-searchbar" className={`${mdOptionsToggle ? "hidden" : "flex"} bg-transparent lg:hidden py-5 px-6 items-center justify-between`}>
                         <div className="flex items-center space-x-3 text-gray-800 ">
