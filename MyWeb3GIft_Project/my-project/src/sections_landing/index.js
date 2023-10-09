@@ -18,6 +18,9 @@ import Testimonial_slider from "./Testimonial_slider";
 import Cards from "./Cards";
 import LogoSlider from "./LogoSlider";
 import TextAnimation from "./TextAnimation";
+import VideoUSP from "./VideoUSP";
+import IconsDetails from "../Components/IconsDetails";
+import WhoForSection from "./WhoForSection";
+import GiftDetails from "./GiftDetails";
 
-
-export {Cards, TextAnimation, Testimonial_slider, LogoSlider, Testimonials,  ConnectWallet, Blog, BenefitsandFeatures,ContactInformation,CountDownTimer, CtaSection, ExitIntendPopup, FaqSection, Footer, HeroSection, LeadCaptureForm, SocialProof, TrustSymbols, ValueProposition, VisualContent }
+export {Cards, VideoUSP, IconsDetails,GiftDetails,  WhoForSection,  TextAnimation, Testimonial_slider, LogoSlider, Testimonials,  ConnectWallet, Blog, BenefitsandFeatures,ContactInformation,CountDownTimer, CtaSection, ExitIntendPopup, FaqSection, Footer, HeroSection, LeadCaptureForm, SocialProof, TrustSymbols, ValueProposition, VisualContent }

@@ -1,45 +1,46 @@
 
 // import { birthday, fukubukuro1, graduation, wedding, calendar1 } from "../assets/Images"
 // import { WeddingModel } from "../assets/Images/3d_models"
-// import {  Gift_Video } from "../assets/Videos"
+// import {  Gift_Video, hexagonal, watercolor } from "../assets/Videos"
 import "./Styles/Hero.css"
 // import TextAnimation from "./TextAnimation";
-import IconsDetails from '../Components/IconsDetails.js';
+
+
 
 
 const HeroSection = () => {
 
 
   const overlayStyle = {
-    // backgroundColor: 'rgba(0.4, 0.4, 1, 0.8)',
+    // backgroundColor: 'rgba(0, 0, 0, 0.5)',
   };
 
   return (
-    <div className=" bg-white  "  >
+    <div className="  "  >
 
     {/* <div className="overflow-x-hidden "> */}
       {/* 
 <video src={Christmas_banner} loop autoPlay muted  className="object-cover absolute h-screen w-screen -z-10 top-0 left-0 " ></video> */}
 
 
-      <section className=" rounded-t-[50px] bg-white text-gray-700  dark:text-white demo relative top-0 ">
+      <section className=" rounded-t-[50px] text-gray-700  dark:text-white demo relative top-0 ">
 
 
 
-        {/* <video src={Gift_Video} loop autoPlay muted className="object-cover absolute h-screen w-screen -z-10 top-0 left-0 " ></video> */}
+        {/* <video src={watercolor} loop autoPlay muted className="object-cover absolute h-screen w-screen -z-10 top-0 left-0 " ></video> */}
 
 
         <div
-          className="mx-auto max-w-full flex relative flex-col  px-4 py-32 lg:flex lg:flex-col lg:h-screen lg:items-center"
+          className="mx-auto max-w-screen max-h-screen flex relative flex-col  px-4 py-32 lg:flex lg:flex-col lg:h-screen lg:items-center"
           style={overlayStyle}>
-          <div className="mx-auto max-w-xl text-center   ">
+          <div className="mx-auto max-w-xl text-center  my-20  ">
             <h1 className="  md:scale-125 lg:scale-150 mb-20  text-3xl  font-extrabold  sm:text-5xl">
 
-              <strong className="font-extrabold animate-charcter text-gray-200 sm:block hover:ease-in  ">
-                <span className="  max-sm:text-4xl text-8xl"> 
+              <strong className="font-extrabold animate-charcter text-gray-100 sm:block hover:ease-in  ">
+                <span className="  max-sm:text-6xl text-8xl"> 
 
 
-                <span >My</span><span>Web3</span><span>Gift</span>
+                <span className="text-yellow-500" >My</span><span className="text-gray-800">Web3</span><span className="text-red-600">Gift</span>
                 
                  {/* <img src={final_tittle} alt="" /> */}
                 
@@ -58,14 +59,14 @@ const HeroSection = () => {
 
             <div className="mt-8 animate-fade-right flex flex-wrap justify-center gap-4">
               <a
-                className="block w-full rounded  bg-red-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-red-700 focus:outline-none focus:ring active:bg-red-500 sm:w-auto"
+                className="block w-full rounded  bg-blue-500 px-12 py-3 text-sm font-medium text-white shadow hover:bg-red-700 focus:outline-none focus:ring active:bg-red-500 sm:w-auto"
                 href="/get-started"
               >
                 GIVE A GIFT
               </a>
 
               <a
-                className="block w-full rounded px-12 py-3 text-sm font-medium bg-slate-100 text-red-600 shadow hover:text-red-700 focus:outline-none focus:ring active:text-red-500 dark:bg-yellow-600 dark:text-white sm:w-auto"
+                className="block w-full rounded px-12 py-3 text-sm font-medium bg-slate-100 text-yellow-500 shadow hover:text-red-700 focus:outline-none focus:ring active:text-red-500 dark:bg-yellow-600 dark:text-white sm:w-auto"
                 href="/about"
               >
                 LEARN MORE
@@ -89,7 +90,7 @@ const HeroSection = () => {
           
           </div> */}
 
-          <IconsDetails/>
+          {/* <IconsDetails/> */}
 
         </div>
 

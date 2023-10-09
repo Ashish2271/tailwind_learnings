@@ -1,5 +1,5 @@
 
-import {  Card11, BitcoinBoy, Calender24,   PersonalMessage, NFT_Token,  SecurePayment1, UniqueGift } from "../assets/Images/CardsImages"
+import {  Card11, BitcoinBoy,    PersonalMessage, UniqueGift } from "../assets/Images/CardsImages"
 
 const Cards = () => {
   return (
@@ -90,7 +90,7 @@ const Cards = () => {
           
         </div>
       </div>
-
+{/* 
       <div className="">
         <div class="sticky top-1 sm:px-20 py-4 bg-gradient-to-r to-red-500  from-red-700 text-slate-100 text-6xl md:text-4xl max-sm:text-2xl   font-bold ...">  Secure Payment Options</div>
         <div class="min-h-screen flex flex-col md:flex-row sm:flex-row justify-between gap-6 mx-4 md:mx-28 sm:mx-24">
@@ -107,9 +107,9 @@ const Cards = () => {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="">
+      {/* <div className="">
         <div class="sticky top-1  sm:px-20 py-4 bg-gradient-to-r to-red-500  from-red-700 text-slate-100 text-6xl md:text-4xl max-sm:text-2xl   font-bold ...">  Interactive Learning</div>
         <div class="min-h-screen flex flex-col md:flex-row sm:flex-row justify-between gap-6 mx-4 md:mx-28 sm:mx-24">
         
@@ -128,11 +128,11 @@ const Cards = () => {
           </div>
           
         </div>
-      </div>
+      </div> */}
 
 
 
-      <div className="">
+      {/* <div className="">
         <div class="sticky top-1  sm:px-20  py-4 bg-gradient-to-r to-red-500  from-red-700 text-slate-100 text-6xl md:text-4xl  max-sm:text-2xl  font-bold ..."> NFTs and Digital Assets</div>
         <div class="min-h-screen flex flex-col md:flex-row sm:flex-row justify-between gap-6 mx-4 md:mx-28 sm:mx-24">
           <div class="flex-1 md:w-3/5 lg:w-2/5 md:py-20 sm:py-16">
@@ -148,7 +148,7 @@ const Cards = () => {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
 
 
 

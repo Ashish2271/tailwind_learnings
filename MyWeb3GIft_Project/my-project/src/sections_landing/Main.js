@@ -1,6 +1,6 @@
 import React from 'react';
-import {Testimonials,  Cards, LogoSlider,   TrustSymbols,  BenefitsandFeatures,CountDownTimer, CtaSection, FaqSection, Footer, HeroSection,  ValueProposition, VisualContent, Blog } from './index.js'
-// import Nav from '../Components/Nav.js'
+import {Testimonials,  Cards, LogoSlider, VideoUSP,  GiftDetails, TrustSymbols,  BenefitsandFeatures,CountDownTimer, CtaSection, FaqSection, Footer, HeroSection,  ValueProposition, VisualContent, Blog, IconsDetails, WhoForSection } from './index.js'
+// import Nav from '../Components/Nav.js' 
 import Nav01 from '../Components/Nav01.js'
 
 
@@ -27,6 +27,32 @@ const Main = () => {
 < HeroSection />
 </section>
 
+
+
+
+<section>
+  <IconsDetails/>
+</section>
+
+
+
+<section>
+  <VideoUSP/>
+</section>
+
+
+
+
+<section>
+  <WhoForSection/>
+</section>
+
+
+
+
+<section>
+  <GiftDetails/>
+</section>
 
 
 <section>
