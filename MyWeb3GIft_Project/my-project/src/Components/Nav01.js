@@ -21,11 +21,11 @@ const Nav01 = () => {
 
 
     return (
-        <div className=" ">
+        <div className="  ">
             <div>
                 <div className="relative">
                     {/* For md screen size */}
-                    <div id="md-searchbar" className={`${mdOptionsToggle ? "hidden" : "flex"} bg-transparent  lg:hidden py-5 px-6 items-center justify-between`}>
+                    <div id="md-searchbar" className={`${mdOptionsToggle ? "hidden" : "flex"} bg-transparent lg:hidden py-5 px-6 items-center justify-between`}>
                         <div className="flex items-center space-x-3 text-gray-800 ">
                             <div>
                                 <svg className="fill-stroke" width={20} height={20} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -80,10 +80,10 @@ const Nav01 = () => {
                     <div className=" bg-gray-50 px-6 py-2">
                         <div className="container mx-auto flex items-center justify-between">
                             <h1 className="md:w-2/12 cursor-pointer text-4xl flex Logo_heading  text-gray-800 " aria-label="MyWeb3Gift ">
-                            
-<a href="./"> <img src={GiftBitcoin} className="  w-20 rounded-3xl   hover:ease-in-out hover:duration-700 hover:delay-300  hover:scale-110 backdrop-filter backdrop-saturate-200 brightness-100  " alt="Logo" /> </a>
-                              
-<a href="./">  <p className="py-4 px-2">  <span className="text-yellow-500  ">My</span>Web3<span className="text-red-500">Gift</span></p></a>
+
+                                <a href="./"> <img src={GiftBitcoin} className="  w-20 rounded-3xl   hover:ease-in-out hover:duration-700 hover:delay-300  hover:scale-110 backdrop-filter backdrop-saturate-200 brightness-100  " alt="Logo" /> </a>
+
+                                <a href="./">  <p className="py-4 px-2">  <span className="text-yellow-500  ">My</span>Web3<span className="text-red-500">Gift</span></p></a>
 
 
 
