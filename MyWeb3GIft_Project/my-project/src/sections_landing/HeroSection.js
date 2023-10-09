@@ -1,5 +1,5 @@
 
-// import { birthday, fukubukuro1, graduation, wedding, calendar1 } from "../assets/Images"
+import {  Background, } from "../assets/Images"
 // import { WeddingModel } from "../assets/Images/3d_models"
 // import {  Gift_Video, hexagonal, watercolor } from "../assets/Videos"
 import "./Styles/Hero.css"
@@ -13,6 +13,7 @@ const HeroSection = () => {
 
   const overlayStyle = {
     // backgroundColor: 'rgba(0, 0, 0, 0.5)',
+  
   };
 
   return (
@@ -29,7 +30,7 @@ const HeroSection = () => {
 
         {/* <video src={watercolor} loop autoPlay muted className="object-cover absolute h-screen w-screen -z-10 top-0 left-0 " ></video> */}
 
-
+<img src={Background} className="object-cover absolute h-screen w-screen -z-10 top-0 left-0 " alt="Background Hero" />
         <div
           className="mx-auto max-w-screen max-h-screen flex relative flex-col  px-4 py-32 lg:flex lg:flex-col lg:h-screen lg:items-center"
           style={overlayStyle}>

@@ -48,12 +48,12 @@ const VideoUSP = () => {
 
 
 
-            <div className='min-h-[60vh] flex flex-col justify-center items-center sm:flex-row max-sm:flex-wrap'>
+            <div className='min-h-[60vh] flex flex-col  justify-center items-center sm:flex-row max-sm:flex-wrap'>
 
-                <div className='sm:w-1/2 max-sm:w-full p-4 max-sm:text-center sm:px-20 '>
-                    <h1 className=' font-bold sm:text-5xl pb-20'>Lorem ipsum dolor sit, amet consectetur illo veritatis laboriosam.</h1>
-                    <h2 className='text-lg font-semibold sm:text-2xl pb-10'>Lorem ipsum dolor sit, amet consectetur adipisicing.</h2>
-                    <button className='bg-orange-500 hover:bg-orange-700 text-white font-bold sm:text-2xl py-4 px-10 rounded mt-4'>Get It Now</button>
+                <div className='sm:w-1/2 max-sm:w-full sm:py-20 p-4 max-sm:text-center sm:px-20 '>
+                    <h1 className=' font-bold sm:text-5xl pb-10'>Lorem ipsum dolor sit, amet consectetur illo veritatis laboriosam.</h1>
+                    <h2 className='text-lg font-semibold sm:text-2xl pb-5'>Lorem ipsum dolor sit, amet consectetur adipisicing.</h2>
+                    <button className='bg-orange-500 hover:bg-orange-700 text-white font-bold sm:text-xl py-3 px-10 rounded mt-4'>Get It Now</button>
                 </div>
 
                 <div className='sm:w-1/2 max-sm:w-full mr-30 sm:mx-32  p-4 text-center'>
