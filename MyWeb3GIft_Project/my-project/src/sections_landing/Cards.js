@@ -1,5 +1,5 @@
 
-import {  Card11, BitcoinBoy,    PersonalMessage, UniqueGift } from "../assets/Images/CardsImages"
+// import {  Card11, BitcoinBoy,    PersonalMessage, UniqueGift } from "../assets/Images/CardsImages"
 
 const Cards = () => {
   return (
@@ -10,7 +10,7 @@ const Cards = () => {
         <div class="top-1 sm:px-20 py-4 bg-gradient-to-r to-yellow-400  from-yellow-300 text-white text-6xl md:text-4xl  max-sm:text-2xl  font-bold ...">  Unlock the World of Crypto and Blockchain</div>
         <div class="min-h-[50vh] flex flex-col md:flex-row sm:flex-row justify-between gap-6 mx-4 md:mx-28 sm:mx-24">
           <div class="flex-1 md:w-3/5 lg:w-2/5 md:py-20 sm:py-16">
-            <img src={BitcoinBoy} class="rounded-3xl shadow-inner w-full" alt="Boys Smiling" />
+            <img src="https://images.unsplash.com/photo-1634024521600-0772a6b89fa8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" class="rounded-3xl backdrop-filter backdrop-grayscale shadow-inner w-full" alt="Boys Smiling" />
           </div>
           <div class="flex-1 py-8 md:py-16 xl:py-16  my-10  ">
             <h1 class="text-3xl md:text-4xl lg:text-3xl font-bold mb-4 max-lg:text-2xl ">
@@ -41,7 +41,7 @@ const Cards = () => {
           </div>
 
           <div class="flex-1 md:w-3/5 lg:w-2/5 md:py-20 sm:py-16">
-            <img src={UniqueGift} class="rounded-3xl shadow-inner w-full" alt="Boys Smiling" />
+            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="rounded-3xl shadow-inner w-full" alt="Boys Smiling" />
           </div>
 
         </div>
@@ -53,7 +53,7 @@ const Cards = () => {
           <div class="flex-1 md:w-3/5 lg:w-2/5 md:py-20 sm:py-16">
      
         
-            <img src={PersonalMessage} class="rounded-3xl shadow-inner w-full" alt="Boys Smiling" />
+            <img src="" class="rounded-3xl shadow-inner w-full" alt="Boys Smiling" />
         
           </div>
           <div class="flex-1 py-8 md:py-16 xl:py-16  my-10  ">
@@ -83,7 +83,7 @@ const Cards = () => {
           </div>
 
           <div class="flex-1 md:w-3/5 lg:w-2/5 md:py-20 sm:py-16">
-            <img src={Card11} class="rounded-3xl shadow-inner w-full" alt="Boys Smiling" />
+            <img src="" class="rounded-3xl shadow-inner w-full" alt="Boys Smiling" />
          
          
           </div>
