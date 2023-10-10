@@ -30,7 +30,7 @@ const HeroSection = () => {
 
         {/* <video src={watercolor} loop autoPlay muted className="object-cover absolute h-screen w-screen -z-10 top-0 left-0 " ></video> */}
 
-        <img src={Background} className="object-cover absolute h-screen w-screen -z-10 top-0 left-0 " alt="Background Hero" />
+        {/* <img src={Background} className="object-cover absolute h-screen w-screen -z-10 top-0 left-0 " alt="Background Hero" /> */}
         <div
           className="mx-auto max-w-screen max-h-screen flex relative flex-col  px-4 py-32 lg:flex lg:flex-col lg:h-screen lg:items-center"
           style={overlayStyle}>
@@ -52,22 +52,22 @@ const HeroSection = () => {
             {/* <h1 class="text-6xl md:text-7xl font-bold mb-5 dark:text-gray-50 text-slate-50">MyWeb3Gift </h1> */}
 
             <p className=" animate-fade-right max-sm:px-20  text-gray-500 sm:text-xl/relaxed">
-              Get our gift calendar for your friends and family.
-              Stand out from the mass with a new kind of gift.
+            Surprise your loved ones with a unique gift box to discover
+the magic of the blockchain universe
             </p>
 
             {/* <TextAnimation  /> */}
 
             <div className="mt-8 animate-fade-right flex flex-wrap justify-center gap-4">
               <a
-                className="block w-full rounded  bg-blue-500 px-12 py-3 text-sm font-medium text-white shadow hover:bg-red-700 focus:outline-none focus:ring active:bg-red-500 sm:w-auto"
+                className="block w-full rounded  bg-yellow-500 px-12 py-3 text-sm font-medium text-white shadow hover:bg-yellow-600 focus:outline-none focus:ring active:bg-red-500 sm:w-auto"
                 href="/get-started"
               >
                 GIVE A GIFT
               </a>
 
               <a
-                className="block w-full rounded px-12 py-3 text-sm font-medium bg-slate-100 text-yellow-500 shadow hover:text-red-700 focus:outline-none focus:ring active:text-red-500 dark:bg-yellow-600 dark:text-white sm:w-auto"
+                className="block w-full rounded px-12 py-3 text-sm font-medium bg-slate-100 text-yellow-500 shadow hover:text-yellow-600 focus:outline-none focus:ring active:text-red-500 dark:bg-yellow-600 dark:text-white sm:w-auto"
                 href="/about"
               >
                 LEARN MORE

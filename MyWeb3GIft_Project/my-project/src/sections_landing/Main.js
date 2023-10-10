@@ -34,22 +34,22 @@ const Main = () => {
 
 
 
-
-
-
-
-
-
-
-
 <section>
   <GiftDetails/>
 </section>
 
 
-<section>
+
+
+
+
+
+
+
+
+{/* <section>
 <BenefitsandFeatures/>
-</section>
+</section> */}
 
 {/* <section>
 <SocialProof/>
