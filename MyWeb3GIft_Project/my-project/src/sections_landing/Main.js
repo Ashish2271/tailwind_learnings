@@ -16,15 +16,20 @@ const Main = () => {
 </section>
 
 
+
+<section>
+  <WhoForSection/>
+</section>
+
+
+
 <section>
   <VideoUSP/>
 </section>
 
 
 
-<section>
-  <WhoForSection/>
-</section>
+
 
 
 <section>
@@ -59,9 +64,9 @@ const Main = () => {
 
 
 
-<section>
+{/* <section>
   <Cards/>
-</section>
+</section> */}
 
 
 <section>
