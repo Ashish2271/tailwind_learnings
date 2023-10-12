@@ -9,22 +9,13 @@ const IconsDetails = () => {
 
 
   return (
-    <div className=' bg-gradient-to-r from-green-200 via-blue-300 to-sky-200  '>
+    <div className=' bg-gradient-to-r  '>
 
-      <div className='text-center py-20 text-black font-bold max-sm:text-3xl sm:text-4xl sm:mx-20' >Get our gift calendar for your friends and family. Stand out from the mass with a new kind of gift.
+      <div className='text-center py-20  text-black font-bold max-sm:text-3xl sm:text-6xl sm:mx-20' >Get our gift calendar for your friends and family
       </div>
-      <div className='text-center text-gray-700 max-sm:text-xl text-2xl pb-7'>All options have the same content, only the arrangement and layout differs.</div>
+      <div className='text-center text-gray-700 max-sm:text-xl font-semibold text-2xl pb-7'>All options have the same content, only the arrangement and layout differs.</div>
 
-      <div class="containerIcon flex flex-1 flex-row flex-wrap min-h-[70vh] ">
-
-
-
-
-
-
-
-
-
+      <div class="containerIcon flex flex-1 flex-row flex-wrap min-h-[50vh] ">
 
         <div class="relative m-10 w-full max-w-xs overflow-hidden rounded-lg bg-white shadow-md">
           <a href="#/">
@@ -207,7 +198,9 @@ const IconsDetails = () => {
       </div>
 
 
-      <p className='text-yel-600 text-5xl py-10 px-3 max-sm:text-xl sm:text-2xl  text-center'>It's an educational and entertaining gift rolled into one.</p>
+      <p className='text-yel-600 text-5xl py-10 px-3 max-sm:text-xl sm:text-2xl   text-center'>It's an educational and entertaining gift rolled into one. <br />
+      <button className='bg-yellow-300 text-white font bold px-7 my-4  rounded-xl text-2xl py-3'>Learn More</button>
+      </p>
 
     </div>
   )

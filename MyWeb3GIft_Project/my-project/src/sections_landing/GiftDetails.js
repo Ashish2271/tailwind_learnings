@@ -3,7 +3,7 @@ import { MenUsingMobile } from '../assets/Images/WhoItFor';
 
 const GiftDetails = () => {
   return (
-    <div className="flex flex-col sm:my-10 sm:mx-16 md:flex-row justify-center items-center p-6  rounded-3xl ">
+    <div className="flex flex-col sm:my-10 sm:mx-16 md:flex-row justify-center items-center p-6 bg-blue-200 rounded-3xl ">
     {/* Left Section */}
     <div className="md:w-1/2 md:py-5 md:mx-20  mb-4 md:mb-0">
       {/* Insert Unsplash Images */}
@@ -28,12 +28,12 @@ const GiftDetails = () => {
     <div className="md:w-1/2 sm:mx-5 ">
       {/* Gift Details */}
       <div className="text-center max-sm:text-left md:text-left">
-        <h2 className="text-3xl md:text-4xl font-semibold mb-2">
+        <h2 className=" font-bold md:text-6xl  mb-2">
           What do the receivers get?
         </h2>
-        <p className=" text-lg mb-6">
+        {/* <p className=" text-lg mb-6">
           MyWeb3Gift provides an accessible and engaging entry point into the world of cryptocurrencies and blockchain technology.
-        </p>
+        </p> */}
         {/* <p className=" text-lg mb-6">
           Our gifts offer a unique gifting experience that combines education and surprises.
         </p>
@@ -48,7 +48,7 @@ const GiftDetails = () => {
         </p>
       </div>
       {/* Gift Contents */}
-      <div className="mt-6">
+      <div className="mt-6 ">
         <div className="flex flex-wrap justify-between">
           {/* Perks */}
           <div className="w-full md:w-1/2 mb-4">

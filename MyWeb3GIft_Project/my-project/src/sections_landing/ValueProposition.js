@@ -8,10 +8,10 @@ const ValueProposition = () => {
 
 <section class=" w-full  px-4 py-12 mx-auto bg-blue-300 dark:bg-gray-800 sm:py-16 sm:px-6 lg:px-8 lg:py-20">
     <div class=" w-full mx-auto text-center">
-        <h2 class="text-3xl font-extrabold leading-9 text-white sm:text-4xl sm:leading-10">
-        Delve into the world of blockchain and cryptocurrencies with just 5 minutes a day. Get ready for a unique gifting experience.
+        <h2 class="text-3xl font-extrabold leading-9 text-white sm:text-6xl sm:leading-10">
+Get ready for a unique gifting experience.
         </h2>
-        <p class="mt-3 text-base leading-7 text-white sm:mt-4">
+        <p class="mt-3 text-base leading-7 text-white sm:text-2xl sm:py-5 sm:mt-4">
             Feel confident in choosing the best energy assessor for your energy rating.
         </p>
     </div>
