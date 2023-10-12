@@ -162,7 +162,6 @@ const FaqSection = () => {
 
 
 
-			<button class="font-semibold text-sm border border-transparent hover:border hover:border-slate-200 inline-flex justify-center items-center gap-2 dark:hover:border-slate-800 focus:outline-none focus:ring focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 focus:dark:ring-offset-slate-800 text-slate-600 dark:text-slate-300 rounded-full p-2 css-14l5cxx" type="button" title="Toggle dark mode" aria-label="Toggle theme"><svg class="css-edyqgg" fill="none" viewBox="0 0 24 24"><path d="M12 20v2m0-20v2m8 8h2M2 12h2m14 6 1.5 1.5m-15-15L6 6m12 0 1.5-1.5m-15 15L6 18m11-6a5 5 0 1 1-10 0 5 5 0 0 1 10 0Z" stroke="stroke-current" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
 
 		</div>
 	)

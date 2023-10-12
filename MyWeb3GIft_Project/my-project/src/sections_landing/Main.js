@@ -1,5 +1,5 @@
 import React from 'react';
-import {Testimonials,  Cards, LogoSlider, VideoUSP,  GiftDetails, TrustSymbols,  BenefitsandFeatures,CountDownTimer, CtaSection, FaqSection, Footer, HeroSection,  ValueProposition, VisualContent, Blog, IconsDetails, WhoForSection } from './index.js'
+import {Testimonials,  LogoSlider, VideoUSP,  GiftDetails, TrustSymbols,  CountDownTimer, CtaSection, FaqSection, Footer, HeroSection,  ValueProposition,  Blog, IconsDetails, WhoForSection, Steps } from './index.js'
 // import Nav from '../Components/Nav.js' 
 import Nav01 from '../Components/Nav01.js'
 
@@ -69,28 +69,21 @@ const Main = () => {
 </section> */}
 
 
-<section>
+{/* <section>
 <VisualContent/>
-</section>
+</section> */}
 
 {/* <section>
 <Testimonial_slider/>
 </section> */}
 
 
-
 <section>
-  <LogoSlider/>
+  <Steps/>
 </section>
 
 
 
-
-
-
-<section>
-<ValueProposition/>
-</section>
 
 
 
@@ -107,6 +100,21 @@ const Main = () => {
 <section>
   <Testimonials/>
 </section>
+
+
+<section>
+  <LogoSlider/>
+</section>
+
+
+
+
+
+
+<section>
+<ValueProposition/>
+</section>
+
 
 
 <section  className=' flex justify-center' >

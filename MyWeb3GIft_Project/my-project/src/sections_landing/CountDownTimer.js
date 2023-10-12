@@ -5,7 +5,7 @@ const CountDownTimer = () => {
         
 
         
-<section class="py-8 bg-red-500 bg-gradient dark:bg-gray-800 md:py-16">
+<section class="py-8 bg-blue-200 bg-gradient dark:bg-gray-800 md:py-16">
     <div class="box-content max-w-5xl px-5 mx-auto">
         <div class="flex flex-col items-center -mx-5 md:flex-row">
             <div class="w-full px-5 mb-5 text-center md:mb-0 md:text-left">

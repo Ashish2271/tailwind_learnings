@@ -4,8 +4,8 @@ const Testimonials = () => {
   return (
     <div>
 
-<div class="min-w-screen dark:bg-gray-800 dark:text-gray-200 min-h-screen bg-gray-50 flex items-center justify-center py-5">
-    <div class="w-full  dark:bg-gray-800 dark:text-white bg-gray-50 border-t border-b border-gray-200 px-5 py-16 md:py-24 text-gray-800">
+<div class="min-w-screen dark:bg-gray-800 dark:text-gray-200 min-h-screen bg-white flex items-center justify-center py-5">
+    <div class="w-full  dark:bg-gray-800 dark:text-white bg-white border-t border-b border-gray-200 px-5 py-16 md:py-24 text-gray-800">
         <div class="w-full max-w-6xl mx-auto">
             <div class="text-center max-w-xl mx-auto">
                 <h1 class="text-6xl md:text-7xl font-bold mb-5 dark:text-gray-50 text-gray-600">What people <br/>are saying.</h1>

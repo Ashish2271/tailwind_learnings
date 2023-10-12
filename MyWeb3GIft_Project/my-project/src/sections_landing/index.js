@@ -22,5 +22,8 @@ import VideoUSP from "./VideoUSP";
 import IconsDetails from "../Components/IconsDetails";
 import WhoForSection from "./WhoForSection";
 import GiftDetails from "./GiftDetails";
+import Steps from "./Steps";
 
-export {Cards, VideoUSP, IconsDetails,GiftDetails,  WhoForSection,  TextAnimation, Testimonial_slider, LogoSlider, Testimonials,  ConnectWallet, Blog, BenefitsandFeatures,ContactInformation,CountDownTimer, CtaSection, ExitIntendPopup, FaqSection, Footer, HeroSection, LeadCaptureForm, SocialProof, TrustSymbols, ValueProposition, VisualContent }
+
+
+export {Cards,  Steps, VideoUSP, IconsDetails,GiftDetails,  WhoForSection,  TextAnimation, Testimonial_slider, LogoSlider, Testimonials,  ConnectWallet, Blog, BenefitsandFeatures,ContactInformation,CountDownTimer, CtaSection, ExitIntendPopup, FaqSection, Footer, HeroSection, LeadCaptureForm, SocialProof, TrustSymbols, ValueProposition, VisualContent }
