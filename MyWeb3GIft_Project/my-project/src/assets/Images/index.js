@@ -13,8 +13,8 @@ import ChallengeCalender from "./ChellngeCalender.png"
 import SurpriseGift from "./SurpriseGift.png"
 import ReceiverGift from "./ReceiverGift.jpg"
 import Background from "./BackgroundPic.jpg"
+import WhiteStrip from "./WhiteStrip.jpg"
 
 
 
-
-export {calendar, myweb3gift , Background, birthday, GiftBox,  ReceiverGift, fukubukuro, fukubukuro1, graduation, wedding, calendar1, final_tittle , SurpriseGift, ChallengeCalender, ChristmasGift   }
+export {calendar, myweb3gift , Background, birthday, GiftBox,  ReceiverGift, fukubukuro, fukubukuro1, graduation, wedding, calendar1, final_tittle , SurpriseGift, ChallengeCalender, ChristmasGift, WhiteStrip   }

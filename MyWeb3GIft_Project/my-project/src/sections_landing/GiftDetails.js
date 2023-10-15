@@ -3,16 +3,16 @@ import { MenUsingMobile } from '../assets/Images/WhoItFor';
 
 const GiftDetails = () => {
   return (
-    <div className="flex flex-col sm:my-10 sm:mx-16 md:flex-row justify-center items-center p-6 bg-blue-200 rounded-3xl ">
+    <div className="flex flex-col  sm:my-10 sm:mx-16 md:flex-row justify-center items-center p-6  bg-blue-200 rounded-3xl ">
     {/* Left Section */}
-    <div className="md:w-1/2 md:py-5 md:mx-20  mb-4 md:mb-0">
+    <div className=" md:py-5 max-w-[1340px] md:mx-20  mb-4 md:mb-0">
       {/* Insert Unsplash Images */}
     
       <div className="da relative flex max-sm:rounded-3xl  flex-col justify-center overflow-hidden ">
           <div className="absolute flex flex-row inset-0 bg-center dark:bg-black"></div>
           <div className="group relative m-0 flex h-96 w-96 rounded-xl shadow-xl ring-gray-900/5 sm:mx-auto sm:max-w-lg">
-            <div className="z-10 h-full w-full overflow-hidden rounded-xl border border-gray-200 opacity-80 transition duration-300 ease-in-out group-hover:opacity-100 dark:border-gray-700 dark:opacity-70">
-              <img src={MenUsingMobile} className="animate-fade-in block h-full w-full scale-100 transform object-cover object-center opacity-100 transition duration-300 group-hover:scale-110" alt="" />
+            <div className="z-10 h-full w-full overflow-hidden  max-sm:w-80 mx-auto rounded-3xl  max-sm:h-80 border border-gray-200 opacity-80 transition duration-300 ease-in-out group-hover:opacity-100 dark:border-gray-700 dark:opacity-70">
+              <img src={MenUsingMobile} className="animate-fade-in block max-sm:w-80 mx-auto rounded-3xl max-sm:h-80  h-full w-full scale-100 transform object-cover object-center opacity-100 transition duration-300 group-hover:scale-110" alt="" />
             </div>
             {/* <div className="absolute bottom-0  z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110">
               <h1 className="font-serif text-2xl font-bold text-white shadow-xl">Friends and Family</h1>
@@ -25,10 +25,10 @@ const GiftDetails = () => {
 
     </div>
     {/* Right Section */}
-    <div className="md:w-1/2 sm:mx-5 ">
+    <div className="md:w-1/2  sm:mx-5 ">
       {/* Gift Details */}
       <div className="text-center max-sm:text-left md:text-left">
-        <h2 className=" font-bold md:text-6xl  mb-2">
+        <h2 className=" font-bold md:text-6xl max-sm:text-center max-sm:text-4xl  mb-2">
           What do the receivers get?
         </h2>
         {/* <p className=" text-lg mb-6">
@@ -43,13 +43,13 @@ const GiftDetails = () => {
         <p className=" text-lg mb-6">
           They’ll get hands-on experience with blockchain technology, do their first transactions, and NFT mints in a guided way without putting up their funds.
         </p> */}
-        <p className=" text-lg mb-6">
+        <p className=" text-lg text-center max-sm:my-8 mb-6">
           They’ll experience the magic of blockchain in an entertaining 25-day journey.
         </p>
       </div>
       {/* Gift Contents */}
       <div className="mt-6 ">
-        <div className="flex flex-wrap justify-between">
+        <div className="flex flex-wrap  justify-between">
           {/* Perks */}
           <div className="w-full md:w-1/2 mb-4">
             <div className="flex items-center">

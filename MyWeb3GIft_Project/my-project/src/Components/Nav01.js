@@ -80,16 +80,10 @@ const Nav01 = () => {
                     <div className=" bg-blue-300 px-6 py-2">
                         <div className="container mx-auto flex items-center justify-between">
                             <h1 className="md:w-2/12 cursor-pointer text-4xl flex Logo_heading  text-gray-800 " aria-label="MyWeb3Gift ">
-
-                                <a href="./"> <img src={GiftBitcoinLogo} className="  w-20 rounded-3xl   hover:ease-in-out hover:duration-700 hover:delay-300  hover:scale-110 backdrop-filter backdrop-saturate-200 brightness-100  " alt="Logo" /> </a>
+                                <a href="./"> <img src={GiftBitcoinLogo} className=" w-20  rounded-full   hover:ease-in-out hover:duration-700 hover:delay-300  hover:scale-110     " alt="Logo" /> </a>
 
                                 <a href="./">  <p className="py-4 px-2">  <span className="text-yellow-500  ">My</span>Web3<span className="text-red-500">Gift</span></p></a>
-
-
-
                             </h1>
-
-
 
 
                             {/* <ul className="max-md:hidden w-8/12 md:flex items-center justify-center space-x-8">
@@ -151,8 +145,6 @@ const Nav01 = () => {
 
 
 
-
-
                                     {/* <button aria-label="go to cart" className="text-gray-800   focus:outline-none focus:ring-2 focus:ring-gray-800">
                                             <svg className="fill-stroke" width={26} height={26} viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M5 1L1 5.8V22.6C1 23.2365 1.28095 23.847 1.78105 24.2971C2.28115 24.7471 2.95942 25 3.66667 25H22.3333C23.0406 25 23.7189 24.7471 24.219 24.2971C24.719 23.847 25 23.2365 25 22.6V5.8L21 1H5Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -162,14 +154,11 @@ const Nav01 = () => {
                                         </button> */}
 
 
-
                                 </div>
 
                                 <div className="max-sm:hidden">
                                     <Menu1 />
                                 </div>
-
-
 
                                 <div className="flex lg:hidden">
                                     <button aria-label="show options" onClick={() => setMdOptionsToggle(!mdOptionsToggle)} className="text-black   hidden md:flex focus:outline-none focus:ring-2 rounded focus:ring-gray-600">
@@ -200,7 +189,7 @@ const Nav01 = () => {
                                         <path d="M18.9984 18.9999L14.6484 14.6499" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
                                     </svg>
                                 </div>
-                                <input type="text" placeholder="Search for products" className="text-sm  text-gray-600 placeholder-gray-600  focus:outline-none" />
+                                <input type="text" placeholder="Search for products" className="text-sm  text-gray-600 rounded-3xl placeholder-gray-600  focus:outline-none" />
                             </div>
                             <button onClick={() => setShowMenu(false)} aria-label="close menu" className="focus:outline-none focus:ring-2 rounded focus:ring-gray-600">
                                 <svg className="fill-stroke text-gray-800 " width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">

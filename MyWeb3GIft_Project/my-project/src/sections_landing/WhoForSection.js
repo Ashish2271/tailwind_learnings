@@ -10,7 +10,7 @@ const WhoForSection = () => {
     <div>
 
       <div className="bg-gray-100  rounded-3xl sm:px-20 max-sm:px-5 sm:mx-5 py-10">
-        <h2 className=" font-bold sm:mx-20 sm:text-4xl text-center ">Who's It For?</h2>
+        <h2 className=" font-bold sm:mx-20 sm:text-4xl max-sm:text-4xl text-center ">Who's It For?</h2>
         <div className='flex my-10 flex-wrap min-h-[50vh] justify-center flex-row gap-7 '>
 
           <div className="da  relative   flex  flex-col justify-center overflow-hidden ">

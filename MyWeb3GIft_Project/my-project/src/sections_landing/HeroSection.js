@@ -38,7 +38,7 @@ const HeroSection = () => {
             <h1 className="  md:scale-125 lg:scale-150 mb-20  text-3xl  font-extrabold  sm:text-5xl">
 
               <strong className="font-extrabold animate-charcter text-gray-100 sm:block hover:ease-in  ">
-                <span className="  max-sm:text-6xl text-8xl">
+                <span className="  max-sm:text-5xl text-8xl">
 
 
                   <span className="text-yellow-500" >My</span><span className="text-gray-800">Web3</span><span className="text-red-600">Gift</span>
