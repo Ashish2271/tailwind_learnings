@@ -79,7 +79,7 @@ const Nav01 = () => {
                     {/* For large screens */}
                     <div className=" bg-blue-300 px-6 py-2">
                         <div className="container mx-auto flex items-center justify-between">
-                            <h1 className="md:w-2/12 cursor-pointer text-4xl flex Logo_heading  text-gray-800 " aria-label="MyWeb3Gift ">
+                            <h1 className=" cursor-pointer text-4xl flex Logo_heading  text-gray-800 " aria-label="MyWeb3Gift ">
                                 <a href="./"> <img src={GiftBitcoinLogo} className=" w-20  rounded-full   hover:ease-in-out hover:duration-700 hover:delay-300  hover:scale-110     " alt="Logo" /> </a>
 
                                 <a href="./">  <p className="py-4 px-2">  <span className="text-yellow-500  ">My</span>Web3<span className="text-red-500">Gift</span></p></a>
