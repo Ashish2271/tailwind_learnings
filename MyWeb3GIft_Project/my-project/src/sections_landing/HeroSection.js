@@ -8,6 +8,8 @@ import "./Styles/Hero.css"
 
 
 
+
+
 const HeroSection = () => {
 
 
@@ -15,6 +17,10 @@ const HeroSection = () => {
     // backgroundColor: 'rgba(0, 0, 0, 0.3)',
 
   };
+
+
+
+
 
   return (
     <div className=" "  >
@@ -65,6 +71,10 @@ the magic of the blockchain universe
               >
                 GIVE A GIFT
               </a>
+
+
+
+            
 
               <a
                 className="block w-full rounded px-12 py-3 text-sm font-medium bg-slate-100 text-yellow-500 shadow hover:text-yellow-600 focus:outline-none focus:ring active:text-red-500 dark:bg-yellow-600 dark:text-white sm:w-auto"
