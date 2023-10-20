@@ -38,34 +38,32 @@ const LogoSlider = () => {
             <img src={"https://bitcoin.org/img/icons/logotop.svg?1693519667"} alt="" />
             </Slider.Slide>
             <Slider.Slide  className="px-16  filter grayscale hover:grayscale-0">
-            <img src={"https://bitcoin.org/img/icons/logotop.svg?1693519667"} alt="" />
+            <img src={"https://altcoinsbox.com/wp-content/uploads/2023/01/full-ethereum-logo-grey-300x75.webp"} alt="" />
             </Slider.Slide>
             <Slider.Slide  className="px-16  filter grayscale hover:grayscale-0">
-            <img src={"https://bitcoin.org/img/icons/logotop.svg?1693519667"} alt="" />
+            <img src={"https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-original-577x577/s3/0004/1747/brand.gif?itok=7KJ8S1Ue"} alt="" />
             </Slider.Slide>
             <Slider.Slide  className="px-16  filter grayscale hover:grayscale-0">
-            <img src={"https://bitcoin.org/img/icons/logotop.svg?1693519667"} alt="" />
+            <img src={"https://upload.wikimedia.org/wikipedia/commons/8/88/Ripple_logo.svg"} alt="" />
             </Slider.Slide>
-
-
             <Slider.Slide  className="px-16  filter grayscale hover:grayscale-0">
-            <img src={"https://bitcoin.org/img/icons/logotop.svg?1693519667"} alt="" />
+            <img src={"https://upload.wikimedia.org/wikipedia/commons/d/df/Polkadot_Logo.png"} alt="" />
             </Slider.Slide>
 
             <Slider.Slide  className="px-16  filter grayscale hover:grayscale-0">
-            <img src={"https://bitcoin.org/img/icons/logotop.svg?1693519667"} alt="" />
+            <img src={"https://upload.wikimedia.org/wikipedia/commons/7/73/Tether_Logo.svg"} alt="" />
             </Slider.Slide>
 
             <Slider.Slide  className="px-16  filter grayscale hover:grayscale-0">
-            <img src={"https://bitcoin.org/img/icons/logotop.svg?1693519667"} alt="" />
+            <img src={"https://www.livingroomofsatoshi.com/images/litecoin-logo.png"} alt="" />
             </Slider.Slide>
 
             <Slider.Slide  className="px-16  filter grayscale hover:grayscale-0">
-            <img src={"https://bitcoin.org/img/icons/logotop.svg?1693519667"} alt="" />
+            <img src={"https://logos-world.net/wp-content/uploads/2023/02/Dogecoin-Logo.png"} alt="" />
             </Slider.Slide>
 
             <Slider.Slide  className="px-16  filter grayscale hover:grayscale-0">
-            <img src={"https://bitcoin.org/img/icons/logotop.svg?1693519667"} alt="" />
+            <img src={"https://upload.wikimedia.org/wikipedia/commons/f/f8/Cardano.svg"} alt="" />
             </Slider.Slide>
         </Slider>
 

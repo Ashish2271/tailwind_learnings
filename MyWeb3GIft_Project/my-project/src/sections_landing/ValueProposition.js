@@ -6,7 +6,7 @@ const ValueProposition = () => {
 
 
 
-<section class=" w-full  px-4 py-12 mx-auto bg-blue-300 dark:bg-gray-800 sm:py-16 sm:px-6 lg:px-8 lg:py-20">
+<section class=" w-full  px-4 py-12 mx-auto bg-blue-600 dark:bg-gray-800 sm:py-16 sm:px-6 lg:px-8 lg:py-20">
     <div class=" w-full mx-auto text-center">
         <h2 class="text-3xl font-extrabold leading-9 text-white sm:text-6xl sm:leading-10">
 Get ready for a unique gifting experience.

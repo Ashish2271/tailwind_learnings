@@ -3,7 +3,7 @@ import { MenUsingMobile } from '../assets/Images/WhoItFor';
 
 const GiftDetails = () => {
   return (
-    <div className="flex flex-col  sm:my-10 sm:mx-16 md:flex-row justify-center items-center p-6  bg-blue-200 rounded-3xl ">
+    <div className="flex flex-col  sm:my-10 sm:mx-16 md:flex-row justify-center items-center p-6  bg-blue-600 rounded-3xl ">
     {/* Left Section */}
     <div className=" md:py-5 max-w-[1340px] md:mx-20  mb-4 md:mb-0">
       {/* Insert Unsplash Images */}
@@ -27,7 +27,7 @@ const GiftDetails = () => {
     {/* Right Section */}
     <div className="md:w-1/2  sm:mx-5 ">
       {/* Gift Details */}
-      <div className="text-center max-sm:text-left md:text-left">
+      <div className="text-center max-sm:text-left text-white md:text-left">
         <h2 className=" font-bold md:text-6xl max-sm:text-center max-sm:text-4xl  mb-2">
           What do the receivers get?
         </h2>
@@ -48,13 +48,13 @@ const GiftDetails = () => {
         </p>
       </div>
       {/* Gift Contents */}
-      <div className="mt-6 ">
-        <div className="flex flex-wrap  justify-between">
+      <div className="mt-6  text-white ">
+        <div className="flex flex-wrap text-white justify-between">
           {/* Perks */}
-          <div className="w-full md:w-1/2 mb-4">
+          <div className="w-full text-white md:w-1/2 mb-4">
             <div className="flex items-center">
               <span className="text-3xl mr-2">&#9733;</span>
-              <p className="text-gray-800 text-lg font-semibold">2 Perks from Partners</p>
+              <p className=" text-white  text-lg font-semibold">2 Perks from Partners</p>
             </div>
           </div>
           {/* Learnings */}
@@ -68,28 +68,28 @@ const GiftDetails = () => {
           <div className="w-full md:w-1/2 mb-4">
             <div className="flex items-center">
               <span className="text-3xl mr-2">&#9733;</span>
-              <p className="text-gray-800 text-lg font-semibold">5 Art of KI generated NFTs</p>
+              <p className=" text-white  text-lg font-semibold">5 Art of KI generated NFTs</p>
             </div>
           </div>
           {/* Gaming NFTs */}
           <div className="w-full md:w-1/2 mb-4">
             <div className="flex items-center">
               <span className="text-3xl mr-2">&#9733;</span>
-              <p className="text-gray-800 text-lg font-semibold">3 Gaming NFTs</p>
+              <p className=" text-white  text-lg font-semibold">3 Gaming NFTs</p>
             </div>
           </div>
           {/* Wallet */}
           <div className="w-full md:w-1/2 mb-4">
             <div className="flex items-center">
               <span className="text-3xl mr-2">&#9733;</span>
-              <p className="text-gray-800 text-lg font-semibold">1 Wallet</p>
+              <p className=" text-white  text-lg font-semibold">1 Wallet</p>
             </div>
           </div>
           {/* Learning Access */}
           <div className="w-full md:w-1/2 mb-4">
             <div className="flex items-center">
               <span className="text-3xl mr-2">&#9733;</span>
-              <p className="text-gray-800 text-lg font-semibold">Lifelong Access to an extensive learning section</p>
+              <p className=" text-white  text-lg font-semibold">Lifelong Access to an extensive learning section</p>
             </div>
           </div>
         </div>

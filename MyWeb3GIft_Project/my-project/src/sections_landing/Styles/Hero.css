@@ -1,19 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,500;1,600;1,700&family=Roboto+Slab:wght@500;600;700&display=swap');
 
 .animate-charcter{
-  font-family: 'Dancing Script', cursive;
-  font-weight: bold;
+  /* font-family: 'Dancing Script', cursive;
+  font-weight: bold; */
+  font-family: 'Montserrat', sans-serif;
+  
 }
 
 
-/* .gradient_background {
+.gradient_background {
     background: linear-gradient(90deg, #F14658, #FF6B00);
     height: 100vh;
     width: 100vw;
-  } */
+  }
 
+
+
+.subheading{
+  font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto Slab', serif;
+}
 
 
 
@@ -21,9 +29,9 @@
 
 
 
-/*   
+  
 
-  .animate-charcter
+  /* .animate-character
 {
   
   background-image: linear-gradient(
@@ -41,7 +49,7 @@
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
+  animation: text_clip 10s linear infinite;
   display: inline-block;
 
 
@@ -51,7 +59,7 @@
 
 }
 
-@keyframes textclip {
+@keyframes text_clip {
   to {
     background-position: 200% center;
   }
@@ -61,3 +69,15 @@
 
 
 
+ /* for image smooth trasition in background  */
+
+
+
+/* Hero.css */
+.crossfade-transition {
+  transition: opacity 1s ease-in-out;
+}
+
+.crossfade-hidden {
+  opacity: 0;
+}

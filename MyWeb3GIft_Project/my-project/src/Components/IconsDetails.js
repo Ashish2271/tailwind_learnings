@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Style/IconsDetails.css"
+
 // import {  ChristmasGift, SurpriseGift, ChallengeCalender, calendar } from '../assets/Images'
 
 
@@ -21,7 +22,7 @@ const IconsDetails = () => {
           <a href="#/">
             <img class="h-60 rounded-t-lg object-cover" src="https://images.unsplash.com/photo-1512916206820-bd6d503c003e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="product" />
           </a>
-          <span class="absolute top-0 left-0 w-28 translate-y-4 -translate-x-6 -rotate-45 bg-black text-center text-sm text-white">Sale</span>
+          {/* <span class="absolute top-0 left-0 w-28 translate-y-4 -translate-x-6 -rotate-45 bg-black text-center text-sm text-white">Sale</span> */}
           <div class="mt-4 px-5 pb-5">
             <a href="#/">
               <h5 class="text-xl font-semibold tracking-tight text-slate-900">Surprise Gift</h5>
@@ -49,12 +50,17 @@ const IconsDetails = () => {
                 <span class="text-3xl font-bold text-slate-900">$25</span>
                 <span class="text-sm text-slate-900 line-through">$50</span>
               </p>
-              <a href="#/" class="flex items-center rounded-md bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300">
+           
+
+
+              <button data-tally-open="3jo994" data-tally-layout="modal" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">   <a href="#/" class="flex items-center rounded-md bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300">
                 <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
                 Buy</a
-              >
+              ></button>
+
+
             </div>
           </div>
         </div>
@@ -66,7 +72,7 @@ const IconsDetails = () => {
           <a href="#/">
             <img class="h-60 rounded-t-lg object-cover" src="https://images.unsplash.com/photo-1606482512676-255bf02be7cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1473&q=80" alt="product" />
           </a>
-          <span class="absolute top-0 left-0 w-28 translate-y-4 -translate-x-6 -rotate-45 bg-black text-center text-sm text-white">Sale</span>
+          {/* <span class="absolute top-0 left-0 w-28 translate-y-4 -translate-x-6 -rotate-45 bg-black text-center text-sm text-white">Sale</span> */}
           <div class="mt-4 px-5 pb-5">
             <a href="#/">
               <h5 class="text-xl font-semibold tracking-tight text-slate-900">Christmas Calender</h5>
@@ -94,12 +100,12 @@ const IconsDetails = () => {
                 <span class="text-3xl font-bold text-slate-900">$25</span>
                 <span class="text-sm text-slate-900 line-through">$50</span>
               </p>
-              <a href="#/" class="flex items-center rounded-md bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300">
+              <button data-tally-open="3jo994" data-tally-layout="modal" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">   <a href="#/" class="flex items-center rounded-md bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300">
                 <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
                 Buy</a
-              >
+              ></button>
             </div>
           </div>
         </div>
@@ -110,7 +116,7 @@ const IconsDetails = () => {
           <a href="#/">
             <img class="h-60 rounded-t-lg object-cover" src="https://plus.unsplash.com/premium_photo-1683731896418-493316129f0e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="product" />
           </a>
-          <span class="absolute top-0 left-0 w-28 translate-y-4 -translate-x-6 -rotate-45 bg-black text-center text-sm text-white">Sale</span>
+          {/* <span class="absolute top-0 left-0 w-28 translate-y-4 -translate-x-6 -rotate-45 bg-black text-center text-sm text-white">Sale</span> */}
           <div class="mt-4 px-5 pb-5">
             <a href="#/">
               <h5 class="text-xl font-semibold tracking-tight text-slate-900">Challenge Calender</h5>
@@ -138,12 +144,12 @@ const IconsDetails = () => {
                 <span class="text-3xl font-bold text-slate-900">$25</span>
                 <span class="text-sm text-slate-900 line-through">$50</span>
               </p>
-              <a href="#/" class="flex items-center rounded-md bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300">
+              <button data-tally-open="3jo994" data-tally-layout="modal" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">   <a href="#/" class="flex items-center rounded-md bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300">
                 <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
                 Buy</a
-              >
+              ></button>
             </div>
           </div>
         </div>

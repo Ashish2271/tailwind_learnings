@@ -10,7 +10,10 @@ const Testimonials = () => {
             <div class="text-center max-w-xl mx-auto">
                 <h1 class="text-6xl md:text-7xl font-bold mb-5 dark:text-gray-50 text-gray-600">What people <br/>are saying.</h1>
                 <h3 class="text-xl mb-5 font-light">
-"User Testimonials: See What People Love About MyWeb3Gift"</h3>
+"User Testimonials: See What People Love About MyWeb3Gift"
+<br />
+These are some Beta Tester Review of Gift Calender
+</h3>
                 <div class="text-center mb-10">
                     <span class="inline-block w-1 h-1 rounded-full bg-red-500 ml-1"></span>
                     <span class="inline-block w-3 h-1 rounded-full bg-red-500 ml-1"></span>

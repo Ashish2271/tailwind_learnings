@@ -613,24 +613,64 @@ const About = () => {
             <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
               <div className="mt-10 lg:mt-0">
                 <span className="block mb-2 text-lg font-semibold text-primary">
-                  Why Choose Us
+                Introduction
                 </span>
                 <h2 className="mb-8 text-3xl font-bold text-dark sm:text-4xl">
-                  Make your customers happy by giving services.
+                About MyWeb3Gift
                 </h2>
                 <p className="mb-8 text-base text-body-color">
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less.
+                MyWeb3Gift is on a mission to revolutionize gifting by combining the world of cryptocurrencies and blockchain with the joy of sharing. Our unique gifting experiences offer recipients an engaging journey into the world of crypto.
                 </p>
-                <a
+                {/* <a
                   href="/#"
                   className="inline-flex items-center justify-center px-10 py-4 text-base font-normal text-center text-white rounded-lg bg-primary hover:bg-opacity-90 lg:px-8 xl:px-10"
                 >
                   Get Started
-                </a>
+                </a> */}
               </div>
             </div>
+
+            <div className="w-full px-4 sm:py-10 lg:w-1/2 xl:w-5/12">
+              <div className="mt-10 lg:mt-0">
+                <span className="block mb-2 text-lg font-semibold text-primary">
+                Our Story
+                </span>
+                <h2 className="mb-8 text-3xl font-bold text-dark sm:text-4xl">
+                Our Journey
+                </h2>
+                <p className="mb-8 text-base text-body-color">
+                Born out of a passion for blockchain and a commitment to simplifying its complexities, MyWeb3Gift was founded by a team of crypto enthusiasts. We believe that crypto education should be exciting and accessible, and that's exactly what we deliver through our gifting platform.
+                </p>
+                {/* <a
+                  href="/#"
+                  className="inline-flex items-center justify-center px-10 py-4 text-base font-normal text-center text-white rounded-lg bg-primary hover:bg-opacity-90 lg:px-8 xl:px-10"
+                >
+                  Get Started
+                </a> */}
+              </div>
+            </div>
+
+            <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
+              <div className="mt-10 lg:mt-0">
+                <span className="block mb-2 text-lg font-semibold text-primary">
+                What Sets Us Apart
+                </span>
+                <h2 className="mb-8 text-3xl font-bold text-dark sm:text-4xl">
+                Uniqueness of MyWeb3Gift
+                </h2>
+                <p className="mb-8 text-base text-body-color">
+                What makes MyWeb3Gift stand out is our innovative approach to learning about blockchain. Our 25-day educational calendars and gift boxes provide users with hands-on experience, NFTs, and exclusive perks. By the end of our journey, users have more blockchain knowledge than 95% of the population.
+                </p>
+                {/* <a
+                  href="/#"
+                  className="inline-flex items-center justify-center px-10 py-4 text-base font-normal text-center text-white rounded-lg bg-primary hover:bg-opacity-90 lg:px-8 xl:px-10"
+                >
+                  Get Started
+                </a> */}
+              </div>
+            </div>
+
+            
           </div>
         </div>
       </section>

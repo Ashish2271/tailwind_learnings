@@ -1,5 +1,5 @@
 
-import { MyWeb3GiftLogo_Black, MyWeb3GiftLogo_White } from "../assets/Images/MyWeb3Gift-red2/index"
+import { MyWeb3GiftLogo_Black } from "../assets/Images/MyWeb3Gift-red2/index"
 
 const Footer = () => {
     return (
@@ -10,8 +10,8 @@ const Footer = () => {
                 <div className="mx-auto w-full max-w-screen-xl">
                     <div className="grid grid-cols-3 gap-8 px-4 py-6 lg:py-8 md:grid-cols-3">
 
-                        <div>
-                            <img src={MyWeb3GiftLogo_Black} className="  " alt="" />
+                        <div className="py-10 px-5">
+                            <img src={MyWeb3GiftLogo_Black} width={250} height={250} className="  " alt="" />
                         </div>
 
                         <div>

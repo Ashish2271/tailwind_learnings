@@ -1,5 +1,5 @@
 import React from 'react';
-import {Testimonials,  LogoSlider, VideoUSP,  GiftDetails, TrustSymbols,  CountDownTimer, CtaSection, FaqSection, Footer, HeroSection,  ValueProposition,  Blog, IconsDetails, WhoForSection, Steps } from './index.js'
+import {Testimonials,  LogoSlider, VideoUSP,  GiftDetails, TrustSymbols,  CountDownTimer,  FaqSection, Footer, HeroSection,  ValueProposition,  Blog, IconsDetails, WhoForSection, Steps } from './index.js'
 // import Nav from '../Components/Nav.js' 
 import Nav01 from '../Components/Nav01.js'
 
@@ -126,9 +126,9 @@ const Main = () => {
 <FaqSection/>
 </section>
 
-<section>
+{/* <section>
 <CtaSection/>
-</section>
+</section> */}
 
 
 
@@ -138,9 +138,7 @@ const Main = () => {
 </section>
 
 
-{/* <section className='max-md:hidden md:scale-50 dark:bg-gray-800 rounded-full dark:text-white'>
-  <TextAnimation/>
-</section> */}
+
 
 {/* <section>
 <ExitIntendPopup/>
