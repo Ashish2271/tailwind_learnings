@@ -1,8 +1,13 @@
-import React from 'react'
+import React from 'react';
 
 // import { ChristmasGift } from '../assets/Images'
 
 const VideoUSP = () => {
+
+
+
+
+
     return (
         <div>
 
@@ -52,7 +57,7 @@ const VideoUSP = () => {
 
             <div className='min-h-[60vh] flex flex-col max-w-[1550px] mx-auto   justify-center items-center sm:flex-row max-sm:flex-wrap'>
 
-            <div className='sm:w-1/2 max-sm:w-full text-white sm:py-20 p-4 max-sm:text-center sm:px-20 '>
+            <div className='sm:w-1/2    max-sm:w-full text-white sm:py-20 p-4 max-sm:text-center sm:px-20 '>
                     <h1 className=' font-bold max-sm:text-4xl sm:text-5xl pb-10'>Future of Gifting with MyWeb3Gift</h1>
                     <h2 className='text-lg font-semibold sm:text-2xl pb-5'>Discover a World of Possibilities in Every Door</h2>
                     <button data-tally-open="3jo994" data-tally-layout="modal" data-tally-emoji-text="👋" data-tally-emoji-animation="wave" className='bg-yellow-400 hover:bg-yellow-500 text-white font-bold sm:text-xl py-3 px-10 rounded mt-4'>Get Now</button>
@@ -61,7 +66,7 @@ const VideoUSP = () => {
 
                 </div>
 
-                <div className='sm:w-1/2 max-sm:w-full mr-30 sm:mx-32  p-4 text-center'>
+                <div className='sm:w-1/2   max-sm:w-full mr-30 sm:mx-32  p-4 text-center'>
                     <video className='w-full rounded-3xl' src="#" preload="auto" autoPlay controls></video>
                 </div>
             </div>

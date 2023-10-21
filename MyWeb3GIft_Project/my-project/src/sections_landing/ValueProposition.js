@@ -12,7 +12,7 @@ const ValueProposition = () => {
 Get ready for a unique gifting experience.
         </h2>
         <p class="mt-3 text-base leading-7 text-white sm:text-2xl sm:py-5 sm:mt-4">
-            Feel confident in choosing the best energy assessor for your energy rating.
+            {/* Feel confident in choosing the best energy assessor for your energy rating. */}
         </p>
     </div>
     <div class="mt-10 text-center sm:max-w-3xl sm:mx-auto sm:grid sm:grid-cols-3 sm:gap-8">

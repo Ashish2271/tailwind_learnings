@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import "./Style/IconsDetails.css"
 
 // import {  ChristmasGift, SurpriseGift, ChallengeCalender, calendar } from '../assets/Images'
@@ -9,16 +9,34 @@ import "./Style/IconsDetails.css"
 const IconsDetails = () => {
 
 
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        } else {
+          entry.target.classList.remove('show');
+        }
+      });
+    });
+
+    const hiddenElements = document.querySelectorAll('.hidden');
+
+    hiddenElements.forEach((el) => observer.observe(el));
+  }, []);
+
+
   return (
     <div className=' bg-gradient-to-r  '>
 
-      <div className='text-center py-20  text-black font-bold max-sm:text-3xl sm:text-6xl sm:mx-20' >Get our gift calendar for your friends and family
+      <div className='text-center py-20 hiden  text-black font-bold max-sm:text-3xl sm:text-6xl sm:mx-20' >Get our gift calendar for your friends and family
       </div>
-      <div className='text-center text-gray-700 max-sm:text-xl font-semibold text-2xl pb-7'>All options have the same content, only the arrangement and layout differs.</div>
+      <div className='text-center hiden text-gray-700 max-sm:text-xl font-semibold text-2xl pb-7'>All options have the same content, only the arrangement and layout differs.</div>
 
-      <div class="containerIcon flex flex-1 flex-row flex-wrap min-h-[50vh] ">
+      <div class="containerIcon  flex flex-1 flex-row flex-wrap min-h-[50vh] ">
 
-        <div class="relative m-10 w-full max-w-xs overflow-hidden rounded-lg bg-white shadow-md">
+        <div class="relative hiden logo m-10 w-full max-w-xs overflow-hidden rounded-lg bg-white shadow-md">
           <a href="#/">
             <img class="h-60 rounded-t-lg object-cover" src="https://images.unsplash.com/photo-1512916206820-bd6d503c003e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="product" />
           </a>
@@ -68,7 +86,7 @@ const IconsDetails = () => {
 
 
 
-        <div class="relative m-10 w-full max-w-xs overflow-hidden rounded-lg bg-white shadow-md">
+        <div class="relative hiden logo m-10 w-full max-w-xs overflow-hidden rounded-lg bg-white shadow-md">
           <a href="#/">
             <img class="h-60 rounded-t-lg object-cover" src="https://images.unsplash.com/photo-1606482512676-255bf02be7cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1473&q=80" alt="product" />
           </a>
@@ -112,7 +130,7 @@ const IconsDetails = () => {
 
 
 
-        <div class="relative m-10 w-full max-w-xs overflow-hidden rounded-lg bg-white shadow-md">
+        <div class="relative hiden logo m-10 w-full max-w-xs overflow-hidden rounded-lg bg-white shadow-md">
           <a href="#/">
             <img class="h-60 rounded-t-lg object-cover" src="https://plus.unsplash.com/premium_photo-1683731896418-493316129f0e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="product" />
           </a>
@@ -204,8 +222,8 @@ const IconsDetails = () => {
       </div>
 
 
-      <p className='text-yel-600 text-5xl py-10 px-3 max-sm:text-xl sm:text-2xl   text-center'>It's an educational and entertaining gift rolled into one. <br />
-      <button className='bg-yellow-300 text-white font bold px-7 my-4  rounded-xl text-2xl py-3'>Learn More</button>
+      <p className='text-yel-600 text-5xl hiden py-10 px-3 max-sm:text-xl sm:text-2xl   text-center'>It's an educational and entertaining gift rolled into one. <br />
+      <button className='bg-yellow-300 hiden text-white font bold px-7 my-4  rounded-xl text-2xl py-3'>Learn More</button>
       </p>
 
     </div>
