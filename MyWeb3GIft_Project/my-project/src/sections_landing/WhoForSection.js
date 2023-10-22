@@ -1,5 +1,8 @@
 
-import React, { useEffect } from 'react';
+
+
+import React from 'react';
+// import React, { useEffect } from 'react';
 import { GirlSmiling,  Friends, Entertainment } from '../assets/Images/WhoItFor';
 
 import "./Styles/WhoForSection.css"
@@ -10,21 +13,21 @@ const WhoForSection = () => {
 
 
 
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('show');
-        } else {
-          entry.target.classList.remove('show');
-        }
-      });
-    });
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver((entries) => {
+  //     entries.forEach((entry) => {
+  //       if (entry.isIntersecting) {
+  //         entry.target.classList.add('show');
+  //       } else {
+  //         entry.target.classList.remove('show');
+  //       }
+  //     });
+  //   });
 
-    const hiddenElements = document.querySelectorAll('.hiden');
+  //   const hiddenElements = document.querySelectorAll('.hiden');
 
-    hiddenElements.forEach((el) => observer.observe(el));
-  }, []);
+  //   hiddenElements.forEach((el) => observer.observe(el));
+  // }, []);
 
 
 
@@ -35,10 +38,10 @@ const WhoForSection = () => {
 <div>
 
 <div className="  rounded-3xl sm:px-20 max-sm:px-5 sm:mx-5 py-10">
-        <h2 className=" font-bold sm:mx-20 max-sm:my-10 hidden  sm:my-10 sm:text-6xl max-sm:text-5xl text-center ">Who's It For?</h2>
+        <h2 className=" font-bold sm:mx-20 max-sm:my-10  sm:my-10 sm:text-6xl max-sm:text-5xl text-center ">Who's It For?</h2>
         <div className='flex  flex-wrap logos  min-h-[40vh] sm:my-10 justify-center flex-row max-sm:gap-10 gap-24 '>
 
-        <div className=" logo hiden pp max-w-sm rounded-3xl overflow-hidden shadow-lg">
+        <div className=" logo  pp max-w-sm rounded-3xl overflow-hidden shadow-lg">
   <img className="w-full" src={GirlSmiling} alt="Sunset in the mountains" />
   <div className="px-6 py-4">
     <div className="font-bold text-xl mb-2">You</div>
@@ -50,7 +53,7 @@ const WhoForSection = () => {
 </div>
 
 
-<div className=" logo hiden pp max-w-sm rounded-3xl overflow-hidden shadow-lg">
+<div className=" logo  pp max-w-sm rounded-3xl overflow-hidden shadow-lg">
   <img className="w-full" src={Friends} alt="Sunset in the mountains"/>
   <div className="px-6 py-4">
     <div className="font-bold text-xl mb-2">Friends and Family</div>
@@ -62,7 +65,7 @@ const WhoForSection = () => {
 </div>
 
 
-<div className=" logo hiden pp max-w-sm rounded-3xl overflow-hidden shadow-lg">
+<div className=" logo  pp max-w-sm rounded-3xl overflow-hidden shadow-lg">
   <img className="w-full" src={Entertainment} alt="Sunset in the mountains"/>
   <div className="px-6 py-4">
     <div className="font-bold text-xl mb-2">Unique Gift Enthusiasts</div>

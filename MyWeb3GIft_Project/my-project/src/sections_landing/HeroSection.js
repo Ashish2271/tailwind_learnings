@@ -73,10 +73,14 @@ const HeroSection = () => {
             <h1 className="  md:scale-125 lg:scale-150 mb-20  text-5xl  font-extrabold  sm:text-5xl">
 
               <strong className="font-extrabold animate-character text-gray-100 sm:block hover:ease-in  ">
-                <span className="  max-sm:text-5xl text-8xl">
+                <span className="  max-sm:text-5xl text-5xl">
 
+<span className='text-gray-300'>Welcome to 
+  
 
-                  <span className="text-yellow-500" >My</span><span className="text-gray-300">Web3</span><span className="text-red-600">Gift</span>
+  <span className="" > my</span><span className="">web3</span><span className="">gift</span>
+   </span>
+                  
 
 
 

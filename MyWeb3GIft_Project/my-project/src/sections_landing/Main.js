@@ -1,5 +1,5 @@
 import React from 'react';
-import {Testimonials,  LogoSlider, VideoUSP,  GiftDetails, TrustSymbols,  CountDownTimer,  FaqSection, Footer, HeroSection,  ValueProposition,  Blog, IconsDetails, WhoForSection, Steps } from './index.js'
+import {Testimonials,  LogoSlider, VideoUSP,  GiftDetails, TrustSymbols,  CountDownTimer,  FaqSection, Footer, HeroSection,    Blog, IconsDetails, WhoForSection, Steps } from './index.js'
 // import Nav from '../Components/Nav.js' 
 import Nav01 from '../Components/Nav01.js'
 
@@ -17,6 +17,12 @@ const Main = () => {
 
 
 
+
+<section>
+  <IconsDetails/>
+</section>
+
+
 <section>
   <WhoForSection/>
 </section>
@@ -32,9 +38,6 @@ const Main = () => {
 
 
 
-<section>
-  <IconsDetails/>
-</section>
 
 
 
@@ -111,11 +114,13 @@ const Main = () => {
 
 
 
-<section>
+{/* <section>
 <ValueProposition/>
+</section> */}
+
+<section>
+<CountDownTimer/>
 </section>
-
-
 
 <section  className=' flex justify-center' >
   <Blog/>
@@ -133,9 +138,7 @@ const Main = () => {
 
 
 
-<section>
-<CountDownTimer/>
-</section>
+
 
 
 

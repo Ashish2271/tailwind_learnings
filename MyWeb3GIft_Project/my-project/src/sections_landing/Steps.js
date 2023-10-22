@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+// import React, { useEffect } from 'react';
 import "./Styles/Steps.css"
 import { Calender24 } from '../assets/Images/CardsImages'
 
@@ -9,21 +9,21 @@ import { Calender24 } from '../assets/Images/CardsImages'
 const Steps = () => {
 
 
-    useEffect(() => {
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('show');
-            } else {
-              entry.target.classList.remove('show');
-            }
-          });
-        });
+    // useEffect(() => {
+    //     const observer = new IntersectionObserver((entries) => {
+    //       entries.forEach((entry) => {
+    //         if (entry.isIntersecting) {
+    //           entry.target.classList.add('show');
+    //         } else {
+    //           entry.target.classList.remove('show');
+    //         }
+    //       });
+    //     });
     
-        const hiddenElements = document.querySelectorAll('.hidden');
+    //     const hiddenElements = document.querySelectorAll('.hidden');
     
-        hiddenElements.forEach((el) => observer.observe(el));
-      }, []);
+    //     hiddenElements.forEach((el) => observer.observe(el));
+    //   }, []);
 
 
 
@@ -31,11 +31,11 @@ const Steps = () => {
     return (
 
 
-        <section className="container hiden mx-auto flex flex-col max-sm:gap-20 my-10   ">
+        <section className="container  mx-auto flex flex-col max-sm:gap-20 my-10   ">
 
-            <div className='font-bold hiden text-center mx-auto py-20 text-6xl'>How it works?</div>
+            <div className='font-bold  text-center mx-auto py-20 text-6xl'>How it works?</div>
 
-            <div className="feature__section hiden sm:mr-24  reverse">
+            <div className="feature__section sm:mr-24  reverse">
                 <div className="feature__content ">
                     <h2 className=''>Gifter 🎁🌟</h2>
                     {/* <p>
@@ -56,13 +56,13 @@ const Steps = () => {
                 </div>
             </div>
 
-            <div className=' bg-black hiden  w-20 max-sm:hidden h-20 mx-auto rounded-full  ' >
+            <div className=' bg-black   w-20 max-sm:hidden h-20 mx-auto rounded-full  ' >
 </div>
 
 
 
 
-            <div className="feature__section hiden sm:ml-[103px] ">
+            <div className="feature__section  sm:ml-[103px] ">
                 <div className="feature__image">
                     <img src={Calender24} alt="product" />
                 </div>
