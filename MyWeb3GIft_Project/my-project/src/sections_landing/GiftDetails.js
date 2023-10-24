@@ -6,7 +6,7 @@ const GiftDetails = () => {
   return (
     <div className="flex flex-col sm:my-10 md:flex-row justify-center items-center p-6 bg-blue-600 rounded-3xl">
       {/* Left Section */}
-      <div className="md:w-1/2 max-w-screen-xl max-[280px]:hidden mx-auto mb-4 md:mb-0">
+      <div className="md:w-1/2 max-w-screen-xl hidden max-[280px]:hidden mx-auto mb-4 md:mb-0">
         <div className="da relative flex max-sm:rounded-3xl flex-col justify-center overflow-hidden">
           <div className="absolute flex flex-row inset-0 bg-center dark:bg-black"></div>
           <div className="group relative m-0 flex h-96 w-96 rounded-xl shadow-xl ring-gray-900/5 sm:mx-auto sm:max-w-lg">

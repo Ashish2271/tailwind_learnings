@@ -30,20 +30,29 @@ const IconsDetails = () => {
   return (
     <div className=' bg-gradient-to-r  '>
 
-      <div className='text-center py-20 hiden  text-black font-bold max-sm:text-3xl sm:text-6xl sm:mx-20' >Get our gift calendar for your friends and family
+      <div className='text-center py-20 hiden  text-black font-bold max-sm:text-3xl sm:text-6xl sm:mx-20' >Get Your Holiday Gifts Now. Shine With A New Kind Of Gift
       </div>
-      <div className='text-center hiden text-gray-700 max-sm:text-xl font-semibold text-2xl pb-7'>All options have the same content, only the arrangement and layout differs.</div>
+      <div className='text-center hiden text-gray-700 max-sm:text-xl font-semibold text-2xl pb-7'>Choose the digital gift box according to the occasion</div>
 
       <div class="containerIcon  flex flex-1 flex-row flex-wrap min-h-[50vh] ">
 
+        
+
         <div class="relative hiden logo m-10 w-full max-w-xs overflow-hidden rounded-lg bg-white shadow-md">
+        <div class="mt-4 px-5 pb-5">
+            <a href="#/">
+              <h5 class="text-xl font-semibold tracking-tight text-slate-900">All occasions</h5>
+            </a>
+          </div>
+
           <a href="#/">
-            <img class="h-60 rounded-t-lg object-cover" src="https://images.unsplash.com/photo-1512916206820-bd6d503c003e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="product" />
+          <img class="h-60 rounded-t-lg object-cover" src="https://images.unsplash.com/photo-1606482512676-255bf02be7cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1473&q=80" alt="product" />
+
           </a>
           {/* <span class="absolute top-0 left-0 w-28 translate-y-4 -translate-x-6 -rotate-45 bg-black text-center text-sm text-white">Sale</span> */}
           <div class="mt-4 px-5 pb-5">
             <a href="#/">
-              <h5 class="text-xl font-semibold tracking-tight text-slate-900">Surprise Gift</h5>
+              <h5 class="text-xl font-semibold tracking-tight text-slate-900">Crypto Advent Calendar</h5>
             </a>
             {/* <div class="mt-2.5 mb-5 flex items-center">
               <span class="mr-2 rounded bg-yellow-200 px-2.5 py-0.5 text-xs font-semibold">5.0</span>
@@ -87,13 +96,20 @@ const IconsDetails = () => {
 
 
         <div class="relative hiden logo m-10 w-full max-w-xs overflow-hidden rounded-lg bg-white shadow-md">
+
+        <div class="mt-4 px-5 pb-5">
+            <a href="#/">
+              <h5 class="text-xl font-semibold tracking-tight text-slate-900">Christmas</h5>
+            </a>
+          </div>
+
           <a href="#/">
-            <img class="h-60 rounded-t-lg object-cover" src="https://images.unsplash.com/photo-1606482512676-255bf02be7cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1473&q=80" alt="product" />
+          <img class="h-60 rounded-t-lg object-cover" src="https://images.unsplash.com/photo-1512916206820-bd6d503c003e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="product" />
           </a>
           {/* <span class="absolute top-0 left-0 w-28 translate-y-4 -translate-x-6 -rotate-45 bg-black text-center text-sm text-white">Sale</span> */}
           <div class="mt-4 px-5 pb-5">
             <a href="#/">
-              <h5 class="text-xl font-semibold tracking-tight text-slate-900">Christmas Calender</h5>
+              <h5 class="text-xl font-semibold tracking-tight text-slate-900">Crypto Surprise Gift Box</h5>
             </a>
             {/* <div class="mt-2.5 mb-5 flex items-center">
               <span class="mr-2 rounded bg-yellow-200 px-2.5 py-0.5 text-xs font-semibold">5.0</span>
@@ -131,13 +147,21 @@ const IconsDetails = () => {
 
 
         <div class="relative hiden logo m-10 w-full max-w-xs overflow-hidden rounded-lg bg-white shadow-md">
+
+        <div class="mt-4 px-5 pb-5">
+            <a href="#/">
+              <h5 class="text-xl font-semibold tracking-tight text-slate-900">Random</h5>
+            </a>
+          </div>
+
           <a href="#/">
             <img class="h-60 rounded-t-lg object-cover" src="https://plus.unsplash.com/premium_photo-1683731896418-493316129f0e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="product" />
           </a>
           {/* <span class="absolute top-0 left-0 w-28 translate-y-4 -translate-x-6 -rotate-45 bg-black text-center text-sm text-white">Sale</span> */}
           <div class="mt-4 px-5 pb-5">
             <a href="#/">
-              <h5 class="text-xl font-semibold tracking-tight text-slate-900">Challenge Calender</h5>
+              <h5 class="text-xl font-semibold tracking-tight text-slate-900">24-Day Crypto
+Challenge Calendar</h5>
             </a>
             {/* <div class="mt-2.5 mb-5 flex items-center">
               <span class="mr-2 rounded bg-yellow-200 px-2.5 py-0.5 text-xs font-semibold">5.0</span>
@@ -220,9 +244,9 @@ const IconsDetails = () => {
 
 
       </div>
+      <p className='text-yel-600 text-5xl font-semibold hiden py-10 px-3 max-sm:text-xl sm:text-2xl   text-center'>Value of goods: $50 <br />  </p>
 
-
-      <p className='text-yel-600 text-5xl hiden py-10 px-3 max-sm:text-xl sm:text-2xl   text-center'>It's an educational and entertaining gift rolled into one. <br />
+      <p className='text-yel-600 text-5xl hiden py-10 px-3 max-sm:text-xl sm:text-2xl   text-center'>All options have the same content, only the arrangement and layout differs. <br />
       <button className='bg-yellow-300 hiden text-white font bold px-7 my-4  rounded-xl text-2xl py-3'>Learn More</button>
       </p>
 

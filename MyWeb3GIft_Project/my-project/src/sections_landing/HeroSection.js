@@ -21,15 +21,15 @@ const HeroSection = () => {
     <div className="relative">
       <section className="text-gray-700 dark:text-white relative">
         <img src={images[currentImageIndex]} alt="" className="object-cover w-full h-[90vh] -z-10" />
-        <div className="absolute top-0 left-0 w-full h-[90vh] bg-blue-500/50">
+        <div className="absolute top-0 left-0 w-full h-[90vh] bg-blue-900/50 ">
           <div className="mx-auto flex flex-col justify-center h-full px-4 py-16 text-center">
-            <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold mb-6">
-              <strong className="font-extrabold animate-character text-gray-100">
-                <span className="text-3xl sm:text-7xl">Welcome to my web3 gift</span>
+            <h1 className="text-3xl sm:text-5xl md:text-6xl  mb-6">
+              <strong className=" animate-character text-gray-50">
+                <span className="text-3xl sm:text-5xl">Welcome to MyWeb3Gift.com</span>
               </strong>
             </h1>
-            <p className="font-serif font-extrabold py-4 text-gray-300 text-2xl">
-              Surprise your loved ones with a blockchain magic gift box!
+            <p className="font-serif font-extrabold py-4 text-gray-100 text-2xl">
+              Surprise your loved ones with a unique digital gift box to <br /> discover the magic of blockchain
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a
