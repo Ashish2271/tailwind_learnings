@@ -23,7 +23,7 @@ import IconsDetails from "../Components/IconsDetails";
 import WhoForSection from "./WhoForSection";
 import GiftDetails from "./GiftDetails";
 import Steps from "./Steps";
+import EmailForm from "./EmailForm";
 
 
-
-export {Cards,  Steps, VideoUSP, IconsDetails,GiftDetails,  WhoForSection,  TextAnimation, Testimonial_slider, LogoSlider, Testimonials,  ConnectWallet, Blog, BenefitsandFeatures,ContactInformation,CountDownTimer, CtaSection, ExitIntendPopup, FaqSection, Footer, HeroSection, LeadCaptureForm, SocialProof, TrustSymbols, ValueProposition, VisualContent }
+export {Cards,  Steps, VideoUSP,  EmailForm, IconsDetails,GiftDetails,  WhoForSection,  TextAnimation, Testimonial_slider, LogoSlider, Testimonials,  ConnectWallet, Blog, BenefitsandFeatures,ContactInformation,CountDownTimer, CtaSection, ExitIntendPopup, FaqSection, Footer, HeroSection, LeadCaptureForm, SocialProof, TrustSymbols, ValueProposition, VisualContent }

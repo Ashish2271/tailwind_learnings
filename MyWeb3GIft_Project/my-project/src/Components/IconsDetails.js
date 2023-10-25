@@ -28,7 +28,7 @@ const IconsDetails = () => {
 
 
   return (
-    <div className=' bg-gradient-to-r  '>
+    <div className=' bg-gradient-to-r mx-auto w-full max-w-screen-xl '>
 
       <div className='text-center py-20 hiden  text-black font-bold max-sm:text-3xl sm:text-6xl sm:mx-20' >Get Your Holiday Gifts Now. Shine With A New Kind Of Gift
       </div>
@@ -247,7 +247,7 @@ Challenge Calendar</h5>
       <p className='text-yel-600 text-5xl font-semibold hiden py-10 px-3 max-sm:text-xl sm:text-2xl   text-center'>Value of goods: $50 <br />  </p>
 
       <p className='text-yel-600 text-5xl hiden py-10 px-3 max-sm:text-xl sm:text-2xl   text-center'>All options have the same content, only the arrangement and layout differs. <br />
-      <button className='bg-yellow-300 hiden text-white font bold px-7 my-4  rounded-xl text-2xl py-3'>Learn More</button>
+      <button className='bg-yellow-400 hiden text-white font bold px-7 my-4 hover:bg-yellow-500  rounded-xl text-2xl py-3'>Learn More</button>
       </p>
 
     </div>

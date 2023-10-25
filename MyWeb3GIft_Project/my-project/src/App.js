@@ -7,6 +7,7 @@ import ErrorPage from "./pages/ErrorPage.js";
 import FAQS from "./pages/FAQS.js";
 import Team from "./pages/Team.js";
 import BlogPage from "./pages/BlogPage.js";
+import Gift from "./pages/Gift.js";
 // import Nav01 from "./Components/Nav01.js";
 
 
@@ -27,6 +28,8 @@ function App() {
         <Route path="/Blog" element={<BlogPage/>} />
 
   <Route path="/Team" element={<Team/>} />
+  <Route path="/Gift" element={<Gift/>} />
+
 
         <Route path="*" element={<ErrorPage/>} />
 

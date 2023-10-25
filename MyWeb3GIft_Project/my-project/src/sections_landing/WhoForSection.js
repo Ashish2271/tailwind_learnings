@@ -11,18 +11,18 @@ const WhoForSection = () => {
 <div className="rounded-3xl sm:px-5 py-10">
         <h2 className="font-bold text-4xl sm:text-5xl py-12 text-center my-5">Who to give it to?</h2>
         <div className="flex flex-wrap justify-center gap-32 max-sm:gap-10">
-        <div className="logo pp max-w-sm rounded-3xl  bg-blue-300 w-80 h-24 overflow-hidden shadow-lg flex justify-center items-center">
+        <div className="logo pp max-w-sm rounded-3xl  bg-blue-500 hover:bg-blue-600  w-80 h-24 overflow-hidden shadow-xl flex justify-center items-center">
   <div className="px-6 py-4">
     <div className="font-bold text-center text-white text-xl mb-2">Friends and family</div>
   </div>
 </div>
 
-<div className="logo pp max-w-sm rounded-3xl bg-blue-300 w-80 h-24 overflow-hidden shadow-lg flex justify-center items-center">
+<div className="logo pp max-w-sm rounded-3xl bg-blue-500 hover:bg-blue-600 w-80 h-24 overflow-hidden shadow-xl flex justify-center items-center">
   <div className="px-6 py-4">
     <div className="font-bold text-center text-white text-xl mb-2">Unique-gift-enthusiasts</div>
   </div>
 </div>
-<div className="logo pp max-w-sm rounded-3xl bg-blue-300 w-80 h-24 overflow-hidden shadow-lg flex justify-center items-center">
+<div className="logo pp max-w-sm rounded-3xl bg-blue-500 hover:bg-blue-600 w-80 h-24 overflow-hidden shadow-xl flex justify-center items-center">
   <div className="px-6 py-4">
     <div className="font-bold text-center text-white  text-xl mb-2">Yourself</div>
   </div>

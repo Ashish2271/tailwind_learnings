@@ -21,7 +21,7 @@ const Nav01 = () => {
 
 
     return (
-        <div className=" z-100  ">
+        <div className=" z-100 font-serif font-extrabold  ">
             <div>
                 <div className="  ">
                     {/* For md screen size */}

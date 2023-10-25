@@ -25,7 +25,7 @@ const HeroSection = () => {
           <div className="mx-auto flex flex-col justify-center h-full px-4 py-16 text-center">
             <h1 className="text-3xl sm:text-5xl md:text-6xl  mb-6">
               <strong className=" animate-character text-gray-50">
-                <span className="text-3xl sm:text-5xl">Welcome to MyWeb3Gift.com</span>
+                <span className="text-3xl font-serif font-extrabold sm:text-5xl">Welcome to MyWeb3Gift.com</span>
               </strong>
             </h1>
             <p className="font-serif font-extrabold py-4 text-gray-100 text-2xl">
@@ -33,17 +33,25 @@ const HeroSection = () => {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a
-                className="block w-full sm:w-auto rounded bg-yellow-500 px-6 py-2 text-sm font-medium text-white shadow hover:bg-yellow-600 focus:outline-none focus:ring active:bg-red-500"
-                href="/get-started"
+                className="block w-full font-serif font-extrabold sm:w-auto rounded bg-yellow-500 px-6 py-2 text-sm  text-white shadow hover:bg-yellow-600 focus:outline-none focus:ring active:bg-red-500"
+                href="/gift"
               >
                 GIVE A GIFT
               </a>
+         
+
+              <button data-tally-open="3jo994" data-tally-layout="modal" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">  
               <a
-                className="block w-full sm:w-auto rounded px-6 py-2 text-sm font-medium bg-slate-100 text-yellow-500 shadow hover:text-yellow-600 focus:outline-none focus:ring active:text-red-500 dark:bg-yellow-600 dark:text-white"
+                className="block w-full font-serif font-extrabold sm:w-auto rounded px-6 py-2 text-sm  bg-slate-100 text-yellow-500 shadow hover:text-yellow-600 focus:outline-none focus:ring active:text-red-500 dark:bg-yellow-600 dark:text-white"
                 href="/about"
               >
                 LEARN MORE
               </a>
+
+              
+              </button>
+
+
             </div>
           </div>
         </div>
