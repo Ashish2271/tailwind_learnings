@@ -99,9 +99,11 @@ const EmailForm = () => {
                                 
                                 />
                             </div>
-                            <button className="flex-shrink-0 px-4 py-2 text-base font-semibold text-white bg-yellow-500 rounded-lg shadow-md hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 focus:ring-offset-purple-200" type="submit"
+                            <button className="flex-shrink-0 px-4   py-2 text-base font-semibold text-white bg-yellow-500 rounded-lg shadow-md hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 focus:ring-offset-purple-200" type="submit"
                                 onClick={postData}
                             >
+
+                              
                                 Subscribe
                             </button>
                         </form>
@@ -111,7 +113,7 @@ const EmailForm = () => {
                     <picture>
                         <source srcSet="/images/object/5.webp" type="image/webp" />
                         <source srcSet="/images/object/5.png" />
-                        <img className="object-cover w-1/2 mx-auto maw-w-44" src="/images/object/5.png" alt="shopping item" />
+                        <img className="object-cover w-1/2 mx-auto    maw-w-44" src="/images/object/5.png" alt="shopping item" />
                     </picture>
                 </div> */}
             </div>
