@@ -1,5 +1,8 @@
 import React from 'react';
-import {Testimonials,  LogoSlider, VideoUSP, EmailForm, TrustSymbols, GiftDetails, CountDownTimer,  FaqSection, Footer, HeroSection,    Blog, IconsDetails, WhoForSection, Steps } from './index.js'
+
+import {Testimonials,  LogoSlider, VideoUSP, EmailForm, GiftDetails,  TrustSymbols, CountDownTimer,  FaqSection, Footer, HeroSection,    Blog, IconsDetails, WhoForSection, Steps } from './index.js'
+
+
 // import Nav from '../Components/Nav.js' 
 import Nav01 from '../Components/Nav01.js'
 
