@@ -8,7 +8,7 @@ const Testimonials = () => {
     <div class="w-full  dark:bg-gray-800 dark:text-white bg-white border-t border-b border-gray-200 px-5 py-16 md:py-24 text-gray-800">
         <div class="w-full max-w-6xl mx-auto">
             <div class="text-center max-w-xl mx-auto">
-                <h1 class="text-6xl md:text-7xl font-bold mb-5 dark:text-gray-50 text-gray-600">What people <br/>are saying.</h1>
+                <h1 class="text-5xl md:text-5xl font-bold mb-5 dark:text-gray-50 text-gray-600">What people <br/>are saying.</h1>
                 <h3 class="text-xl mb-5 font-light">
 "User Testimonials: See What People Love About MyWeb3Gift"
 <br />
