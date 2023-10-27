@@ -4,32 +4,57 @@ import './Styles/Steps.css';
 
 const Steps = () => {
   return (
-    <section className="container mx-auto flex flex-col gap-10 md:gap-20 my-10 text-center">
-      <div className="font-bold text-3xl sm:text-5xl py-10">How it works?</div>
-      <div className="feature__section flex flex-col-reverse md:flex-row">
-        <div className="feature__content md:mr-24 text-left">
-          <h2>Gifter 🎁🌟</h2>
-          <p>
+    <div>
+
+
+      <section className="container mx-auto flex flex-col gap-10 md:gap-20   text-center">
+        <div className="font-bold text-3xl mt-28 sm:text-5xl ">How it works?</div>
+        <div className="feature__section flex flex-col-reverse md:flex-row">
+          <div className="feature__content w-96 text-left">
+            <h2>Gifter 🎁🌟</h2>
+            {/* <p>
             You can select a gift box, add an optional personal message, and then choose how to hand it over: via email with a link/barcode or in person with a printed card containing the link/barcode.
-          </p>
+          </p> */}
+
+            <p> ▪️  Select a gift box <br />
+              ▪️  Add an optional personal message <br />
+              ▪️  Choose how to hand it over: <br />
+
+             <span >
+
+             <span className='ml-11'> a. via email with a link/barcode or
+              </span> <br />
+              <span className='ml-11'> b. in person with a printed card containing the link/barcode
+              </span>
+             </span>
+            </p>
+          </div>
+          <div className="feature__image">
+            <img src="https://images.pexels.com/photos/5970863/pexels-photo-5970863.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="product" />
+          </div>
         </div>
-        <div className="feature__image">
-          <img src="https://images.pexels.com/photos/5970863/pexels-photo-5970863.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="product" />
+        <div className="bg-black w-20 h-20 rounded-full mx-auto my-10 md:hidden"></div>
+        <div className="feature__section  md:ml-20">
+          <div className="feature__image">
+            <img src={Calender24} alt="product" />
+          </div>
+          <div className="feature__content text-left">
+            <h2>Recipient 📲⚡️</h2>
+            {/* <p>
+              Recipients can use the link/barcode to access our redeem page where they'll discover your personal message and gain access to the gift box. They can then open and enjoy the individual gifts day by day.
+            </p> */}
+
+<p> ▪️  Use the link/barcode to access our redeem page <br />
+              ▪️  Discover personal message from gifter <br />
+              ▪️  Open gift content day by day for 24 days<br />
+
+
+            </p>
+          </div>
         </div>
-      </div>
-      <div className="bg-black w-20 h-20 rounded-full mx-auto my-10 md:hidden"></div>
-      <div className="feature__section md:ml-20">
-        <div className="feature__image">
-          <img src={Calender24} alt="product" />
-        </div>
-        <div className="feature__content text-left">
-          <h2>Recipient 📲⚡️</h2>
-          <p>
-            Recipients can use the link/barcode to access our redeem page where they'll discover your personal message and gain access to the gift box. They can then open and enjoy the individual gifts day by day.
-          </p>
-        </div>
-      </div>
-    </section>
+      </section>
+
+    </div>
   );
 }
 
@@ -40,7 +65,7 @@ export default Steps;
 
 
 
-//  {/* 
+//  {/*
 // <div className=' bg-black w-20 h-20 mx-auto max-sm:hidden rounded-full  '></div>
 // <div className="feature__section sm:mr-24 reverse">
 //     <div className="feature__content">

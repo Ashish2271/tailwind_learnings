@@ -33,13 +33,13 @@ const WhoForSection = () => {
 
 
       <div className="rounded-3xl sm:px-5 py-10">
-        <h2 className="font-bold text-4xl sm:text-5xl py-12 text-center my-5">Why buy our gift boxes?</h2>
-        <div className="flex flex-wrap justify-center gap-5 max-sm:gap-10">
+        <h2 className="font-bold text-5xl sm:text-5xl py-12 text-center my-5">Why buy our gift boxes?</h2>
+        <div className="flex flex-wrap justify-center gap-14 max-sm:gap-10">
           <div className="logo pp max-w-sm rounded-3xl overflow-hidden shadow-lg">
             <img className="w-full" src={GirlSmiling} alt="Girl Smiling" />
             <div className="px-6 py-4">
-              <div className="font-bold text-xl mb-2">You</div>
-              <p className="text-gray-700 text-base">
+              {/* <div className="font-bold text-xl mb-2">You</div> */}
+              <p className="text-gray-700  text-base">
                 Unlock the fascinating world of Crypto and Blockchain, even if you're a beginner.
               </p>
             </div>
@@ -48,7 +48,7 @@ const WhoForSection = () => {
           <div className="logo pp max-w-sm rounded-3xl overflow-hidden shadow-lg">
             <img className="w-full" src={Entertainment} alt="Entertainment" />
             <div className="px-6 py-4">
-              <div className="font-bold text-xl mb-2">Unique Gift Enthusiasts</div>
+              {/* <div className="font-bold text-xl mb-2">Unique Gift Enthusiasts</div> */}
               <p className="text-gray-700 text-base">
                 One-of-a-kind gift that combines education and entertainment in a magical way.
               </p>
@@ -58,7 +58,7 @@ const WhoForSection = () => {
           <div className="logo pp max-w-sm rounded-3xl overflow-hidden shadow-lg">
             <img className="w-full" src={Friends} alt="Friends" />
             <div className="px-6 py-4">
-              <div className="font-bold text-xl mb-2">Friends and Family</div>
+              {/* <div className="font-bold text-xl mb-2">Friends and Family</div> */}
               <p className="text-gray-700 text-base">
                 Perfect for those eager to dive into crypto and blockchain, dedicating just 5 minutes a day.
               </p>

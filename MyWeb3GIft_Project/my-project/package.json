@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@clerk/clerk-react": "^4.27.0",
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.0.18",
     "@testing-library/jest-dom": "^5.17.0",
@@ -15,7 +16,6 @@
     "react-scripts": "5.0.1",
     "tw-elements-react": "^1.0.0-alpha1",
     "web-vitals": "^2.1.4"
-
   },
   "scripts": {
     "start": "react-scripts start",

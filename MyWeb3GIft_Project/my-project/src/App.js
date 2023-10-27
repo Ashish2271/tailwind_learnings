@@ -10,37 +10,61 @@ import BlogPage from "./pages/BlogPage.js";
 import Gift from "./pages/Gift.js";
 // import Nav01 from "./Components/Nav01.js";
 
+import {
+  ClerkProvider,
+  // SignedIn,
+  // SignedOut,
+  // RedirectToSignIn,
+  // SignIn,
+  // SignUp,
+  // UserButton,
+} from "@clerk/clerk-react";
+
+if (!process.env.REACT_APP_CLERK_PUBLISHABLE_KEY) {
+  throw new Error("Missing Publishable Key")
+}
+const clerkPubKey = process.env.REACT_APP_CLERK_PUBLISHABLE_KEY;
 
 
 function App() {
   return (
 
 
-    <Router>
-
-{/* <Nav01/> */}
-      <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/FAQS" element={<FAQS />} />
-        <Route path="/Team" element={<Team/>} />
-        <Route path="/Blog" element={<BlogPage/>} />
-
-  <Route path="/Team" element={<Team/>} />
-  <Route path="/Gift" element={<Gift/>} />
-
-
-        <Route path="*" element={<ErrorPage/>} />
 
 
 
 
-      </Routes>
+    <ClerkProvider publishableKey={clerkPubKey}>
 
 
-    </Router>
 
+
+      <Router>
+
+        {/* <Nav01/> */}
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/FAQS" element={<FAQS />} />
+          <Route path="/Team" element={<Team />} />
+          <Route path="/Blog" element={<BlogPage />} />
+
+          <Route path="/Team" element={<Team />} />
+          <Route path="/Gift" element={<Gift />} />
+
+
+          <Route path="*" element={<ErrorPage />} />
+
+
+
+
+        </Routes>
+
+
+      </Router>
+
+    </ClerkProvider>
 
 
   );

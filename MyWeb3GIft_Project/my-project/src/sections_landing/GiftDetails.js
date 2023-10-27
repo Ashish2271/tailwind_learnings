@@ -18,10 +18,10 @@ const GiftDetails = () => {
               {/* <p className="text-base font-semibold leading-6 text-indigo-500 uppercase">
                     Interactive
                 </p> */}
-              <h4 className="mt-2 text-2xl font-extrabold leading-8 text-gray-900 dark:text-white sm:text-3xl sm:leading-9">
+              <h4 className="mt-2 text-4xl   font-bold leading-8 text-gray-900 dark:text-white sm:text-5xl sm:leading-9">
                 What do the receivers get?
               </h4>
-              <p className="mt-4 text-lg leading-6 text-gray-500 dark:text-gray-300">
+              <p className="mt-4 text-base leading-6 dark:text-gray-300">
                 They’ll experience the magic of blockchain in an entertaining 25-day journey.
               </p>
               <ul className="gap-6 mt-8 md:grid md:grid-cols-2">
@@ -35,7 +35,7 @@ const GiftDetails = () => {
                         </path>
                       </svg>
                     </span>
-                    <span className="ml-4 text-base font-medium leading-6 text-gray-500 dark:text-gray-200">
+                    <span className="ml-4 text-base  leading-6  dark:text-gray-200">
                     25 Learnings
                     </span>
                   </div>
@@ -48,7 +48,7 @@ const GiftDetails = () => {
                         </path>
                       </svg>
                     </span>
-                    <span className="ml-4 text-base font-medium leading-6 text-gray-500 dark:text-gray-200">
+                    <span className="ml-4 text-base  leading-6  dark:text-gray-200">
                     2 Perks from Partners
                     </span>
                   </div>
@@ -61,7 +61,7 @@ const GiftDetails = () => {
                         </path>
                       </svg>
                     </span>
-                    <span className="ml-4 text-base font-medium leading-6 text-gray-500 dark:text-gray-200">
+                    <span className="ml-4 text-base  leading-6  dark:text-gray-200">
                     5 Art of KI generated NFTs
                     </span>
                   </div>
@@ -74,7 +74,7 @@ const GiftDetails = () => {
                         </path>
                       </svg>
                     </span>
-                    <span className="ml-4 text-base font-medium leading-6 text-gray-500 dark:text-gray-200">
+                    <span className="ml-4 text-base  leading-6  dark:text-gray-200">
                     3 Gaming NFTs
                     </span>
                   </div>
@@ -88,7 +88,7 @@ const GiftDetails = () => {
                         </path>
                       </svg>
                     </span>
-                    <span className="ml-4 text-base font-medium leading-6 text-gray-500 dark:text-gray-200">
+                    <span className="ml-4 text-base  leading-6  dark:text-gray-200">
                     1 Wallet
                     </span>
                   </div>
@@ -102,7 +102,7 @@ const GiftDetails = () => {
                         </path>
                       </svg>
                     </span>
-                    <span className="ml-4 text-base font-medium leading-6 text-gray-500 dark:text-gray-200">
+                    <span className="ml-4 text-base  leading-6  dark:text-gray-200">
                     Lifelong Access to an extensive learning section
                     </span>
                   </div>

@@ -7,7 +7,7 @@ const Main = () => {
 
 
   return (
-    <main className='font-serif  font-extrabold' >
+    <main className='  ' >
 
     <Nav01/>
 

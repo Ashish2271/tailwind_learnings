@@ -24,13 +24,19 @@ const HeroSection = () => {
         <div className="absolute top-0 left-0 w-full h-[90vh] bg-blue-900/50 ">
           <div className="mx-auto flex flex-col justify-center h-full px-4 py-16 text-center">
             <h1 className="text-3xl sm:text-5xl md:text-6xl  mb-6">
-              <strong className=" animate-character text-gray-50">
-                <span className="text-3xl font-serif font-extrabold sm:text-5xl">Welcome to MyWeb3Gift.com</span>
+              <strong className=" text-3xl sm:text-5xl md:text-6xl  mb-6 text-gray-100">
+                <span className="text-2xl  sm:text-4xl">Welcome to <span className='text-2xl  sm:text-3xl'>MyWeb3Gift</span>.com</span>
               </strong>
             </h1>
-            <p className="font-serif font-extrabold py-4 text-gray-100 text-2xl">
+            <h2 className=" py-4 text-gray-100 text-3xl">
               Surprise your loved ones with a unique digital gift box to <br /> discover the magic of blockchain
-            </p>
+            </h2>
+
+{/* <h1 className="text-3xl sm:text-5xl md:text-6xl  mb-6">
+              <strong className=" text-3xl sm:text-5xl md:text-6xl  mb-6 text-gray-100">
+                <span className="text-2xl  sm:text-4xl">  Surprise your loved ones with a unique digital gift box to <br /> discover the magic of blockchain</span>
+              </strong>
+            </h1> */}
             <div className="flex flex-wrap justify-center gap-4">
               <a
                 className="block w-full font-serif font-extrabold sm:w-auto rounded bg-yellow-500 px-6 py-2 text-sm  text-white shadow hover:bg-yellow-600 focus:outline-none focus:ring active:bg-red-500"

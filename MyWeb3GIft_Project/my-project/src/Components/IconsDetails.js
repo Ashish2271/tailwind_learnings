@@ -30,18 +30,14 @@ const IconsDetails = () => {
   return (
     <div className=' bg-gradient-to-r mx-auto w-full max-w-screen-xl '>
 
-      <div className='text-center py-20 hiden  text-black font-bold max-sm:text-3xl sm:text-6xl sm:mx-20' >Get Your Holiday Gifts Now. Shine With A New Kind Of Gift
+      <div className='text-center py-10 hiden  text-black font-bold max-sm:text-3xl sm:text-5xl sm:mx-20' >Get Your Holiday Gifts Now. <br /> Shine With A New Kind Of Gift
       </div>
-      <div className='text-center hiden text-gray-700 max-sm:text-xl font-semibold text-2xl pb-7'>Choose the digital gift box according to the occasion</div>
-
+      <div className='text-center hiden text-gray-700 max-sm:text-xl font-semibold text-2xl '>Choose the digital gift box according to the occasion</div>
       <div class="containerIcon  flex flex-1 flex-row flex-wrap min-h-[50vh] ">
-
-        
-
         <div class="relative hiden logo m-10 w-full max-w-xs overflow-hidden rounded-lg bg-white shadow-md">
         <div class="mt-4 px-5 pb-5">
             <a href="#/">
-              <h5 class="text-xl font-semibold tracking-tight text-slate-900">All occasions</h5>
+              <h5 class="text-xl font-semibold tracking-tight text-slate-900">Christmas</h5>
             </a>
           </div>
 
@@ -99,7 +95,7 @@ const IconsDetails = () => {
 
         <div class="mt-4 px-5 pb-5">
             <a href="#/">
-              <h5 class="text-xl font-semibold tracking-tight text-slate-900">Christmas</h5>
+              <h5 class="text-xl font-semibold tracking-tight text-slate-900">All Occasions</h5>
             </a>
           </div>
 
@@ -161,7 +157,7 @@ const IconsDetails = () => {
           <div class="mt-4 px-5 pb-5">
             <a href="#/">
               <h5 class="text-xl font-semibold tracking-tight text-slate-900">24-Day Crypto
-Challenge Calendar</h5>
+Challenge </h5>
             </a>
             {/* <div class="mt-2.5 mb-5 flex items-center">
               <span class="mr-2 rounded bg-yellow-200 px-2.5 py-0.5 text-xs font-semibold">5.0</span>
@@ -244,9 +240,9 @@ Challenge Calendar</h5>
 
 
       </div>
-      <p className='text-yel-600 text-5xl font-semibold hiden py-10 px-3 max-sm:text-xl sm:text-2xl   text-center'>Value of goods: $50 <br />  </p>
+      <p className='text-yel-600 text-5xl font-semibold hiden  px-3 max-sm:text-xl sm:text-2xl   text-center'>Value of goods: $50 <br />  </p>
 
-      <p className='text-yel-600 text-5xl hiden py-10 px-3 max-sm:text-xl sm:text-2xl   text-center'>All options have the same content, only the arrangement and layout differs. <br />
+      <p className='text-yel-600 text-5xl hiden py-4 px-3 max-sm:text-xl sm:text-2xl   text-center'>All options have the same content, only the arrangement and layout differs. <br />
       <button className='bg-yellow-400 hiden text-white font bold px-7 my-4 hover:bg-yellow-500  rounded-xl text-2xl py-3'>Learn More</button>
       </p>
 
