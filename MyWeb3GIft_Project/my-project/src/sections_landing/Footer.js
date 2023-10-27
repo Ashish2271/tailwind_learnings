@@ -17,6 +17,9 @@ const Footer = () => {
                             <img src={MyWeb3GiftLogo_Black} width={250} height={250} className="  " alt="" />
                         </div>
 
+
+                        
+
                         <div>
                             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Company</h2>
                             <ul className="text-gray-500 dark:text-gray-400 font-medium">
