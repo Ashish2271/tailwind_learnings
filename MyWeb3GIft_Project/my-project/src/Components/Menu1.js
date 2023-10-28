@@ -10,8 +10,8 @@ export default function Menu1() {
   return (
     <Menu as="div" className="relative inline-block text-left">
       <div>
-        <Menu.Button className="inline-flex w-full justify-center  gap-x-1.5 rounded-md px-3 py-2 text-sm font-semibold text-white shadow-sm  ring-inset ring-gray-300 hover:bg-yellow-500">
-        Menu
+        <Menu.Button className="inline-flex w-full justify-center  gap-x-1.5 rounded-md px-3 py-2 text-sm font-semibold text-white   ring-inset ring-gray-300 hover:bg-yellow-500">
+        MENU
           {/* <ChevronDownIcon className="-mr-1 h-5 w-5 text-gray-400" aria-hidden="true" /> */}
         </Menu.Button>
       </div>

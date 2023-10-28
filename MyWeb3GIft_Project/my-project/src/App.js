@@ -1,5 +1,5 @@
 import Main from "./sections_landing/Main.js";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import About from "./pages/About.js";
 import Contact from "./pages/Contact.js";
 // import Layout from "./pages/Layout.js";
@@ -12,38 +12,60 @@ import Gift from "./pages/Gift.js";
 
 import {
   ClerkProvider,
-  // SignedIn,
-  // SignedOut,
-  // RedirectToSignIn,
-  // SignIn,
-  // SignUp,
-  // UserButton,
+  SignedIn,
+  SignedOut,
+  RedirectToSignIn,
+  SignIn,
+  SignUp,
+  UserButton,
 } from "@clerk/clerk-react";
-
+import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
+ 
 if (!process.env.REACT_APP_CLERK_PUBLISHABLE_KEY) {
   throw new Error("Missing Publishable Key")
 }
+ 
 const clerkPubKey = process.env.REACT_APP_CLERK_PUBLISHABLE_KEY;
-
-
-function App() {
+ 
+// function PublicPage() {
+//   return (
+//     <>
+//       <h1>Public page</h1>
+//       <a href="/protected">Go to protected page</a>
+//     </>
+//   );
+// }
+ 
+function ProtectedPage() {
   return (
+    <>
+      <h1>Protected page</h1>
+      <UserButton />
+    </>
+  );
+}
 
 
 
 
 
 
-    <ClerkProvider publishableKey={clerkPubKey}>
+function ClerkProviderWithRoutes() {
+  const navigate = useNavigate();
+ 
+  return (
+    <ClerkProvider
+      publishableKey={clerkPubKey}
+      navigate={(to) => navigate(to)}
+    >
+      <Routes>
 
 
 
 
-      <Router>
 
-        {/* <Nav01/> */}
-        <Routes>
-          <Route path="/" element={<Main />} />
+
+      <Route path="/" element={<Main />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/FAQS" element={<FAQS />} />
@@ -59,15 +81,93 @@ function App() {
 
 
 
-        </Routes>
 
 
-      </Router>
-
+        {/* <Route path="/" element={<PublicPage />} /> */}
+        <Route
+          path="/sign-in/*"
+          element={<SignIn routing="path" path="/sign-in" />}
+        />
+        <Route
+          path="/sign-up/*"
+          element={<SignUp routing="path" path="/sign-up" />}
+        />
+        <Route
+          path="/protected"
+          element={
+          <>
+            <SignedIn>
+              <ProtectedPage />
+            </SignedIn>
+             <SignedOut>
+              <RedirectToSignIn />
+           </SignedOut>
+          </>
+          }
+        />
+      </Routes>
     </ClerkProvider>
-
-
   );
 }
 
+
+
+
+function App() {
+  return (
+    <BrowserRouter>
+      <ClerkProviderWithRoutes />
+    </BrowserRouter>
+  );
+}
+ 
 export default App;
+
+
+
+
+// function App() {
+//   return (
+
+
+
+
+
+
+//     <ClerkProvider publishableKey={clerkPubKey}>
+
+
+
+
+//       <Router>
+
+//         {/* <Nav01/> */}
+//         <Routes>
+//           <Route path="/" element={<Main />} />
+//           <Route path="/about" element={<About />} />
+//           <Route path="/contact" element={<Contact />} />
+//           <Route path="/FAQS" element={<FAQS />} />
+//           <Route path="/Team" element={<Team />} />
+//           <Route path="/Blog" element={<BlogPage />} />
+
+//           <Route path="/Team" element={<Team />} />
+//           <Route path="/Gift" element={<Gift />} />
+
+
+//           <Route path="*" element={<ErrorPage />} />
+
+
+
+
+//         </Routes>
+
+
+//       </Router>
+
+//     </ClerkProvider>
+
+
+//   );
+// }
+
+// export default App;

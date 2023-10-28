@@ -7,7 +7,7 @@ const Main = () => {
 
 
   return (
-    <main className='  ' >
+    <main  >
 
     <Nav01/>
 

@@ -9,22 +9,22 @@ const WhoForSection = () => {
 
 
 <div className="rounded-3xl sm:px-5 py-10">
-        <h2 className="font-bold text-4xl sm:text-5xl py-12 text-center my-5">Who to give it to?</h2>
+        <h2 className="font-bold text-4xl sm:text-4xl py-12 text-center my-5">Who to give it to?</h2>
         <div className="flex flex-wrap justify-center gap-32 max-sm:gap-10">
-        <div className="logo pp max-w-sm rounded-3xl  bg-blue-500 hover:bg-blue-600  w-80 h-24 overflow-hidden shadow-xl flex justify-center items-center">
+        <div className="logo pp max-w-sm rounded-3xl   text-black w-80 h-24 overflow-hidden shadow-xl flex justify-center items-center">
   <div className="px-6 py-4">
-    <div className="font-bold text-center text-white text-xl mb-2">Friends and family</div>
+    <div className="font-bold text-center text-black font-uppercase text-xl mb-2">FRIENDS AND FAMILY</div>
   </div>
 </div>
 
-<div className="logo pp max-w-sm rounded-3xl bg-blue-500 hover:bg-blue-600 w-80 h-24 overflow-hidden shadow-xl flex justify-center items-center">
+<div className="logo pp max-w-sm rounded-3xl  w-80 h-24 overflow-hidden shadow-xl flex justify-center items-center">
   <div className="px-6 py-4">
-    <div className="font-bold text-center text-white text-xl mb-2">Unique-gift-enthusiasts</div>
+    <div className="font-bold text-center text-black text-xl mb-2">  UNIQUE-GIFT-ENTHUSIASTS </div>
   </div>
 </div>
-<div className="logo pp max-w-sm rounded-3xl bg-blue-500 hover:bg-blue-600 w-80 h-24 overflow-hidden shadow-xl flex justify-center items-center">
+<div className="logo pp max-w-sm rounded-3xl  w-80 h-24 overflow-hidden shadow-xl flex justify-center items-center">
   <div className="px-6 py-4">
-    <div className="font-bold text-center text-white  text-xl mb-2">Yourself</div>
+    <div className="font-bold text-center text-black  text-xl mb-2">YOURSELF</div>
   </div>
 </div>
         </div>
@@ -33,14 +33,15 @@ const WhoForSection = () => {
 
 
       <div className="rounded-3xl sm:px-5 py-10">
-        <h2 className="font-bold text-5xl sm:text-5xl py-12 text-center my-5">Why buy our gift boxes?</h2>
+        <h2 className="font-bold text-4xl sm:text-5xl py-12 text-center my-5">Why buy our gift boxes?</h2>
         <div className="flex flex-wrap justify-center gap-14 max-sm:gap-10">
           <div className="logo pp max-w-sm rounded-3xl overflow-hidden shadow-lg">
             <img className="w-full" src={GirlSmiling} alt="Girl Smiling" />
             <div className="px-6 py-4">
               {/* <div className="font-bold text-xl mb-2">You</div> */}
-              <p className="text-gray-700  text-base">
-                Unlock the fascinating world of Crypto and Blockchain, even if you're a beginner.
+              <p className="text-gray-700  text-2xl">
+                Unlock the fascinating world of Crypto and Blockchain in easy and joyful way.
+                 {/* even for complete beginner. */}
               </p>
             </div>
           </div>
@@ -49,8 +50,8 @@ const WhoForSection = () => {
             <img className="w-full" src={Entertainment} alt="Entertainment" />
             <div className="px-6 py-4">
               {/* <div className="font-bold text-xl mb-2">Unique Gift Enthusiasts</div> */}
-              <p className="text-gray-700 text-base">
-                One-of-a-kind gift that combines education and entertainment in a magical way.
+              <p className="text-gray-700 text-2xl">
+                One-of-a-kind gift combining education and entertainment in a magical way.
               </p>
             </div>
           </div>
@@ -59,7 +60,7 @@ const WhoForSection = () => {
             <img className="w-full" src={Friends} alt="Friends" />
             <div className="px-6 py-4">
               {/* <div className="font-bold text-xl mb-2">Friends and Family</div> */}
-              <p className="text-gray-700 text-base">
+              <p className="text-gray-700 text-2xl ">
                 Perfect for those eager to dive into crypto and blockchain, dedicating just 5 minutes a day.
               </p>
             </div>
