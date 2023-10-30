@@ -12,15 +12,24 @@ const Blog = () => {
                 <span className="block mb-2  text-lg font-semibold text-primary">
                   {/* Our Blogs */}
                 </span>
-                <h2 className="mb-4   font-bold text-dark  md:text-[50px]">
+                <h2 className="font-bold text-4xl sm:text-5xl mt-10 mb-2  text-dark  md:text-[50px]">
                 Our Recent Blogs
                 </h2>
+
+                <div class="text-center mb-10">
+                    <span class="inline-block w-1 h-1 rounded-full bg-blue-600 ml-1"></span>
+                    <span class="inline-block w-3 h-1 rounded-full bg-blue-600 ml-1"></span>
+                    <span class="inline-block w-40 h-1 rounded-full bg-blue-500"></span>
+                    <span class="inline-block w-3 h-1 rounded-full bg-blue-600 ml-1"></span>
+                    <span class="inline-block w-1 h-1 rounded-full bg-blue-600 ml-1"></span>
+                </div>
                 <p className="text-base sm:text-2xl text-body-color">
                  
                 </p>
               </div>
             </div>
           </div>
+
 
           <div className="flex flex-wrap -mx-4">
             <BlogCard

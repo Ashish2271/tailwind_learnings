@@ -659,7 +659,7 @@ const About = () => {
                 Uniqueness of MyWeb3Gift
                 </h2>
                 <p className="mb-8 text-base text-body-color">
-                What makes MyWeb3Gift stand out is our innovative approach to learning about blockchain. Our 25-day educational calendars and gift boxes provide users with hands-on experience, NFTs, and exclusive perks. By the end of our journey, users have more blockchain knowledge than 95% of the population.
+                What makes MyWeb3Gift stand out is our innovative approach to learning about blockchain. Our 24-day educational calendars and gift boxes provide users with hands-on experience, NFTs, and exclusive perks. By the end of our journey, users have more blockchain knowledge than 95% of the population.
                 </p>
                 {/* <a
                   href="/#"

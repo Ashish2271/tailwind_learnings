@@ -1,103 +1,39 @@
-/* Non-required presets */
-/* import inter google font */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
-
-/* body {
-  font-family: "Inter", sans-serif;
-} */
-/* End of presets */
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-
-  padding: 0 1rem;
+.steps-container {
+  text-align: center;
+  padding: 20px;
 }
 
-/* features */
-.feature__section {
-  /* margin-top: 1rem; */
-  /* margin-bottom: 1rem; */
+.steps-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.steps-content {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  /* justify-content: space-between; */
-  gap: 20px;
 }
 
-.feature__content {
-  max-width: 500px;
+.step {
+  text-align: left;
+  margin: 20px 0;
 }
 
-.feature__content h2 {
-  font-size: 2rem;
-  line-height: 1;
-  margin: 1rem 0;
-  font-weight: 800;
+.step h2 {
+  font-weight: bold;
 }
 
-.feature__content p {
-  font-size: 1.2rem;
-  margin: 1rem 0;
+.step-icon {
+  width: 24px;
+  vertical-align: middle;
 }
 
-.feature__image img {
-  max-width: 400px;
-  border-radius: 10px;
+ul {
+  list-style: disc;
+  margin-left: 20px;
 }
 
-@media screen and (max-width: 768px) {
-  .feature__section {
-    flex-direction: column;
-    gap: 0;
-  }
-
-  .feature__section.reverse {
-    flex-direction: column-reverse;
-    gap: 0;
-  }
-  .feature__content h2 {
-    font-size: 2.0rem;
-    padding: auto;
-  }
-
-  .feature__image img {
-    max-width: 100%;
-  }
+ul ul {
+  list-style: circle;
+  margin-left: 20px;
 }
-
-
-
-
-
-
-
-
-
-/* Scroll Animation */
-
-
-
-/* 
-.hiden{
-
-  opacity: 0;
-  filter: blur(5px);
-  transform: translateX(-100%);
-  transition: all 3s;
- 
-}
-
-
-.show
-{
-  opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
-}
-.logo:nth-child(2){
-transition-delay: 300ms;
-}
-.logo:nth-child(3){
-transition-delay: 600ms;
-} */
