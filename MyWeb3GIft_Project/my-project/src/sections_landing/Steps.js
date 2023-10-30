@@ -1,172 +1,53 @@
 import React from 'react';
-import { Calender24 } from '../assets/Images/CardsImages';
-import './Styles/Steps.css';
+import { Surprise, Gift } from '../assets/Images';
 
 const Steps = () => {
   return (
-    <div>
-
-
-      <section className="container mx-auto flex flex-col gap-10 md:gap-20   text-center">
-        <div className="font-bold text-3xl mt-28 sm:text-5xl ">How it works?</div>
-        <div className="feature__section flex flex-col-reverse md:flex-row">
-          <div className="feature__content w-96 text-left">
-            <h2>Gifter 🎁🌟</h2>
-            {/* <p>
-            You can select a gift box, add an optional personal message, and then choose how to hand it over: via email with a link/barcode or in person with a printed card containing the link/barcode.
-          </p> */}
-
-            <p> ▪️  Select a gift box <br />
-              ▪️  Add an optional personal message <br />
-              ▪️  Choose how to hand it over: <br />
-
-             <span >
-
-             <span className='ml-11'> a. via email with a link/barcode or
-              </span> <br />
-              <span className='ml-11'> b. in person with a printed card containing the link/barcode
-              </span>
-             </span>
-            </p>
-          </div>
-          <div className="feature__image">
-            <img src="https://images.pexels.com/photos/5970863/pexels-photo-5970863.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="product" />
-          </div>
+    <div className=" py-10">
+      <section className="container mx-auto text-center">
+        <div className="font-bold text-4xl sm:text-5xl mt-10 mb-2">How it works?
+        <div class="text-center mb-10">
+                    <span class="inline-block w-1 h-1 rounded-full bg-blue-600 ml-1"></span>
+                    <span class="inline-block w-3 h-1 rounded-full bg-blue-600 ml-1"></span>
+                    <span class="inline-block w-40 h-1 rounded-full bg-blue-500"></span>
+                    <span class="inline-block w-3 h-1 rounded-full bg-blue-600 ml-1"></span>
+                    <span class="inline-block w-1 h-1 rounded-full bg-blue-600 ml-1"></span>
+                </div>
         </div>
-        <div className="bg-black w-20 h-20 rounded-full mx-auto my-10 md:hidden"></div>
-        <div className="feature__section  md:ml-20">
-          <div className="feature__image">
-            <img src={Calender24} alt="product" />
+        
+        <div className="flex flex-col justify-center md:flex-row  gap-10 md:space-x-12">
+          {/* Gifter Side */}
+          <div className="text-center mx-3 bottom-2 border-indigo-800 mb-6 md:mb-0">
+            <h2 className="text-2xl my-6 font-bold">
+              Gifter
+              <img src={Gift} className="w-8 inline-block ml-2" alt="Gift Icon" />
+            </h2>
+            <ul className="text-left leading-10 list-inside list-disc">
+              <li>Select a gift box</li>
+              <li>Add an optional personal message</li>
+              <li>Choose how to hand it over:</li>
+              <ul className="pl-6">
+                <li>a. via email with a link/barcode</li>
+                <li>b. in person with a printed card containing the link/barcode</li>
+              </ul>
+            </ul>
           </div>
-          <div className="feature__content text-left">
-            <h2>Recipient 📲⚡️</h2>
-            {/* <p>
-              Recipients can use the link/barcode to access our redeem page where they'll discover your personal message and gain access to the gift box. They can then open and enjoy the individual gifts day by day.
-            </p> */}
-
-<p> ▪️  Use the link/barcode to access our redeem page <br />
-              ▪️  Discover personal message from gifter <br />
-              ▪️  Open gift content day by day for 24 days<br />
-
-
-            </p>
+          {/* Recipient Side */}
+          <div className="text-center mx-3 ">
+            <h2 className="text-2xl my-6 font-bold">
+              Recipient 📲
+              <img src={Surprise} className="w-8 inline-block ml-2" alt="Surprise Icon" />
+            </h2>
+            <ul className="text-left leading-10 list-inside list-disc">
+              <li>Use the link/barcode to access our redeem page</li>
+              <li>Discover the personal message from the gifter</li>
+              <li>Open one gift content per day for 24 days</li>
+            </ul>
           </div>
         </div>
       </section>
-
     </div>
   );
 }
 
 export default Steps;
-
-
-
-
-
-
-//  {/*
-// <div className=' bg-black w-20 h-20 mx-auto max-sm:hidden rounded-full  '></div>
-// <div className="feature__section sm:mr-24 reverse">
-//     <div className="feature__content">
-//         <h2>Step 3 - Send the Gift 🚀</h2>
-//         <p>
-//             Provide two options: "Send via Email" and "Print for Personal Delivery." Use icons or buttons for these choices.
-//         </p>
-//     </div>
-
-//     <div className='bg-black max-sm:hidden w-2 sm:h-[400px]'>   </div>
-//     <div className="feature__image">
-//         <img src="https://source.unsplash.com/500x500/?Interface" alt="product" />
-//     </div>
-// </div>
-
-
-
-// <div className=' bg-black w-20 h-20 max-sm:hidden mx-auto rounded-full  '></div>
-// <div className="feature__section sm:ml-[103px] ">
-//     <div className="feature__image">
-//         <img src="https://source.unsplash.com/500x500/?interface" alt="product" />
-//     </div>
-
-
-//     <div className='bg-black max-sm:hidden w-2 sm:h-[400px]'>   </div>
-//     <div className="feature__content">
-//         <h2>Step 4 - Recipient's Experience ⚡️</h2>
-//         <p>
-//             Display a mobile phone or laptop screen with a barcode or link. Indicate that the recipient uses this to access their gift.
-//         </p>
-//     </div>
-// </div>
-
-
-
-// <div className=' bg-black w-20 h-20 max-sm:hidden mx-auto rounded-full  '></div>
-// <div className="feature__section sm:mr-24 reverse">
-//     <div className="feature__content">
-//         <h2> Step 5 - Unwrapping Animation 🌟</h2>
-//         <p>
-//             Showcase a digital gift box or calendar with a "Unwrap Gift" button. When clicked, a delightful animation reveals the gift.
-//         </p>
-//     </div>
-
-//     <div className='bg-black max-sm:hidden  w-2 sm:h-[400px]'>   </div>
-
-//     <div className="feature__image">
-//         <img src="https://source.unsplash.com/500x500/?gift" alt="product" />
-//     </div>
-// </div>
-
-
-// <div className=' bg-black w-20 h-20 max-sm:hidden mx-auto rounded-full  '></div>
-// <div className="feature__section sm:ml-[103px] ">
-//     <div className="feature__image">
-//         <img src="https://source.unsplash.com/500x500/?interface" alt="product" />
-//     </div>
-
-
-//     <div className='bg-black max-sm:hidden w-2 sm:h-[400px]'>   </div>
-//     <div className="feature__content">
-//         <h2>Step 6 - Personal Message⚡️</h2>
-//         <p>
-//             Show the recipient's screen with the personal message and the gift calendar or box.
-//         </p>
-//     </div>
-// </div>
-
-
-
-// <div className=' bg-black w-20 h-20 max-sm:hidden mx-auto rounded-full  '></div>
-// <div className="feature__section sm:mr-24 reverse">
-//     <div className="feature__content">
-//         <h2>Step 7 - Interactive Learning Journey🌟</h2>
-//         <p>
-//             Present an engaging graphic that represents an educational and interactive journey. Include icons for digital assets and perks.
-//         </p>
-//     </div>
-
-//     <div className='bg-black max-sm:hidden w-2 sm:h-[400px]'>   </div>
-
-//     <div className="feature__image">
-//         <img src="https://source.unsplash.com/500x500/?analytics-interface" alt="product" />
-//     </div>
-// </div>
-
-
-
-// <div className=' bg-black w-20 h-20 max-sm:hidden mx-auto rounded-full  '></div>
-// <div className="feature__section sm:ml-[103px]  ">
-//     <div className="feature__image">
-//         <img src="https://source.unsplash.com/500x500/?interface" alt="product" />
-//     </div>
-
-
-//     <div className='bg-black max-sm:hidden w-2 sm:h-[400px]'>   </div>
-//     <div className="feature__content">
-//         <h2>Step 8 - Lifelong Access⚡️</h2>
-//         <p>
-//             Conclude with an image of a book or open browser indicating access to the learning section for a lifetime.
-//         </p>
-//     </div>
-// </div> */}
-

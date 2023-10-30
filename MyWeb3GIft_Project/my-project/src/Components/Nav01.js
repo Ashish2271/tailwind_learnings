@@ -266,7 +266,7 @@ const Nav01 = () => {
                                         </div>
                                     </a>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <a href="team" className=" flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
                                         Team
                                         <div>
@@ -275,7 +275,7 @@ const Nav01 = () => {
                                             </svg>
                                         </div>
                                     </a>
-                                </li>
+                                </li> */}
                                 <li>
                                     <a href="faqs" className=" flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
                                         FAQ's

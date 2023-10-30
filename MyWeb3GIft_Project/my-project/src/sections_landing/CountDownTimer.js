@@ -56,7 +56,7 @@ const CountDownTimer = () => {
                   type="button"
                   className="py-2 px-4  bg-yellow-400 hover:bg-yellow-500 focus:ring-yellow-200 focus:ring-offset-indigo-200 text-indigo-500 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg "
                 >
-                  Early bird
+                EARLY BIRD
                 </button>
               </div>
             </div>

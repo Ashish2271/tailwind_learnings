@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import "./Style/IconsDetails.css"
+import { AllOcassions, Chellenge } from '../assets/Images/Compressed';
 
 // import {  ChristmasGift, SurpriseGift, ChallengeCalender, calendar } from '../assets/Images'
 
@@ -98,7 +99,7 @@ const IconsDetails = () => {
           </div>
 
           <a href="#/">
-          <img class="h-60 rounded-t-lg object-cover" src="https://images.unsplash.com/photo-1512916206820-bd6d503c003e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="product" />
+          <img class="h-60 rounded-t-lg object-cover" src={AllOcassions} alt="product" />
           </a>
           {/* <span class="absolute top-0 left-0 w-28 translate-y-4 -translate-x-6 -rotate-45 bg-black text-center text-sm text-white">Sale</span> */}
           <div class="mt-4 px-5 pb-5">
@@ -149,7 +150,7 @@ const IconsDetails = () => {
           </div>
 
           <a href="#/">
-            <img class="h-60 rounded-t-lg object-cover" src="https://plus.unsplash.com/premium_photo-1683731896418-493316129f0e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="product" />
+            <img class="h-60 rounded-t-lg object-cover" src={Chellenge} alt="product" />
           </a>
           {/* <span class="absolute top-0 left-0 w-28 translate-y-4 -translate-x-6 -rotate-45 bg-black text-center text-sm text-white">Sale</span> */}
           <div class="mt-4 px-5 pb-5">

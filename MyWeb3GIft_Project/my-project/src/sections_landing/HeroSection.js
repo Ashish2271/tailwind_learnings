@@ -33,7 +33,7 @@ const HeroSection = () => {
            Welcome to MyWeb3Gift.com
             </h1>
             <h1 className=" py-4 text-gray-100 text-3xl">
-              Surprise your loved ones with a unique digital gift box to <br /> discover the magic of blockchain
+              Surprise your loved ones with a unique digital gift box to <br className='max-sm:hidden' /> discover the magic of blockchain
             </h1>
 
             {/* <h1 className="text-3xl sm:text-5xl md:text-6xl  mb-6">
@@ -45,7 +45,7 @@ const HeroSection = () => {
 
             <div className="flex flex-wrap justify-center gap-4">
               <a
-                className="block w-full  sm:w-auto rounded bg-yellow-500 px-6 py-2 text-sm  text-white shadow hover:bg-yellow-600 focus:outline-none focus:ring active:bg-red-500"
+                className="block   sm:w-auto rounded bg-yellow-500 px-6 py-2 text-sm  text-white shadow hover:bg-yellow-600 focus:outline-none focus:ring active:bg-red-500"
                 href="/gift"
               >
                 GIVE A GIFT
@@ -54,7 +54,7 @@ const HeroSection = () => {
 
               <button data-tally-open="3jo994" data-tally-layout="modal" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">
                 <a
-                  className="block w-full   sm:w-auto rounded px-6 py-2 text-sm  bg-slate-100 text-yellow-500 shadow hover:text-yellow-600 focus:outline-none focus:ring active:text-red-500 dark:bg-yellow-600 dark:text-white"
+                  className="block w-full   sm:w-auto rounded px-6 py-2 text-sm  bg-slate-100 text-yellow-500 shadow hover:bg-yellow-600 focus:outline-none focus:ring active:text-red-500 dark:bg-yellow-500 dark:text-white"
                   href="/about"
                 >
                  GET BENEFITS

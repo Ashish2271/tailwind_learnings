@@ -84,7 +84,7 @@ export default function Menu1() {
             </form> */}
 
 
-<Menu.Item>
+{/* <Menu.Item>
               {({ active }) => (
                 <a
                   href="/Team"
@@ -96,7 +96,7 @@ export default function Menu1() {
              Team
                 </a>
               )}
-            </Menu.Item>
+            </Menu.Item> */}
 
             <Menu.Item>
               {({ active }) => (
