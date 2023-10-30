@@ -31,9 +31,9 @@ const IconsDetails = () => {
   return (
     <div className=' bg-gradient-to-r mx-auto w-full max-w-screen-xl '>
 
-      <div className='text-center py-10 hiden  text-black font-bold max-sm:text-3xl sm:text-4xl sm:mx-20' >Get Your Holiday Gifts Now, <br /> Shine With A New Kind Of Gift
+      <div className='text-center py-10 hiden  text-black font-bold max-sm:text-2xl sm:text-4xl sm:mx-20' >Get Your Holiday Gifts Now, <br /> Shine With A New Kind Of Gift
       </div>
-      <div className='text-center hiden text-yel-600 max-sm:text-xl py-4 sm:text-3xl text-3xl   '>Choose the digital gift box according to the occasion</div>
+      <div className='text-center hiden text-yel-600 max-sm:text-xl py-4 sm:text-3xl text-3xl mx-4  '>Choose the digital gift box <br className='sm:hidden' /> according to the occasion</div>
       <div class="containerIcon  flex flex-1 flex-row flex-wrap min-h-[50vh] ">
         <div class="relative hiden logo m-10 w-full max-w-xs overflow-hidden rounded-lg bg-white shadow-md">
         <div class="mt-4 px-5 pb-5">

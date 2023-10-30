@@ -11,6 +11,7 @@ import Connection from "./connection.png"
 import Surprise from "./surprise.png"
 import Gift from "./gift.png"
 import GiftBox from "./Giftbox (HD).png"
+import Thumbnail from "./Thumbnail.png"
 
 
-export { Surprise,  Gift ,  Connection, GiftBox,  Crpto1,  Crpto2 ,  Crpto3 , Crpto4 ,   Picture1, Picture2, Picture3, Picture4   }
+export { Surprise,  Gift ,  Connection, GiftBox, Thumbnail, Crpto1,  Crpto2 ,  Crpto3 , Crpto4 ,   Picture1, Picture2, Picture3, Picture4 }
