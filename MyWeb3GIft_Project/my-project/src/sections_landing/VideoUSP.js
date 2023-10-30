@@ -76,9 +76,9 @@ const VideoUSP = () => {
              <span class="sr-only">Close modal</span>
            </button>
    
-           <div class="max-sm:w-full p-1 flex justify-center items-center">
+           <div class="w-full p-1 flex justify-center items-center">
              <div class="video-container">
-               <video class="w-full h-full rounded-3xl" src={Video1} preload="auto" autoPlay controls></video>
+               <video class="sm:w-[1250px]  max-sm:w-full h-full rounded-3xl" src={Video1} width={90} preload="auto" autoPlay controls></video>
              </div>
            </div>
          </div>
