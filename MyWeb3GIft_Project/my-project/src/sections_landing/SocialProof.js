@@ -17,7 +17,7 @@ const SocialProof = () => {
         <div className="p-4">
             <div className="mb-4 text-center opacity-90">
                 <a href="./" className="relative block">
-                    <img alt="profil" src={bert} className="mx-auto object-cover rounded-full h-40 w-40 "/>
+                    <img alt="Bert" src={bert} className="mx-auto object-cover rounded-full h-40 w-40 "  loading="lazy"/>
                 </a>
             </div>
             <div className="text-center">
@@ -67,7 +67,7 @@ const SocialProof = () => {
         <div className="p-4">
             <div className="mb-4 text-center opacity-90">
                 <a href="./" className="relative block">
-                    <img alt="profil" src={valerio} className="mx-auto object-cover rounded-full h-40 w-40 "/>
+                    <img alt="Valerio" src={valerio} className="mx-auto object-cover rounded-full h-40 w-40 "/>
                 </a>
             </div>
             <div className="text-center">
@@ -117,7 +117,7 @@ const SocialProof = () => {
         <div className="p-4">
             <div className="mb-4 text-center opacity-90">
                 <a href="./" className="relative block">
-                    <img alt="profil" src={arpit} className="mx-auto object-cover rounded-full h-40 w-40 "/>
+                    <img alt="Arpit Singh" src={arpit} className="mx-auto object-cover rounded-full h-40 w-40 "/>
                 </a>
             </div>
             <div className="text-center">

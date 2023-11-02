@@ -7,6 +7,7 @@ import ErrorPage from "./pages/ErrorPage.js";
 import FAQS from "./pages/FAQS.js";
 // import Team from "./pages/Team.js";
 import BlogPage from "./pages/BlogPage.js";
+import ClaimGift from "./pages/ClaimGift.js";
 import Gift from "./pages/Gift.js";
 // import Nav01 from "./Components/Nav01.js";
 
@@ -20,6 +21,7 @@ import {
   UserButton,
 } from "@clerk/clerk-react";
 import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
+// import ClaimGift from "./pages/ClaimGift.js";
  
 if (!process.env.REACT_APP_CLERK_PUBLISHABLE_KEY) {
   throw new Error("Missing Publishable Key")
@@ -75,7 +77,7 @@ function ClerkProviderWithRoutes() {
           {/* <Route path="/Team" element={<Team />} /> */}
           <Route path="/Gift" element={<Gift />} />
 
-
+          <Route path="/ClaimGift" element={<ClaimGift />} />
           <Route path="*" element={<ErrorPage />} />
 
 

@@ -43,7 +43,7 @@ const IconsDetails = () => {
           </div>
 
           <a href="#/">
-          <img class="h-60 rounded-t-lg object-cover" src="https://images.unsplash.com/photo-1606482512676-255bf02be7cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1473&q=80" alt="product" />
+          <img class="h-60 rounded-t-lg object-cover" src="https://images.unsplash.com/photo-1606482512676-255bf02be7cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1473&q=80" alt="product" loading="lazy" />
 
           </a>
           {/* <span class="absolute top-0 left-0 w-28 translate-y-4 -translate-x-6 -rotate-45 bg-black text-center text-sm text-white">Sale</span> */}
@@ -99,7 +99,7 @@ const IconsDetails = () => {
           </div>
 
           <a href="#/">
-          <img class="h-60 rounded-t-lg object-cover" src={AllOcassions} alt="product" />
+          <img class="h-60 rounded-t-lg object-cover" src={AllOcassions} alt="All Occasions Calender" loading="lazy"/>
           </a>
           {/* <span class="absolute top-0 left-0 w-28 translate-y-4 -translate-x-6 -rotate-45 bg-black text-center text-sm text-white">Sale</span> */}
           <div class="mt-4 px-5 pb-5">
@@ -150,7 +150,7 @@ const IconsDetails = () => {
           </div>
 
           <a href="#/">
-            <img class="h-60 rounded-t-lg object-cover" src={Chellenge} alt="product" />
+            <img class="h-60 rounded-t-lg object-cover" src={Chellenge} alt="Challenge Calender" loading="lazy" />
           </a>
           {/* <span class="absolute top-0 left-0 w-28 translate-y-4 -translate-x-6 -rotate-45 bg-black text-center text-sm text-white">Sale</span> */}
           <div class="mt-4 px-5 pb-5">
@@ -238,7 +238,7 @@ Challenge </h5>
       <p className='text-yel-600 text-5xl  hiden  px-3 max-sm:text-xl sm:text-3xl   text-center'>Value of goods: $50 <br />  </p>
 
       <p className='text-yel-600 text-5xl hiden py-4 px-3 max-sm:text-xl sm:text-3xl   text-center'>All options have the same content, only the arrangement and layout differs. <br />
-      <button data-tally-open="3jo994" data-tally-layout="modal" data-tally-emoji-text="👋" data-tally-emoji-animation="wave" className='bg-yellow-400 hiden text-yel-600 text-white font max-sm:text-xl sm:text-2xl  bold px-7 my-4 hover:bg-yellow-500  rounded-xl text-2xl py-3'>STAY UPDATED</button>
+      <button data-tally-open="3jo994" data-tally-layout="modal" data-tally-emoji-text="👋" data-tally-emoji-animation="wave" className='bg-yellow-400 hiden shadow-2xl text-yel-600 text-white font max-sm:text-xl sm:text-2xl  bold px-7 my-4 hover:bg-yellow-500  rounded-xl text-2xl py-3'>STAY UPDATED</button>
 
      
 

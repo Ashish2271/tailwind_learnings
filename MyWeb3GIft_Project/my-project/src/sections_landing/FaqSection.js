@@ -5,7 +5,7 @@ const FaqSection = () => {
 
 
 
-			<div class=" w-full mx-auto px-5 bg-gray-50 dark:bg-gray-800 dark:text-white min-h-sceen">
+			<div class=" w-full min-h-screen py-10 mx-auto px-5 bg-gray-50 dark:bg-gray-800 dark:text-white min-h-sceen">
 				<div class="flex flex-col items-center">
 					<h2 class="font-bold text-5xl mt-5 tracking-tight">
 						FAQ

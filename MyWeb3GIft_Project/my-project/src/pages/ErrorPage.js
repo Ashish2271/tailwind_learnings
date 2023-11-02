@@ -22,12 +22,12 @@ const ErrorPage = () => {
                         </div>
                     </div>
                     <div>
-                        <img src="https://i.ibb.co/G9DC8S0/404-2.png" alt=''/>
+                        <img src="https://i.ibb.co/G9DC8S0/404-2.png" alt='Web3 Gift Error '/>
                     </div>
                 </div>
             </div>
             <div>
-                <img src="https://i.ibb.co/ck1SGFJ/Group.png" alt=''/>
+                <img src="https://i.ibb.co/ck1SGFJ/Group.png" alt='Web3 gift Error page' loading="lazy"/>
             </div>
         </div>
 

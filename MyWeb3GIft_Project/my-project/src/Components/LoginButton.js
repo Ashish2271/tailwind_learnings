@@ -11,7 +11,7 @@ const Login = () => {
     return (
         <div>
 
-            <a href="/sign-in/* ">  <span className=" inline-flex w-28 justify-center  gap-x-1.5 rounded-md px-3 py-2 text-sm  text-white   ring-inset ring-gray-300 hover:bg-yellow-500 ">  LOGIN </span> </a>
+            <a href="/sign-in/* ">  <span className=" inline-flex w-28 justify-center  gap-x-1.5 rounded-md px-3 py-2 text-base  text-white   ring-inset ring-gray-300 hover:bg-yellow-500 ">  LOGIN </span> </a>
 
         </div>
     )

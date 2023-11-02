@@ -8,6 +8,7 @@ const About = () => {
 
 <>
 <Nav01></Nav01>
+<div className="bg-sky-950 h-[90px] w-screen"></div>
       <section className=" sm:mx-20 max-sm:mx-5 pt-20 lg:pt-[120px] pb-12 lg:pb-[90px] overflow-hidden">
         <div className="container">
           <div className="flex flex-wrap items-center justify-between -mx-4">
@@ -17,15 +18,17 @@ const About = () => {
                   <div className="py-3 sm:py-4">
                     <img
                       src="https://i.ibb.co/gFb3ns6/image-1.jpg"
-                      alt=""
+                      alt="My web3 gift"
                       className="w-full rounded-2xl"
+                      loading="lazy"
                     />
                   </div>
                   <div className="py-3 sm:py-4">
                     <img
                       src="https://i.ibb.co/rfHFq15/image-2.jpg"
-                      alt=""
+                      alt="My Crypto gift"
                       className="w-full rounded-2xl"
+                      loading="lazy"
                     />
                   </div>
                 </div>
@@ -33,8 +36,9 @@ const About = () => {
                   <div className="relative z-10 my-4">
                     <img
                       src="https://i.ibb.co/9y7nYCD/image-3.jpg"
-                      alt=""
+                      alt="My Blockchain gift"
                       className="w-full rounded-2xl"
+                      loading="lazy"
                     />
                     <span className="absolute -right-7 -bottom-7 z-[-1]">
                       <svg

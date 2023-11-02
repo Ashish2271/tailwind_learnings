@@ -2,6 +2,7 @@ import React from 'react';
 
 import './Styles/WhoForSection.css';
 import { FiveMinute,Education, Unlock } from '../assets/Images/Compressed';
+import { Employee, FriendsandFamily, Unique, Yourself } from '../assets/icons';
 const WhoForSection = () => {
   return (
     <div>
@@ -9,44 +10,63 @@ const WhoForSection = () => {
 
 
 <div className="rounded-3xl sm:px-5 py-10">
-        <h2 className="font-bold text-4xl sm:text-4xl py-12 text-center ">Who to give it to?</h2>
+        <h2 className="font-bold text-4xl sm:text-4xl py-12  text-center ">Who to give it to?</h2>
    
 
 
-        <div className="flex flex-wrap justify-center gap-32 max-sm:gap-10">
-        <div className="logo pp max-w-sm rounded-3xl   text-black w-80 h-24 overflow-hidden shadow-xl flex justify-center items-center">
-  <div className="px-6 py-4">
-    <div className="font-bold text-center text-black font-uppercase text-xl mb-2">FRIENDS AND FAMILY</div>
+        <div className="flex flex-wrap justify-center gap-6 max-sm:gap-10">
+        <div className="logo pp max-w-sm rounded-3xl h-40  text-black w-80 overflow-hidden shadow-2xl flex justify-center items-center">
+  <div className="px-6 py-8 grid grid-cols-1 justify-items-center">
+    <img className='text-center' src={FriendsandFamily} alt="Web3 Gift for Friends and Family" width={70} />
+    <div className="font-bold text-center text-black my-4 text-xl mb-2">FRIENDS AND FAMILY</div>
   </div>
 </div>
 
-<div className="logo pp max-w-sm rounded-3xl  w-80 h-24 overflow-hidden shadow-xl flex justify-center items-center">
-  <div className="px-6 py-4">
-    <div className="font-bold text-center text-black text-xl mb-2">  UNIQUE-GIFT-ENTHUSIASTS </div>
+<div className="logo pp max-w-sm rounded-3xl  w-80 h-40 overflow-hidden shadow-2xl flex justify-center items-center">
+  <div className="px-6 py-8 grid grid-cols-1 justify-items-center">
+  <img className='text-center' src={Unique} alt="Web3 Gift for Everyone" width={70} />
+    <div className="font-bold text-center text-black my-4 text-xl mb-2">  UNIQUE-GIFT-ENTHUSIASTS </div>
   </div>
 </div>
-<div className="logo pp max-w-sm rounded-3xl  w-80 h-24 overflow-hidden shadow-xl flex justify-center items-center">
-  <div className="px-6 py-4">
-    <div className="font-bold text-center text-black  text-xl mb-2">YOURSELF</div>
+<div className="logo pp max-w-sm rounded-3xl  w-80 h-40 overflow-hidden shadow-2xl flex justify-center items-center">
+  <div className="px-6 py-8 grid grid-cols-1 justify-items-center">
+  <img className='text-center' src={Yourself} alt="Web3 Gift for You" width={70} />
+    <div className="font-bold text-center text-black my-4 text-xl mb-2">YOURSELF</div>
   </div>
 </div>
+
+<div className="logo pp max-w-sm rounded-3xl   w-80 h-40 overflow-hidden shadow-2xl flex justify-center items-center">
+  <div className="px-4 py-8 grid grid-cols-1 justify-items-center">
+  <img className='text-center' src={Employee} alt="Gift for Employee" width={70} />
+    <div className="font-bold text-center text-black my-4  text-xl mb-2">EMPLOYEES AND CLIENTS</div>
+  </div>
+</div>
+
+
         </div>
       </div>
+
+<div className=' text-yel-600 text-5xl py-4 px-3 max-sm:text-xl sm:text-3xl   text-center  mx-auto'>
+
+
+Contact us if you want to customize our products according to your corporate design.
+</div>
+
 
       <div className="rounded-3xl sm:px-5 py-10">
         <h2 className="font-bold text-4xl sm:text-5xl py-4 text-center my-5">Why buy our gift boxes?</h2>
 
         <div class="text-center mb-10">
-                    <span class="inline-block w-3.5 h-1 rounded-full bg-blue-600 ml-1"></span>
-                    <span class="inline-block w-24 h-1 rounded-full bg-blue-600 ml-1"> </span>
-                    <span class="inline-block w-72 h-1 rounded-full bg-blue-500"></span>
-                    <span class="inline-block w-24 h-1 rounded-full bg-blue-600 ml-1"></span>
-                    <span class="inline-block w-3.5 h-1 rounded-full bg-blue-600 ml-1"></span>
+                    <span class="inline-block w-3.5 h-1 rounded-full bg-sky-950 ml-1"></span>
+                    <span class="inline-block w-24 h-1 rounded-full bg-sky-950 ml-1"> </span>
+                    <span class="inline-block w-72 h-1 rounded-full bg-sky-950"></span>
+                    <span class="inline-block w-24 h-1 rounded-full bg-sky-950 ml-1"></span>
+                    <span class="inline-block w-3.5 h-1 rounded-full bg-sky-950 ml-1"></span>
                 </div>
 
         <div className="flex flex-wrap justify-center gap-14 max-sm:gap-10">
-          <div className="logo pp max-w-sm rounded-3xl overflow-hidden shadow-lg">
-            <img className="w-full" src={Unlock} alt="Girl Smiling" />
+          <div className="logo pp max-w-sm rounded-3xl overflow-hidden shadow-2xl">
+            <img className="w-full" src={Unlock} alt="Girl Smiling" loading="lazy"/>
             <div className="px-6 py-4">
               {/* <div className="font-bold text-xl mb-2">You</div> */}
               <p className="text-gray-700  text-2xl">
@@ -56,8 +76,8 @@ const WhoForSection = () => {
             </div>
           </div>
 
-          <div className="logo pp max-w-sm rounded-3xl overflow-hidden shadow-lg">
-            <img className="w-full" src={Education} alt="Entertainment" />
+          <div className="logo pp max-w-sm rounded-3xl overflow-hidden shadow-2xl">
+            <img className="w-full" src={Education} alt="Entertainment" loading="lazy"/>
             <div className="px-6 py-4">
               {/* <div className="font-bold text-xl mb-2">Unique Gift Enthusiasts</div> */}
               <p className="text-gray-700 text-2xl">
@@ -66,8 +86,8 @@ const WhoForSection = () => {
             </div>
           </div>
 
-          <div className="logo pp max-w-sm rounded-3xl overflow-hidden shadow-lg">
-            <img className="w-full" src={FiveMinute} alt="Friends" />
+          <div className="logo pp max-w-sm rounded-3xl overflow-hidden shadow-2xl">
+            <img className="w-full" src={FiveMinute} alt="Friends" loading="lazy"/>
             <div className="px-6 py-4">
               {/* <div className="font-bold text-xl mb-2">Friends and Family</div> */}
               <p className="text-gray-700 text-2xl ">

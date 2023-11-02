@@ -17,7 +17,7 @@ const VideoUSP = () => {
 
   return (
     <div>
-      <div className='bg-blue-600'>
+      <div className='bg-sky-950'>
         <div className='min-h-[60vh] flex flex-col max-w-screen-xl mx-auto justify-center items-center sm:flex-row max-sm:flex-wrap'>
 
           <div className='sm:w-1/2 max-sm:w-full text-white sm:py-10 p-4 sm:px-10'>
@@ -45,7 +45,7 @@ const VideoUSP = () => {
        
         type="button"
       >
-       <img src={Thumbnail} className='rounded-3xl  shadow-xl ' alt="" />
+       <img src={Thumbnail} className='rounded-3xl  shadow-xl ' alt="Web3 Gift Video Intro Thumbnail" />
       </button>
 
 
@@ -121,7 +121,7 @@ export default VideoUSP;
 //     <div>
 //       <button
 //         onClick={openModal}
-//         className="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+//         className="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-sky-950 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
 //         type="button"
 //       >
 //         Toggle modal

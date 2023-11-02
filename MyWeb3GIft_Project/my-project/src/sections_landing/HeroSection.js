@@ -18,10 +18,10 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="relative">
-      <section className="text-gray-700 dark:text-white relative">
-        <img src={images[currentImageIndex]} alt="" className="object-cover w-full h-[90vh] -z-10" />
-        <div className="absolute top-0 left-0 w-full h-[90vh] bg-blue-900/50 ">
+    <div className="relative   ">
+      <section className="text-gray-700  dark:text-white ">
+        <img src={images[currentImageIndex]} alt="" className="object-cover w-full h-screen -z-10" />
+        <div className="absolute top-0 left-0 w-full h-screen bg-sky-900/60 ">
           <div className="mx-auto flex flex-col justify-center h-full px-4 py-16 text-center">
             {/* <h1 className="text-3xl sm:text-5xl md:text-6xl  mb-6">
               <strong className=" text-3xl sm:text-5xl md:text-6xl  mb-6 text-gray-100">

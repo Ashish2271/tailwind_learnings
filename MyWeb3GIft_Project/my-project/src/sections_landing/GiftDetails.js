@@ -139,7 +139,7 @@ export default GiftDetails
 
 // const GiftDetails = () => {
 //   return (
-//     <div className="flex flex-col sm:my-10 md:flex-row justify-center items-center p-6 bg-blue-600 rounded-3xl">
+//     <div className="flex flex-col sm:my-10 md:flex-row justify-center items-center p-6 bg-sky-950 rounded-3xl">
 //       Left Section
 //       <div className="md:w-1/2 max-w-screen-xl hidden max-[280px]:hidden mx-auto mb-4 md:mb-0">
 //         <div className="da relative flex max-sm:rounded-3xl flex-col justify-center overflow-hidden">

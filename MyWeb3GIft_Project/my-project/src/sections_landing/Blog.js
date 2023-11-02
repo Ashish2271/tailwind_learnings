@@ -17,11 +17,11 @@ const Blog = () => {
                 </h2>
 
                 <div class="text-center mb-10">
-                    <span class="inline-block w-1 h-1 rounded-full bg-blue-600 ml-1"></span>
-                    <span class="inline-block w-3 h-1 rounded-full bg-blue-600 ml-1"></span>
-                    <span class="inline-block w-40 h-1 rounded-full bg-blue-500"></span>
-                    <span class="inline-block w-3 h-1 rounded-full bg-blue-600 ml-1"></span>
-                    <span class="inline-block w-1 h-1 rounded-full bg-blue-600 ml-1"></span>
+                    <span class="inline-block w-1 h-1 rounded-full bg-sky-950 ml-1"></span>
+                    <span class="inline-block w-3 h-1 rounded-full bg-sky-950 ml-1"></span>
+                    <span class="inline-block w-40 h-1 rounded-full bg-sky-950"></span>
+                    <span class="inline-block w-3 h-1 rounded-full bg-sky-950 ml-1"></span>
+                    <span class="inline-block w-1 h-1 rounded-full bg-sky-950 ml-1"></span>
                 </div>
                 <p className="text-base sm:text-2xl text-body-color">
                  
@@ -65,7 +65,7 @@ const BlogCard = ({ image, date, CardTitle, CardDescription }) => {
       <div className="w-full px-4 md:w-1/2 lg:w-1/3">
         <div className="mx-auto mb-10 max-w-[370px]">
           <div className="mb-8 overflow-hidden rounded">
-            <img src={image} alt="" className="w-full" />
+            <img src={image} alt="Easy Web3 Onboarding" className="w-full" loading="lazy"/>
           </div>
           <div>
             {date && (

@@ -78,10 +78,10 @@ const EmailForm = () => {
     return (
 
 
-<div className='bg-blue-600  dark:bg-gray-800'>
+<div className='bg-sky-950  dark:bg-gray-800'>
 
-<div className="bg-blue-600 w-full mx-auto  max-w-screen-xl dark:bg-gray-800">
-            <div className="relative px-4 bg-blue-600 rounded-3xl py-6 overflow-hidden sm:px-6 sm:py-8 lg:p-12 xl:p-16">
+<div className="bg-sky-950 w-full mx-auto  max-w-screen-xl dark:bg-gray-800">
+            <div className="relative px-4 bg-sky-950 rounded-3xl py-6 overflow-hidden sm:px-6 sm:py-8 lg:p-12 xl:p-16">
                 <h2 className="text-2xl text-white font-semibold font-display  dark:text-white sm:text-3xl">
                     We&#x27;ve got more coming...
                 </h2>

@@ -23,24 +23,36 @@ const Nav01 = () => {
     // }
 
 
+const [Navbar,setNavbar] = useState(false)
 
+const ChangeBackground = () =>
+{
+    // console.log(window.scrollY);
+    if(window.scrollY >= 30)
+    {
+setNavbar(true)
+    }
+    else{
+setNavbar(false)
+    }
+}
 
-
+window.addEventListener('scroll', ChangeBackground);
 
     return (
-        <div className=" z-100  font-extrabold  ">
+        <div className=" z-50 fixed top-0 w-screen font-bold  ">
             <div>
                 <div className="  ">
                     {/* For md screen size */}
                     <div id="md-searchbar" className={`${mdOptionsToggle ? "hidden" : "flex"} bg-transparent lg:hidden py-5 px-6 items-center justify-between`}>
-                        <div className="flex items-center space-x-3 text-gray-800 ">
+                        <div className="flex items-center space-x-3 text-gray-100 ">
                             <div>
                                 <svg className="fill-stroke" width={20} height={20} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                     <path d="M18.9984 18.9999L14.6484 14.6499" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </div>
-                            <input type="text" placeholder="Search for products" className="text-sm leading-none   text-gray-600 focus:outline-none" />
+                            <input type="text" placeholder="Search for products" className="text-sm leading-none   text-gray-600 rounded-r-full focus:outline-none" />
                         </div>
                         <div className="space-x-6">
 
@@ -77,16 +89,16 @@ const Nav01 = () => {
 
 
 
-                            <button aria-label="go to cart" className="text-gray-800  focus:outline-none focus:ring-2 focus:ring-gray-800   hover:ease-in-out hover:duration-700 hover:delay-300  hover:scale-150 backdrop-filter  ">
+                            <button aria-label="go to cart" className="text-gray-100  focus:outline-none focus:ring-2 focus:ring-gray-800   hover:ease-in-out hover:duration-700 hover:delay-300  hover:scale-150 backdrop-filter  ">
                                 <svg className="fill-stroke" width={20} height={20} fill="none" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M384 64H134.144c-51.2 0-89.6 41.472-89.6 89.6v227.328c0 51.2 41.472 89.6 89.6 89.6H384c51.2 0 89.6-41.472 89.6-89.6V153.6c0-48.128-38.4-89.6-89.6-89.6z m45.056 316.928c0 25.6-19.456 44.544-45.056 44.544H134.144c-25.6 0-45.056-19.456-45.056-44.544V153.6c0-25.6 19.456-45.056 45.056-45.056H384c25.6 0 45.056 18.944 45.056 45.056v227.328z" fill="#5FFFBA" /><path d="M192 192h134.656v134.656H192V192z" fill="#FFA28D" /><path d="M377.856 544.256H134.656c-48.128 0-86.528 38.4-86.528 89.6v220.672c0 48.128 38.4 89.6 86.528 89.6h243.2c48.128 0 86.528-38.4 86.528-89.6v-220.672c3.072-51.2-38.912-89.6-86.528-89.6z m44.544 307.2c0 25.6-19.456 45.056-45.056 45.056H134.656c-25.6 0-45.056-19.456-45.056-45.056v-220.672c0-25.6 18.944-45.056 45.056-45.056h243.2c25.6 0 45.056 19.456 45.056 45.056v220.672z" fill="#5FFFBA" /><path d="M192 668.672h131.072v131.072H192v-131.072z" fill="#FFD561" /><path d="M633.344 470.528h249.344c51.2 0 89.6-41.472 89.6-89.6V153.6c0-51.2-41.472-89.6-89.6-89.6h-249.344c-51.2 0-89.6 41.472-89.6 89.6v227.328c0.512 51.2 41.984 89.6 89.6 89.6zM588.8 153.6c0-25.6 19.456-45.056 44.544-45.056h249.344c25.6 0 45.056 19.456 45.056 45.056v227.328c0 25.6-19.456 44.544-45.056 44.544h-249.344c-25.6 0-44.544-19.456-44.544-44.544V153.6z" fill="#5FFFBA" /><path d="M700.928 192h134.144v134.656h-134.656l0.512-134.656z" fill="#FFD561" /><path d="M572.928 716.8h137.728c12.8 0 22.528-9.728 22.528-22.528v-137.728c0-12.8-9.728-22.528-22.528-22.528h-137.728c-12.8 0-22.528 9.728-22.528 22.528v137.728c0 12.8 9.728 22.528 22.528 22.528zM886.272 563.2v38.4c0 12.8 12.8 25.6 25.6 25.6h38.4c12.8 0 25.6-12.8 25.6-25.6V563.2c0-12.8-12.8-25.6-25.6-25.6h-38.4c-12.8 0-25.6 9.728-25.6 25.6zM582.656 944.128h48.128c12.8 0 22.528-9.728 22.528-22.528v-48.128c0-12.8-9.728-22.528-22.528-22.528h-48.128c-12.8 0-22.528 9.728-22.528 22.528v48.128c0 12.8 9.216 22.528 22.528 22.528zM944.128 704H844.8c-15.872 0-28.672 12.8-28.672 28.672v45.056H768c-19.456 0-32.256 12.8-32.256 32.256v99.328c0 15.872 12.8 28.672 28.672 28.672l179.2 3.072c15.872 0 28.672-12.8 28.672-28.672v-179.2c0.512-16.384-12.288-29.184-28.16-29.184z" fill="#5FFFBA" /></svg>
                             </button>
                         </div>
                     </div>
                     {/* For md screen size */}
                     {/* For large screens */}
-                    <div className=" bg-blue-600  py-2">
+                    <div className={`${Navbar ? "navbar active" : "navbar"} py-2  sm:px-2 sm:pr-8  `} >
                         <div className="   max-sm:mx-2 flex items-center justify-between">
-                            <h1 className=" cursor-pointer text-4xl flex Logo_heading mx-4  text-gray-800 " aria-label="MyWeb3Gift ">
+                            <h1 className=" cursor-pointer text-4xl flex Logo_heading mx-4  text-gray-100 " aria-label="MyWeb3Gift ">
                                 <a href="./"> <img src={GiftBitcoinLogo} className=" w-16  rounded-full   hover:ease-in-out hover:duration-700 hover:delay-300  hover:scale-110     " alt="Logo" /> </a>
 
                                 <a href="./">  <p className="py-4 px-2"><span className="text-yellow-500  ">My</span><span className="text-yellow-500">Web3</span><span className="text-yellow-500">Gift</span></p></a>
@@ -146,16 +158,13 @@ const Nav01 = () => {
                                             </svg>
                                         </button> */}
 
-                                    <button aria-label="view favourites" className="   focus:outline-none  ">
-                                       
-                                     <span className=" inline-flex w-28 justify-center  gap-x-1.5 rounded-md px-3 mx-4 py-2 text-sm font-semibold text-white  ring-inset ring-gray-300 hover:bg-yellow-500 ">  CLAIM GIFT </span>
 
-                           
-
-                                        {/* <svg className="fill-stroke" width={20} height={20} fill="none" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M384 64H134.144c-51.2 0-89.6 41.472-89.6 89.6v227.328c0 51.2 41.472 89.6 89.6 89.6H384c51.2 0 89.6-41.472 89.6-89.6V153.6c0-48.128-38.4-89.6-89.6-89.6z m45.056 316.928c0 25.6-19.456 44.544-45.056 44.544H134.144c-25.6 0-45.056-19.456-45.056-44.544V153.6c0-25.6 19.456-45.056 45.056-45.056H384c25.6 0 45.056 18.944 45.056 45.056v227.328z" fill="#5FFFBA" /><path d="M192 192h134.656v134.656H192V192z" fill="#FFA28D" /><path d="M377.856 544.256H134.656c-48.128 0-86.528 38.4-86.528 89.6v220.672c0 48.128 38.4 89.6 86.528 89.6h243.2c48.128 0 86.528-38.4 86.528-89.6v-220.672c3.072-51.2-38.912-89.6-86.528-89.6z m44.544 307.2c0 25.6-19.456 45.056-45.056 45.056H134.656c-25.6 0-45.056-19.456-45.056-45.056v-220.672c0-25.6 18.944-45.056 45.056-45.056h243.2c25.6 0 45.056 19.456 45.056 45.056v220.672z" fill="#5FFFBA" /><path d="M192 668.672h131.072v131.072H192v-131.072z" fill="#FFD561" /><path d="M633.344 470.528h249.344c51.2 0 89.6-41.472 89.6-89.6V153.6c0-51.2-41.472-89.6-89.6-89.6h-249.344c-51.2 0-89.6 41.472-89.6 89.6v227.328c0.512 51.2 41.984 89.6 89.6 89.6zM588.8 153.6c0-25.6 19.456-45.056 44.544-45.056h249.344c25.6 0 45.056 19.456 45.056 45.056v227.328c0 25.6-19.456 44.544-45.056 44.544h-249.344c-25.6 0-44.544-19.456-44.544-44.544V153.6z" fill="#5FFFBA" /><path d="M700.928 192h134.144v134.656h-134.656l0.512-134.656z" fill="#FFD561" /><path d="M572.928 716.8h137.728c12.8 0 22.528-9.728 22.528-22.528v-137.728c0-12.8-9.728-22.528-22.528-22.528h-137.728c-12.8 0-22.528 9.728-22.528 22.528v137.728c0 12.8 9.728 22.528 22.528 22.528zM886.272 563.2v38.4c0 12.8 12.8 25.6 25.6 25.6h38.4c12.8 0 25.6-12.8 25.6-25.6V563.2c0-12.8-12.8-25.6-25.6-25.6h-38.4c-12.8 0-25.6 9.728-25.6 25.6zM582.656 944.128h48.128c12.8 0 22.528-9.728 22.528-22.528v-48.128c0-12.8-9.728-22.528-22.528-22.528h-48.128c-12.8 0-22.528 9.728-22.528 22.528v48.128c0 12.8 9.216 22.528 22.528 22.528zM944.128 704H844.8c-15.872 0-28.672 12.8-28.672 28.672v45.056H768c-19.456 0-32.256 12.8-32.256 32.256v99.328c0 15.872 12.8 28.672 28.672 28.672l179.2 3.072c15.872 0 28.672-12.8 28.672-28.672v-179.2c0.512-16.384-12.288-29.184-28.16-29.184z" fill="#5FFFBA" /></svg> */}
-                                    </button>
-
-
+                                    <a href="/ClaimGift">
+                                        <button aria-label="view favourites" className="   focus:outline-none  ">
+                                            <span className=" inline-flex w-28 justify-center  gap-x-1.5 rounded-md px-3 mx-4 py-2 text-sm font-semibold text-white  ring-inset ring-gray-300 hover:bg-yellow-500 ">  CLAIM GIFT </span>
+                                            {/* <svg className="fill-stroke" width={20} height={20} fill="none" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M384 64H134.144c-51.2 0-89.6 41.472-89.6 89.6v227.328c0 51.2 41.472 89.6 89.6 89.6H384c51.2 0 89.6-41.472 89.6-89.6V153.6c0-48.128-38.4-89.6-89.6-89.6z m45.056 316.928c0 25.6-19.456 44.544-45.056 44.544H134.144c-25.6 0-45.056-19.456-45.056-44.544V153.6c0-25.6 19.456-45.056 45.056-45.056H384c25.6 0 45.056 18.944 45.056 45.056v227.328z" fill="#5FFFBA" /><path d="M192 192h134.656v134.656H192V192z" fill="#FFA28D" /><path d="M377.856 544.256H134.656c-48.128 0-86.528 38.4-86.528 89.6v220.672c0 48.128 38.4 89.6 86.528 89.6h243.2c48.128 0 86.528-38.4 86.528-89.6v-220.672c3.072-51.2-38.912-89.6-86.528-89.6z m44.544 307.2c0 25.6-19.456 45.056-45.056 45.056H134.656c-25.6 0-45.056-19.456-45.056-45.056v-220.672c0-25.6 18.944-45.056 45.056-45.056h243.2c25.6 0 45.056 19.456 45.056 45.056v220.672z" fill="#5FFFBA" /><path d="M192 668.672h131.072v131.072H192v-131.072z" fill="#FFD561" /><path d="M633.344 470.528h249.344c51.2 0 89.6-41.472 89.6-89.6V153.6c0-51.2-41.472-89.6-89.6-89.6h-249.344c-51.2 0-89.6 41.472-89.6 89.6v227.328c0.512 51.2 41.984 89.6 89.6 89.6zM588.8 153.6c0-25.6 19.456-45.056 44.544-45.056h249.344c25.6 0 45.056 19.456 45.056 45.056v227.328c0 25.6-19.456 44.544-45.056 44.544h-249.344c-25.6 0-44.544-19.456-44.544-44.544V153.6z" fill="#5FFFBA" /><path d="M700.928 192h134.144v134.656h-134.656l0.512-134.656z" fill="#FFD561" /><path d="M572.928 716.8h137.728c12.8 0 22.528-9.728 22.528-22.528v-137.728c0-12.8-9.728-22.528-22.528-22.528h-137.728c-12.8 0-22.528 9.728-22.528 22.528v137.728c0 12.8 9.728 22.528 22.528 22.528zM886.272 563.2v38.4c0 12.8 12.8 25.6 25.6 25.6h38.4c12.8 0 25.6-12.8 25.6-25.6V563.2c0-12.8-12.8-25.6-25.6-25.6h-38.4c-12.8 0-25.6 9.728-25.6 25.6zM582.656 944.128h48.128c12.8 0 22.528-9.728 22.528-22.528v-48.128c0-12.8-9.728-22.528-22.528-22.528h-48.128c-12.8 0-22.528 9.728-22.528 22.528v48.128c0 12.8 9.216 22.528 22.528 22.528zM944.128 704H844.8c-15.872 0-28.672 12.8-28.672 28.672v45.056H768c-19.456 0-32.256 12.8-32.256 32.256v99.328c0 15.872 12.8 28.672 28.672 28.672l179.2 3.072c15.872 0 28.672-12.8 28.672-28.672v-179.2c0.512-16.384-12.288-29.184-28.16-29.184z" fill="#5FFFBA" /></svg> */}
+                                        </button>
+                                    </a>
 
                                     {/* <button aria-label="go to cart" className="text-gray-800   focus:outline-none focus:ring-2 focus:ring-gray-800">
                                             <svg className="fill-stroke" width={26} height={26} viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -172,19 +181,19 @@ const Nav01 = () => {
                                     <Menu1 />
                                 </div>
 
-                                <div className="max-sm:hidden   ">
+                                <div className="max-sm:hidden rounded-xl ring-2 ring-gray-100 ring-inset ml-4 ">
                                     <LoginButton />
                                 </div>
 
                                 <div className="flex lg:hidden">
-                                    <button aria-label="show options" onClick={() => setMdOptionsToggle(!mdOptionsToggle)} className="text-black   hidden md:flex focus:outline-none focus:ring-2 rounded focus:ring-gray-600">
+                                    <button aria-label="show options" onClick={() => setMdOptionsToggle(!mdOptionsToggle)} className="text-gray-100   hidden md:flex focus:outline-none focus:ring-2 rounded focus:ring-gray-600">
                                         <svg className="fill-stroke" width={24} height={24} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M4 6H20" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                             <path d="M10 12H20" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                             <path d="M6 18H20" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                         </svg>
                                     </button>
-                                    <button aria-label="open menu" onClick={() => setShowMenu(true)} className="text-black   md:hidden focus:outline-none focus:ring-2 rounded focus:ring-gray-600">
+                                    <button aria-label="open menu" onClick={() => setShowMenu(true)} className="text-gray-100   md:hidden focus:outline-none focus:ring-2 rounded focus:ring-gray-600">
                                         <svg className="fill-stroke" width={24} height={24} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M4 6H20" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                             <path d="M10 12H20" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -196,7 +205,7 @@ const Nav01 = () => {
                         </div>
                     </div>
                     {/* For small screen */}
-                    <div id="mobile-menu" className={`${showMenu ? "flex" : "hidden"} absolute  z-10 inset-0 md:hidden bg-blue-600 flex-col h-screen w-full`}>
+                    <div id="mobile-menu" className={`${showMenu ? "flex" : "hidden"} absolute  z-10 inset-0 md:hidden bg-blue-950 text-white flex-col h-screen w-full`}>
                         <div className="flex items-center justify-between border-b border-gray-200  pb-4 p-4">
                             {/* <div className="flex items-center space-x-3">
                                 <div>
@@ -208,16 +217,16 @@ const Nav01 = () => {
                                 <input type="text" placeholder="Search for products" className="text-sm  text-gray-600 rounded-3xl placeholder-gray-600  focus:outline-none" />
                             </div> */}
 
-                        
-                                    <div  className=" flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
-                                   <LoginButton/>
-                                       
-                                    </div>
-                             
+
+                            <div className=" flex items-center justify-between hover:underline text-base  text-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-800">
+                                <LoginButton />
+
+                            </div>
+
 
 
                             <button onClick={() => setShowMenu(false)} aria-label="close menu" className="focus:outline-none focus:ring-2 rounded focus:ring-gray-600">
-                                <svg className="fill-stroke text-gray-800 " width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg className="fill-stroke text-gray-100 " width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M12 4L4 12" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
                                     <path d="M4 4L12 12" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
@@ -229,17 +238,17 @@ const Nav01 = () => {
                         <div className="mt-6 p-4">
                             <ul className="flex flex-col space-y-6">
 
-                            {/* <li>
+                                {/* <li>
                                     <div  className="  flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
                                        <LoginButton/>
                                     </div>
                                 </li> */}
 
                                 <li>
-                                    <a href="/" className=" flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
+                                    <a href="/" className=" flex items-center justify-between hover:underline text-base text-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-800">
                                         Home
                                         <div>
-                                            <svg className="fill-stroke text-black " width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <svg className="fill-stroke text-gray-100 " width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor" strokeWidth="0.75" strokeLinecap="round" strokeLinejoin="round" />
                                             </svg>
                                         </div>
@@ -247,20 +256,20 @@ const Nav01 = () => {
                                 </li>
 
                                 <li>
-                                    <a href="/about" className=" flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
+                                    <a href="/about" className=" flex items-center justify-between hover:underline text-base text-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-800">
                                         About
                                         <div>
-                                            <svg className="fill-stroke text-black " width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <svg className="fill-stroke text-gray-100 " width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor" strokeWidth="0.75" strokeLinecap="round" strokeLinejoin="round" />
                                             </svg>
                                         </div>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="contact" className=" flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
+                                    <a href="contact" className=" flex items-center justify-between hover:underline text-base text-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-800">
                                         Contact
                                         <div>
-                                            <svg className="fill-stroke text-black " width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <svg className="fill-stroke text-gray-100 " width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor" strokeWidth="0.75" strokeLinecap="round" strokeLinejoin="round" />
                                             </svg>
                                         </div>
@@ -270,17 +279,17 @@ const Nav01 = () => {
                                     <a href="team" className=" flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
                                         Team
                                         <div>
-                                            <svg className="fill-stroke text-black " width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <svg className="fill-stroke text-gray-100 " width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor" strokeWidth="0.75" strokeLinecap="round" strokeLinejoin="round" />
                                             </svg>
                                         </div>
                                     </a>
                                 </li> */}
                                 <li>
-                                    <a href="faqs" className=" flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
+                                    <a href="faqs" className=" flex items-center justify-between hover:underline text-base text-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-800">
                                         FAQ's
                                         <div>
-                                            <svg className="fill-stroke text-black " width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <svg className="fill-stroke text-gray-100 " width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor" strokeWidth="0.75" strokeLinecap="round" strokeLinejoin="round" />
                                             </svg>
                                         </div>
@@ -337,7 +346,7 @@ const Nav01 = () => {
 
 
                                 <li>
-                                    <a href="#/" className=" text-gray-800 flex items-center space-x-2 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                    <a href="#/" className=" text-gray-900 flex items-center space-x-2 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
                                         <div>
                                             <svg className="fill-stroke" width={20} height={20} fill="none" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M384 64H134.144c-51.2 0-89.6 41.472-89.6 89.6v227.328c0 51.2 41.472 89.6 89.6 89.6H384c51.2 0 89.6-41.472 89.6-89.6V153.6c0-48.128-38.4-89.6-89.6-89.6z m45.056 316.928c0 25.6-19.456 44.544-45.056 44.544H134.144c-25.6 0-45.056-19.456-45.056-44.544V153.6c0-25.6 19.456-45.056 45.056-45.056H384c25.6 0 45.056 18.944 45.056 45.056v227.328z" fill="#5FFFBA" /><path d="M192 192h134.656v134.656H192V192z" fill="#FFA28D" /><path d="M377.856 544.256H134.656c-48.128 0-86.528 38.4-86.528 89.6v220.672c0 48.128 38.4 89.6 86.528 89.6h243.2c48.128 0 86.528-38.4 86.528-89.6v-220.672c3.072-51.2-38.912-89.6-86.528-89.6z m44.544 307.2c0 25.6-19.456 45.056-45.056 45.056H134.656c-25.6 0-45.056-19.456-45.056-45.056v-220.672c0-25.6 18.944-45.056 45.056-45.056h243.2c25.6 0 45.056 19.456 45.056 45.056v220.672z" fill="#5FFFBA" /><path d="M192 668.672h131.072v131.072H192v-131.072z" fill="#FFD561" /><path d="M633.344 470.528h249.344c51.2 0 89.6-41.472 89.6-89.6V153.6c0-51.2-41.472-89.6-89.6-89.6h-249.344c-51.2 0-89.6 41.472-89.6 89.6v227.328c0.512 51.2 41.984 89.6 89.6 89.6zM588.8 153.6c0-25.6 19.456-45.056 44.544-45.056h249.344c25.6 0 45.056 19.456 45.056 45.056v227.328c0 25.6-19.456 44.544-45.056 44.544h-249.344c-25.6 0-44.544-19.456-44.544-44.544V153.6z" fill="#5FFFBA" /><path d="M700.928 192h134.144v134.656h-134.656l0.512-134.656z" fill="#FFD561" /><path d="M572.928 716.8h137.728c12.8 0 22.528-9.728 22.528-22.528v-137.728c0-12.8-9.728-22.528-22.528-22.528h-137.728c-12.8 0-22.528 9.728-22.528 22.528v137.728c0 12.8 9.728 22.528 22.528 22.528zM886.272 563.2v38.4c0 12.8 12.8 25.6 25.6 25.6h38.4c12.8 0 25.6-12.8 25.6-25.6V563.2c0-12.8-12.8-25.6-25.6-25.6h-38.4c-12.8 0-25.6 9.728-25.6 25.6zM582.656 944.128h48.128c12.8 0 22.528-9.728 22.528-22.528v-48.128c0-12.8-9.728-22.528-22.528-22.528h-48.128c-12.8 0-22.528 9.728-22.528 22.528v48.128c0 12.8 9.216 22.528 22.528 22.528zM944.128 704H844.8c-15.872 0-28.672 12.8-28.672 28.672v45.056H768c-19.456 0-32.256 12.8-32.256 32.256v99.328c0 15.872 12.8 28.672 28.672 28.672l179.2 3.072c15.872 0 28.672-12.8 28.672-28.672v-179.2c0.512-16.384-12.288-29.184-28.16-29.184z" fill="#5FFFBA" /></svg>
                                         </div>
