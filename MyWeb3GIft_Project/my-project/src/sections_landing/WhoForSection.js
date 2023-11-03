@@ -56,12 +56,12 @@ Contact us if you want to customize our products according to your corporate des
       <div className="rounded-3xl sm:px-5 py-10">
         <h2 className="font-bold text-4xl sm:text-5xl py-4 text-center my-5">Why buy our gift boxes?</h2>
 
-        <div class="text-center mb-10">
-                    <span class="inline-block w-3.5 h-1 rounded-full bg-sky-950 ml-1"></span>
-                    <span class="inline-block w-24 h-1 rounded-full bg-sky-950 ml-1"> </span>
-                    <span class="inline-block w-72 h-1 rounded-full bg-sky-950"></span>
-                    <span class="inline-block w-24 h-1 rounded-full bg-sky-950 ml-1"></span>
-                    <span class="inline-block w-3.5 h-1 rounded-full bg-sky-950 ml-1"></span>
+        <div className="text-center mb-10">
+                    <span className="inline-block w-3.5 h-1 rounded-full bg-sky-950 ml-1"></span>
+                    <span className="inline-block w-24 h-1 rounded-full bg-sky-950 ml-1"> </span>
+                    <span className="inline-block w-72 h-1 rounded-full bg-sky-950"></span>
+                    <span className="inline-block w-24 h-1 rounded-full bg-sky-950 ml-1"></span>
+                    <span className="inline-block w-3.5 h-1 rounded-full bg-sky-950 ml-1"></span>
                 </div>
 
         <div className="flex flex-wrap justify-center gap-14 max-sm:gap-10">

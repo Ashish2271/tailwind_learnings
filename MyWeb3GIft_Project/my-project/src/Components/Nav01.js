@@ -52,7 +52,7 @@ window.addEventListener('scroll', ChangeBackground);
                                     <path d="M18.9984 18.9999L14.6484 14.6499" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </div>
-                            <input type="text" placeholder="Search for products" className="text-sm leading-none   text-gray-600 rounded-r-full focus:outline-none" />
+                            <input id="search" type="text" placeholder="Search for products" className="text-sm leading-none   text-gray-600 rounded-r-full focus:outline-none" />
                         </div>
                         <div className="space-x-6">
 

@@ -16,12 +16,12 @@ const Blog = () => {
                 Our Recent Blogs
                 </h2>
 
-                <div class="text-center mb-10">
-                    <span class="inline-block w-1 h-1 rounded-full bg-sky-950 ml-1"></span>
-                    <span class="inline-block w-3 h-1 rounded-full bg-sky-950 ml-1"></span>
-                    <span class="inline-block w-40 h-1 rounded-full bg-sky-950"></span>
-                    <span class="inline-block w-3 h-1 rounded-full bg-sky-950 ml-1"></span>
-                    <span class="inline-block w-1 h-1 rounded-full bg-sky-950 ml-1"></span>
+                <div className="text-center mb-10">
+                    <span className="inline-block w-1 h-1 rounded-full bg-sky-950 ml-1"></span>
+                    <span className="inline-block w-3 h-1 rounded-full bg-sky-950 ml-1"></span>
+                    <span className="inline-block w-40 h-1 rounded-full bg-sky-950"></span>
+                    <span className="inline-block w-3 h-1 rounded-full bg-sky-950 ml-1"></span>
+                    <span className="inline-block w-1 h-1 rounded-full bg-sky-950 ml-1"></span>
                 </div>
                 <p className="text-base sm:text-2xl text-body-color">
                  

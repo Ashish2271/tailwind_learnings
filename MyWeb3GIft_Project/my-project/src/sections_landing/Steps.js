@@ -6,12 +6,12 @@ const Steps = () => {
     <div className=" py-10">
       <section className="container mx-auto text-center">
         <div className="font-bold text-4xl sm:text-5xl mt-10 mb-2">How it works?
-        <div class="text-center mb-10">
-                    <span class="inline-block w-1 h-1 rounded-full bg-sky-950 ml-1"></span>
-                    <span class="inline-block w-3 h-1 rounded-full bg-sky-950 ml-1"></span>
-                    <span class="inline-block w-40 h-1 rounded-full bg-sky-950"></span>
-                    <span class="inline-block w-3 h-1 rounded-full bg-sky-950 ml-1"></span>
-                    <span class="inline-block w-1 h-1 rounded-full bg-sky-950 ml-1"></span>
+        <div className="text-center mb-10">
+                    <span className="inline-block w-1 h-1 rounded-full bg-sky-950 ml-1"></span>
+                    <span className="inline-block w-3 h-1 rounded-full bg-sky-950 ml-1"></span>
+                    <span className="inline-block w-40 h-1 rounded-full bg-sky-950"></span>
+                    <span className="inline-block w-3 h-1 rounded-full bg-sky-950 ml-1"></span>
+                    <span className="inline-block w-1 h-1 rounded-full bg-sky-950 ml-1"></span>
                 </div>
         </div>
         

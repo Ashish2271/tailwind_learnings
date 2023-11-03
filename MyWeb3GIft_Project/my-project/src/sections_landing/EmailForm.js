@@ -88,15 +88,15 @@ const EmailForm = () => {
                 {/* <p className="mt-2 max-w-xl text-base text-gray-400">
                     Want to hear from us when we add new components? Sign up for our newsletter and we&#x27;ll email you every time we release a new batch of components.
                 </p> */}
-                <form>
-                    <div className="mt-6 sm:flex jusitfy-start">
+          
+                    <div className="mt-6 sm:flex justify-start">
                         <form className="flex flex-col justify-center w-3/4 max-w-sm space-y-3 md:flex-row md:w-full md:space-x-3 md:space-y-0">
                             <div className=" relative ">
                                 <input type="email" id="&quot;form-subscribe-Subscribe" className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:border-transparent" placeholder="Email" 
                                   name="email"
                                   value={user.email}
                                    onChange={getUserData}
-                                
+                                   autoComplete="email"
                                 />
                             </div>
                             <button className="flex-shrink-0 px-4   py-2 text-base font-semibold text-white bg-yellow-500 rounded-lg shadow-md hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 focus:ring-offset-purple-200" type="submit"
@@ -108,7 +108,7 @@ const EmailForm = () => {
                             </button>
                         </form>
                     </div>
-                </form>
+                
                 {/* <div className="absolute inset-y-0 right-0 hidden lg:block lg:left-2/3 xl:left-1/2">
                     <picture>
                     
