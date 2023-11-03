@@ -1,3 +1,4 @@
+import ReactGA from 'react-ga';
 import Main from "./sections_landing/Main.js";
 // import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import About from "./pages/About.js";
@@ -10,6 +11,12 @@ import BlogPage from "./pages/BlogPage.js";
 import ClaimGift from "./pages/ClaimGift.js";
 import Gift from "./pages/Gift.js";
 // import Nav01 from "./Components/Nav01.js";
+
+
+
+
+
+
 
 import {
   ClerkProvider,
@@ -54,6 +61,11 @@ function ProtectedPage() {
 
 function ClerkProviderWithRoutes() {
   const navigate = useNavigate();
+
+
+  const TRACKING_ID = "G-G6P69YFVWZ"; // OUR_TRACKING_ID
+  ReactGA.initialize(TRACKING_ID);
+
  
   return (
     <ClerkProvider
