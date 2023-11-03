@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Picture1, Picture2, Picture3, Picture4 } from "../assets/Images";
 import "./Styles/Hero.css";
+import  {Link}  from 'react-router-dom';
 
 const images = [Picture1, Picture2, Picture3, Picture4];
 
@@ -44,13 +45,16 @@ const HeroSection = () => {
 
 
             <div className="flex flex-wrap justify-center gap-4">
-              <a
+              {/* <a
                 className="block   sm:w-auto rounded bg-yellow-500 px-6 py-2 text-sm  text-white shadow hover:bg-yellow-600 focus:outline-none focus:ring active:bg-red-500"
                 href="/gift"
               >
                 GIVE A GIFT
-              </a>
+              </a> */}
 
+<Link to="/gift"> <button className='block   sm:w-auto rounded bg-yellow-500 px-6 py-2 text-sm  text-white shadow hover:bg-yellow-600 focus:outline-none focus:ring active:bg-red-500'>
+GIVE A GIFT
+  </button> </Link>
 
               <button data-tally-open="3jo994" data-tally-layout="modal" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">
                 <a

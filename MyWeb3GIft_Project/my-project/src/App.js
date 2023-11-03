@@ -1,6 +1,6 @@
 import ReactGA from 'react-ga';
 import Main from "./sections_landing/Main.js";
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import About from "./pages/About.js";
 import Contact from "./pages/Contact.js";
 // import Layout from "./pages/Layout.js";
