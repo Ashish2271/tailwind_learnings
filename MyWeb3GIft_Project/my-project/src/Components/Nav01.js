@@ -270,7 +270,7 @@ const Nav01 = () => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="contact" className=" flex items-center justify-between hover:underline text-base text-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-800">
+                                    <Link to="/contact" className=" flex items-center justify-between hover:underline text-base text-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-800">
                                         Contact
                                         <div>
                                             <svg className="fill-stroke text-gray-100 " width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -290,7 +290,7 @@ const Nav01 = () => {
                                     </a>
                                 </li> */}
                                 <li>
-                                    <Link to="faqs" className=" flex items-center justify-between hover:underline text-base text-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-800">
+                                    <Link to="/faqs" className=" flex items-center justify-between hover:underline text-base text-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-800">
                                         FAQ's
                                         <div>
                                             <svg className="fill-stroke text-gray-100 " width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
