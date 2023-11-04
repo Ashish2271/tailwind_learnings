@@ -15,7 +15,7 @@ import Gift from "./pages/Gift.js";
 import BlogPage1 from './pages/BlogPages/BlogPage1/BlogPage1.js';
 import BlogPage2 from './pages/BlogPages/BlogPage2/BlogPage2.js';
 import BlogPage3 from './pages/BlogPages/BlogPage3/BlogPage3.js';
-
+import ScrollToTop from './pages/ScrollToTop/ScrollToTop.js';
 
 
 
@@ -28,7 +28,7 @@ import {
   SignUp,
   UserButton,
 } from "@clerk/clerk-react";
-import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useNavigate} from "react-router-dom";
 // import ClaimGift from "./pages/ClaimGift.js";
  
 if (!process.env.REACT_APP_CLERK_PUBLISHABLE_KEY) {
@@ -76,7 +76,7 @@ function ClerkProviderWithRoutes() {
       <Routes>
 
 
-
+   
 
 
 
@@ -136,8 +136,11 @@ function ClerkProviderWithRoutes() {
 
 
 function App() {
+
+ 
   return (
     <BrowserRouter>
+       <ScrollToTop />
       <ClerkProviderWithRoutes />
     </BrowserRouter>
   );

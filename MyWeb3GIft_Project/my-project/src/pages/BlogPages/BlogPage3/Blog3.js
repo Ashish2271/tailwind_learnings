@@ -45,7 +45,7 @@ const Blog3 = () => {
 
 
 
-                    <div>
+                    <div className='mx-auto w-full leading-10 max-w-2xl'>
 
 
 
@@ -74,7 +74,7 @@ const Blog3 = () => {
                             products appear favorable.
                         </p>
 
-                        <div className='flex justify-center items-center' ><img className='rounded-2xl' width={1050} src="" alt="MyWeb3Gift Steps" /></div>
+                        <div className='flex justify-center items-center' ><img className='rounded-2xl' width={1050} src="https://images.unsplash.com/photo-1670782559267-d4c1ef138060?auto=format&fit=crop&q=80&w=1400&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="MyWeb3Gift Steps" /></div>
 
 
 
