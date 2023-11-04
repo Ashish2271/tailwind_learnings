@@ -1,7 +1,7 @@
 
 // import { GiftBitcoin} from "../assets/Images/MyWeb3Gift-red2/index";
-
-
+import EmailForm from "./EmailForm.js"
+import { Link } from "react-router-dom"
 
 
 const Footer = () => {
@@ -11,31 +11,34 @@ const Footer = () => {
 
             <footer className="bg-sky-950 dark:bg-gray-700">
                 <div className="mx-auto w-full max-w-screen-xl">
-                  
-                  
-                  
-                    {/* <div className="grid grid-cols-3  gap-0 px-4 py-6 lg:py-8 md:grid-cols-3">
-                        <div className=" px-5">
+
+                <div className=" py-4 px-4 sm:hidden"> <EmailForm />  </div>
+
+                    <div className="grid grid-cols-3 max-sm:grid-cols-2  gap-4 justify-items-center px-4 py-6 lg:py-8 ">
+                        {/* <div className=" px-5">
                             <img src={GiftBitcoin} width={250} height={250} className="  " alt="" />
-                        </div>
-                        <div>
-                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Company</h2>
-                            <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                        </div> */}
+
+                        <div className=" max-sm:hidden"> <EmailForm />  </div>
+
+                        <div className="">
+                            <h2 className="mb-6 text-sm font-semibold text-gray-200 uppercase dark:text-white">Company</h2>
+                            <ul className="text-gray-400 dark:text-gray-100 font-medium">
                                 <li className="mb-4">
-                                    <a href="/about" className=" hover:underline">About</a>
+                                    <Link to="/about" className=" hover:underline" >About</Link>
                                 </li>
                                 <li className="mb-4">
                                     <a href="https://forms.gle/YyJfsw41TPqF94AF9" className="hover:underline">Careers</a>
                                 </li>
-                               
+
                                 <li className="mb-4">
-                                    <a href="./" className="hover:underline">Blog</a>
+                                    <Link to="/blog" className="hover:underline">Blog</Link>
                                 </li>
                             </ul>
                         </div>
-                        <div>
-                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Help center</h2>
-                            <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                        <div className="">
+                            <h2 className="mb-6 text-sm font-semibold text-gray-200 uppercase dark:text-white">Help center</h2>
+                            <ul className="text-gray-400 dark:text-gray-100 font-medium">
                                 <li className="mb-4">
                                     <a href="./" className="hover:underline">Discord Server</a>
                                 </li>
@@ -46,13 +49,13 @@ const Footer = () => {
                                     <a href="./" className="hover:underline">Facebook</a>
                                 </li>
                                 <li className="mb-4">
-                                    <a href="./" className="hover:underline">Contact Us</a>
+                                    <Link to="/contact"  className="hover:underline" >Contact Us</Link>
                                 </li>
                             </ul>
                         </div>
 
-                     
-                        <div>
+
+                        {/* <div>
                             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
                             <ul className="text-gray-500 dark:text-gray-400 font-medium">
                                 <li className="mb-4">
@@ -65,8 +68,9 @@ const Footer = () => {
                                     <a href="./" className="hover:underline">Terms &amp; Conditions</a>
                                 </li>
                             </ul>
-                        </div>
-                        <div>
+                        </div> */}
+
+                        {/* <div>
                             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Download</h2>
                             <ul className="text-gray-500 dark:text-gray-400 font-medium">
                                 <li className="mb-4">
@@ -82,8 +86,10 @@ const Footer = () => {
                                     <a href="./" className="hover:underline">MacOS</a>
                                 </li>
                             </ul>
-                        </div>
-                    </div> */}
+                        </div> */}
+
+
+                    </div>
 
 
 

@@ -12,8 +12,9 @@ import ClaimGift from "./pages/ClaimGift.js";
 import Gift from "./pages/Gift.js";
 // import Nav01 from "./Components/Nav01.js";
 
-
-
+import BlogPage1 from './pages/BlogPages/BlogPage1/BlogPage1.js';
+import BlogPage2 from './pages/BlogPages/BlogPage2/BlogPage2.js';
+import BlogPage3 from './pages/BlogPages/BlogPage3/BlogPage3.js';
 
 
 
@@ -90,6 +91,13 @@ function ClerkProviderWithRoutes() {
           <Route path="/Gift" element={<Gift />} />
 
           <Route path="/ClaimGift" element={<ClaimGift />} />
+
+
+
+          <Route path="/Blog1" element={<BlogPage1/>} />
+          <Route path="/Blog2" element={<BlogPage2/>} />
+          <Route path="/Blog3" element={<BlogPage3/>} />
+
           <Route path="*" element={<ErrorPage />} />
 
 
