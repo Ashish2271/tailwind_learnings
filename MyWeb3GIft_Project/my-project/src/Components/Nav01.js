@@ -42,8 +42,11 @@ const Nav01 = () => {
         <div className=" z-50 fixed top-0 w-screen font-bold  ">
             <div>
                 <div className="  ">
+
+
+
                     {/* For md screen size */}
-                    <div id="md-searchbar" className={`${mdOptionsToggle ? "hidden" : "flex"} bg-transparent lg:hidden py-5 px-6 items-center justify-between`}>
+                    {/* <div id="md-searchbar" className={`${mdOptionsToggle ? "hidden" : "flex"} bg-transparent lg:hidden py-5 px-6 items-center justify-between`}>
                         <div className="flex items-center space-x-3 text-gray-100 ">
                             <div>
                                 <svg className="fill-stroke" width={20} height={20} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -58,7 +61,7 @@ const Nav01 = () => {
 
 
 
-                            {/* <button aria-label="view favourites" className="text-gray-800  focus:outline-none focus:ring-2 focus:ring-gray-800">
+                            <button aria-label="view favourites" className="text-gray-800  focus:outline-none focus:ring-2 focus:ring-gray-800">
                                     <svg className="fill-stroke" width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M13.8921 3.07357C13.5516 2.73291 13.1473 2.46267 12.7023 2.2783C12.2574 2.09392 11.7804 1.99902 11.2988 1.99902C10.8171 1.99902 10.3402 2.09392 9.89521 2.2783C9.45023 2.46267 9.04595 2.73291 8.70544 3.07357L7.99878 3.78024L7.29211 3.07357C6.60432 2.38578 5.67147 1.99938 4.69878 1.99938C3.72609 1.99938 2.79324 2.38578 2.10544 3.07357C1.41765 3.76137 1.03125 4.69422 1.03125 5.66691C1.03125 6.6396 1.41765 7.57245 2.10544 8.26024L2.81211 8.96691L7.99878 14.1536L13.1854 8.96691L13.8921 8.26024C14.2328 7.91974 14.503 7.51545 14.6874 7.07048C14.8718 6.6255 14.9667 6.14857 14.9667 5.66691C14.9667 5.18525 14.8718 4.70831 14.6874 4.26334C14.503 3.81836 14.2328 3.41408 13.8921 3.07357V3.07357Z"
@@ -68,21 +71,21 @@ const Nav01 = () => {
                                             strokeLinejoin="round"
                                         />
                                     </svg>
-                                </button> */}
-                            {/* <button aria-label="go to cart" className="text-gray-800  focus:outline-none focus:ring-2 focus:ring-gray-800">
+                                </button>
+                            <button aria-label="go to cart" className="text-gray-800  focus:outline-none focus:ring-2 focus:ring-gray-800">
                                     <svg className="fill-stroke" width={18} height={18} viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M3.66667 1L1 4.2V15.4C1 15.8243 1.1873 16.2313 1.5207 16.5314C1.8541 16.8314 2.30628 17 2.77778 17H15.2222C15.6937 17 16.1459 16.8314 16.4793 16.5314C16.8127 16.2313 17 15.8243 17 15.4V4.2L14.3333 1H3.66667Z" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
                                         <path d="M1 4.2002H17" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
                                         <path d="M12.5564 7.3999C12.5564 8.2486 12.1818 9.06253 11.515 9.66264C10.8482 10.2628 9.94386 10.5999 9.00087 10.5999C8.05788 10.5999 7.15351 10.2628 6.48671 9.66264C5.81991 9.06253 5.44531 8.2486 5.44531 7.3999" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
                                     </svg>
-                                </button> */}
-                            {/* <button aria-label="go to cart" className="text-gray-800  focus:outline-none focus:ring-2 focus:ring-gray-800">
+                                </button>
+                            <button aria-label="go to cart" className="text-gray-800  focus:outline-none focus:ring-2 focus:ring-gray-800">
                                     <svg className="fill-stroke" width={18} height={18} viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M3.66667 1L1 4.2V15.4C1 15.8243 1.1873 16.2313 1.5207 16.5314C1.8541 16.8314 2.30628 17 2.77778 17H15.2222C15.6937 17 16.1459 16.8314 16.4793 16.5314C16.8127 16.2313 17 15.8243 17 15.4V4.2L14.3333 1H3.66667Z" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
                                         <path d="M1 4.2002H17" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
                                         <path d="M12.5564 7.3999C12.5564 8.2486 12.1818 9.06253 11.515 9.66264C10.8482 10.2628 9.94386 10.5999 9.00087 10.5999C8.05788 10.5999 7.15351 10.2628 6.48671 9.66264C5.81991 9.06253 5.44531 8.2486 5.44531 7.3999" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
                                     </svg>
-                                </button> */}
+                                </button>
 
 
 
@@ -92,7 +95,11 @@ const Nav01 = () => {
                                 <svg className="fill-stroke" width={20} height={20} fill="none" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M384 64H134.144c-51.2 0-89.6 41.472-89.6 89.6v227.328c0 51.2 41.472 89.6 89.6 89.6H384c51.2 0 89.6-41.472 89.6-89.6V153.6c0-48.128-38.4-89.6-89.6-89.6z m45.056 316.928c0 25.6-19.456 44.544-45.056 44.544H134.144c-25.6 0-45.056-19.456-45.056-44.544V153.6c0-25.6 19.456-45.056 45.056-45.056H384c25.6 0 45.056 18.944 45.056 45.056v227.328z" fill="#5FFFBA" /><path d="M192 192h134.656v134.656H192V192z" fill="#FFA28D" /><path d="M377.856 544.256H134.656c-48.128 0-86.528 38.4-86.528 89.6v220.672c0 48.128 38.4 89.6 86.528 89.6h243.2c48.128 0 86.528-38.4 86.528-89.6v-220.672c3.072-51.2-38.912-89.6-86.528-89.6z m44.544 307.2c0 25.6-19.456 45.056-45.056 45.056H134.656c-25.6 0-45.056-19.456-45.056-45.056v-220.672c0-25.6 18.944-45.056 45.056-45.056h243.2c25.6 0 45.056 19.456 45.056 45.056v220.672z" fill="#5FFFBA" /><path d="M192 668.672h131.072v131.072H192v-131.072z" fill="#FFD561" /><path d="M633.344 470.528h249.344c51.2 0 89.6-41.472 89.6-89.6V153.6c0-51.2-41.472-89.6-89.6-89.6h-249.344c-51.2 0-89.6 41.472-89.6 89.6v227.328c0.512 51.2 41.984 89.6 89.6 89.6zM588.8 153.6c0-25.6 19.456-45.056 44.544-45.056h249.344c25.6 0 45.056 19.456 45.056 45.056v227.328c0 25.6-19.456 44.544-45.056 44.544h-249.344c-25.6 0-44.544-19.456-44.544-44.544V153.6z" fill="#5FFFBA" /><path d="M700.928 192h134.144v134.656h-134.656l0.512-134.656z" fill="#FFD561" /><path d="M572.928 716.8h137.728c12.8 0 22.528-9.728 22.528-22.528v-137.728c0-12.8-9.728-22.528-22.528-22.528h-137.728c-12.8 0-22.528 9.728-22.528 22.528v137.728c0 12.8 9.728 22.528 22.528 22.528zM886.272 563.2v38.4c0 12.8 12.8 25.6 25.6 25.6h38.4c12.8 0 25.6-12.8 25.6-25.6V563.2c0-12.8-12.8-25.6-25.6-25.6h-38.4c-12.8 0-25.6 9.728-25.6 25.6zM582.656 944.128h48.128c12.8 0 22.528-9.728 22.528-22.528v-48.128c0-12.8-9.728-22.528-22.528-22.528h-48.128c-12.8 0-22.528 9.728-22.528 22.528v48.128c0 12.8 9.216 22.528 22.528 22.528zM944.128 704H844.8c-15.872 0-28.672 12.8-28.672 28.672v45.056H768c-19.456 0-32.256 12.8-32.256 32.256v99.328c0 15.872 12.8 28.672 28.672 28.672l179.2 3.072c15.872 0 28.672-12.8 28.672-28.672v-179.2c0.512-16.384-12.288-29.184-28.16-29.184z" fill="#5FFFBA" /></svg>
                             </button>
                         </div>
-                    </div>
+                    </div> */}
+
+
+
+
                     {/* For md screen size */}
                     {/* For large screens */}
                     <div className={`${Navbar ? "navbar active" : "navbar"} py-2  sm:px-2 sm:pr-8  `} >
@@ -146,7 +153,7 @@ const Nav01 = () => {
                                     </button>
                                     <input id="searchInput" type="text" placeholder="search" className={` ${searchInput ? "hidden" : ""} text-sm   text-gray-600 rounded ml-1 border border-transparent focus:outline-none focus:border-gray-400 px-1`} />
                                 </div> */}
-                                <div className="hidden lg:flex items-center space-x-2 xl:space-x-2   backdrop-filter  ">
+                                <div className="max-sm:hidden lg:flex items-center space-x-2 xl:space-x-2   backdrop-filter  ">
                                     {/* <button aria-label="view favourites" className="text-gray-800   focus:outline-none focus:ring-2 focus:ring-gray-800">
                                             <svg className="fill-stroke" width={24} height={24} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -185,7 +192,7 @@ const Nav01 = () => {
                                     <LoginButton />
                                 </div>
 
-                                <div className="flex lg:hidden">
+                                <div className="flex md:hidden">
                                     <button aria-label="show options" onClick={() => setMdOptionsToggle(!mdOptionsToggle)} className="text-gray-100   hidden md:flex focus:outline-none focus:ring-2 rounded focus:ring-gray-600">
                                         <svg className="fill-stroke" width={24} height={24} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M4 6H20" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -279,16 +286,16 @@ const Nav01 = () => {
                                         </div>
                                     </Link>
                                 </li>
-                                {/* <li>
-                                    <a href="team" className=" flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
-                                        Team
+                                <li>
+                                    <Link to="/blog" className=" flex items-center justify-between hover:underline text-base text-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-800">
+                                        Blog
                                         <div>
                                             <svg className="fill-stroke text-gray-100 " width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor" strokeWidth="0.75" strokeLinecap="round" strokeLinejoin="round" />
                                             </svg>
                                         </div>
-                                    </a>
-                                </li> */}
+                                    </Link>
+                                </li>
                                 <li>
                                     <Link to="/faqs" className=" flex items-center justify-between hover:underline text-base text-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-800">
                                         FAQ's

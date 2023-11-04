@@ -24,12 +24,12 @@ const Blog2 = () => {
                 <hr />
 
                 <div className='my-4'>
-                    <div class=" flex  justify-between ">
+                    <div className=" flex  justify-between ">
 
-                        <div className='flex items-center space-x-4'>  <img class="w-10 h-10 rounded-full" src={ProfilePicValerio} alt="Valerio Jacobi" />
-                            <div class="font-medium dark:text-white">
+                        <div className='flex items-center space-x-4'>  <img className="w-10 h-10 rounded-full" src={ProfilePicValerio} alt="Valerio Jacobi" />
+                            <div className="font-medium dark:text-white">
                                 <div>Valerio Jacobi</div>
-                                <div class="text-sm text-gray-500 dark:text-gray-400">myweb3gift@gmail.com</div>
+                                <div className="text-sm text-gray-500 dark:text-gray-400">myweb3gift@gmail.com</div>
                             </div></div>
 
                         <a href="https://www.linkedin.com/in/valerio-jacobi-6b4a0826/">
