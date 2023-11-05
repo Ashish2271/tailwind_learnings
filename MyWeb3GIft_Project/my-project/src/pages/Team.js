@@ -75,7 +75,7 @@ const TeamCard = ({ imageSrc, name, profession }) => {
       <div className="w-full px-4 md:w-1/2 xl:w-1/4">
         <div className="mx-auto mb-10 w-full max-w-[370px]">
           <div className="relative overflow-hidden rounded-lg">
-            <img src={imageSrc} alt="" className="w-full" />
+            <img src={imageSrc} alt=" Arpit Singh Blockchain Developer" className="w-full" loading="lazy"/>
             <div className="absolute left-0 w-full text-center bottom-5">
               <div className="relative px-3 py-5 mx-5 overflow-hidden bg-white rounded-lg">
                 <h3 className="text-base font-semibold text-dark">{name}</h3>

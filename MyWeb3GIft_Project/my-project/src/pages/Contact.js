@@ -85,7 +85,11 @@ const Contact = () => {
   return (
     <>
       <Nav01></Nav01>
+<div className="bg-sky-950 h-[90px] w-screen"></div>
       <section className="bg-white max-sm:px-5 sm:px-20  py-20 lg:py-[120px] overflow-hidden relative ">
+
+
+
         <div className="container ">
           <div className="flex flex-wrap -mx-4 lg:justify-between">
             <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
@@ -206,7 +210,7 @@ const Contact = () => {
                     <button
                       type="submit"
                       onClick={postData}
-                      className="w-full bg-indigo-600 p-3 text-white transition border rounded border-primary bg-primary hover:bg-opacity-90"
+                      className="w-full bg-sky-950 p-3 text-white transition border rounded border-primary bg-primary hover:bg-opacity-90"
                     >
                       Send Message
                     </button>

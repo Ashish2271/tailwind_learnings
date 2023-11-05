@@ -1,5 +1,6 @@
+import ReactGA from 'react-ga';
 import Main from "./sections_landing/Main.js";
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import About from "./pages/About.js";
 import Contact from "./pages/Contact.js";
 // import Layout from "./pages/Layout.js";
@@ -7,8 +8,16 @@ import ErrorPage from "./pages/ErrorPage.js";
 import FAQS from "./pages/FAQS.js";
 // import Team from "./pages/Team.js";
 import BlogPage from "./pages/BlogPage.js";
+import ClaimGift from "./pages/ClaimGift.js";
 import Gift from "./pages/Gift.js";
 // import Nav01 from "./Components/Nav01.js";
+
+import BlogPage1 from './pages/BlogPages/BlogPage1/BlogPage1.js';
+import BlogPage2 from './pages/BlogPages/BlogPage2/BlogPage2.js';
+import BlogPage3 from './pages/BlogPages/BlogPage3/BlogPage3.js';
+import ScrollToTop from './pages/ScrollToTop/ScrollToTop.js';
+
+
 
 import {
   ClerkProvider,
@@ -19,7 +28,8 @@ import {
   SignUp,
   UserButton,
 } from "@clerk/clerk-react";
-import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useNavigate} from "react-router-dom";
+// import ClaimGift from "./pages/ClaimGift.js";
  
 if (!process.env.REACT_APP_CLERK_PUBLISHABLE_KEY) {
   throw new Error("Missing Publishable Key")
@@ -52,6 +62,11 @@ function ProtectedPage() {
 
 function ClerkProviderWithRoutes() {
   const navigate = useNavigate();
+
+
+  const TRACKING_ID = "G-G6P69YFVWZ"; // OUR_TRACKING_ID
+  ReactGA.initialize(TRACKING_ID);
+
  
   return (
     <ClerkProvider
@@ -61,7 +76,7 @@ function ClerkProviderWithRoutes() {
       <Routes>
 
 
-
+   
 
 
 
@@ -75,6 +90,13 @@ function ClerkProviderWithRoutes() {
           {/* <Route path="/Team" element={<Team />} /> */}
           <Route path="/Gift" element={<Gift />} />
 
+          <Route path="/ClaimGift" element={<ClaimGift />} />
+
+
+
+          <Route path="/Blog1" element={<BlogPage1/>} />
+          <Route path="/Blog2" element={<BlogPage2/>} />
+          <Route path="/Blog3" element={<BlogPage3/>} />
 
           <Route path="*" element={<ErrorPage />} />
 
@@ -114,8 +136,11 @@ function ClerkProviderWithRoutes() {
 
 
 function App() {
+
+ 
   return (
     <BrowserRouter>
+       <ScrollToTop />
       <ClerkProviderWithRoutes />
     </BrowserRouter>
   );

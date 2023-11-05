@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
 import "./Style/IconsDetails.css"
 import { AllOcassions, Chellenge } from '../assets/Images/Compressed';
-
-// import {  ChristmasGift, SurpriseGift, ChallengeCalender, calendar } from '../assets/Images'
+import Modal from './Modal';
 
 
 
@@ -28,60 +27,62 @@ const IconsDetails = () => {
   }, []);
 
 
+
+  const handleAccept = (componentIdentifier) => {
+    switch (componentIdentifier) {
+      case 'Facebook':
+        console.log("1");
+        window.location.href = "https://buy.stripe.com/test_cN27tcaqreAFg7e145";
+        break;
+      case 'Instagram':
+        console.log("2");
+        window.location.href = "https://buy.stripe.com/test_cN27tcaqreAFg7e145";
+        break;
+      case 'Discord':
+        console.log("3");
+        window.location.href = "https://buy.stripe.com/test_cN27tcaqreAFg7e145";
+        break;
+      default:
+        break;
+    }
+  };
+
+
+
+
   return (
     <div className=' bg-gradient-to-r mx-auto w-full max-w-screen-xl '>
 
       <div className='text-center py-10 hiden  text-black font-bold max-sm:text-2xl sm:text-4xl sm:mx-20' >Get Your Holiday Gifts Now, <br /> Shine With A New Kind Of Gift
       </div>
       <div className='text-center hiden text-yel-600 max-sm:text-xl py-4 sm:text-3xl text-3xl mx-4  '>Choose the digital gift box <br className='sm:hidden' /> according to the occasion</div>
-      <div class="containerIcon  flex flex-1 flex-row flex-wrap min-h-[50vh] ">
-        <div class="relative hiden logo m-10 w-full max-w-xs overflow-hidden rounded-lg bg-white shadow-md">
-        <div class="mt-4 px-5 pb-5">
+      <div className="containerIcon  flex flex-1 flex-row flex-wrap min-h-[50vh] ">
+        <div className="relative hiden logo m-10 w-full max-w-xs overflow-hidden rounded-lg bg-white shadow-md">
+          <div className="mt-4 px-5 pb-5">
             <a href="#/">
-              <h5 class="text-xl font-semibold tracking-tight text-slate-900">Christmas</h5>
+              <h5 className="text-xl font-semibold tracking-tight text-slate-900">Christmas</h5>
             </a>
           </div>
 
           <a href="#/">
-          <img class="h-60 rounded-t-lg object-cover" src="https://images.unsplash.com/photo-1606482512676-255bf02be7cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1473&q=80" alt="product" />
+            <img className="h-60 rounded-t-lg object-cover" src="https://images.unsplash.com/photo-1606482512676-255bf02be7cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1473&q=80" alt="product" loading="lazy" />
 
           </a>
-          {/* <span class="absolute top-0 left-0 w-28 translate-y-4 -translate-x-6 -rotate-45 bg-black text-center text-sm text-white">Sale</span> */}
-          <div class="mt-4 px-5 pb-5">
+          {/* <span className="absolute top-0 left-0 w-28 translate-y-4 -translate-x-6 -rotate-45 bg-black text-center text-sm text-white">Sale</span> */}
+          <div className="mt-4 px-5 pb-5">
             <a href="#/">
-              <h5 class="text-xl font-semibold tracking-tight text-slate-900">Crypto Advent Calendar</h5>
+              <h5 className="text-xl font-semibold tracking-tight text-slate-900">Crypto Advent Calendar</h5>
             </a>
-            {/* <div class="mt-2.5 mb-5 flex items-center">
-              <span class="mr-2 rounded bg-yellow-200 px-2.5 py-0.5 text-xs font-semibold">5.0</span>
-              <svg aria-hidden="true" class="h-5 w-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-              </svg>
-              <svg aria-hidden="true" class="h-5 w-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-              </svg>
-              <svg aria-hidden="true" class="h-5 w-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-              </svg>
-              <svg aria-hidden="true" class="h-5 w-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-              </svg>
-              <svg aria-hidden="true" class="h-5 w-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-              </svg>
-            </div> */}
-            <div class="flex items-center justify-between">
+       
+            <div className="flex items-center justify-between">
               <p>
-                <span class="text-3xl font-bold text-slate-900">$25</span>
-                <span class="text-sm text-slate-900 line-through">$50</span>
+                <span className="text-3xl font-bold text-slate-900">$25</span>
+                <span className="text-sm text-slate-900 line-through">$50</span>
               </p>
 
-              <button data-tally-open="3jo994" data-tally-layout="modal" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">   <a href="#/" class="flex items-center rounded-md bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300">
-                <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
-                Buy</a
-              ></button>
-
+              <Modal
+                componentIdentifier="Facebook"
+                onAccept={handleAccept} />
 
             </div>
           </div>
@@ -90,159 +91,101 @@ const IconsDetails = () => {
 
 
 
-        <div class="relative hiden logo m-10 w-full max-w-xs overflow-hidden rounded-lg bg-white shadow-md">
+        <div className="relative hiden logo m-10 w-full max-w-xs overflow-hidden rounded-lg bg-white shadow-md">
 
-        <div class="mt-4 px-5 pb-5">
+          <div className="mt-4 px-5 pb-5">
             <a href="#/">
-              <h5 class="text-xl font-semibold tracking-tight text-slate-900">All Occasions</h5>
+              <h5 className="text-xl font-semibold tracking-tight text-slate-900">All Occasions</h5>
             </a>
           </div>
 
           <a href="#/">
-          <img class="h-60 rounded-t-lg object-cover" src={AllOcassions} alt="product" />
+            <img className="h-60 rounded-t-lg object-cover" src={AllOcassions} alt="All Occasions Calender" loading="lazy" />
           </a>
-          {/* <span class="absolute top-0 left-0 w-28 translate-y-4 -translate-x-6 -rotate-45 bg-black text-center text-sm text-white">Sale</span> */}
-          <div class="mt-4 px-5 pb-5">
+          {/* <span className="absolute top-0 left-0 w-28 translate-y-4 -translate-x-6 -rotate-45 bg-black text-center text-sm text-white">Sale</span> */}
+          <div className="mt-4 px-5 pb-5">
             <a href="#/">
-              <h5 class="text-xl font-semibold tracking-tight text-slate-900">Crypto Surprise Gift Box</h5>
+              <h5 className="text-xl font-semibold tracking-tight text-slate-900">Crypto Surprise Gift Box</h5>
             </a>
-            {/* <div class="mt-2.5 mb-5 flex items-center">
-              <span class="mr-2 rounded bg-yellow-200 px-2.5 py-0.5 text-xs font-semibold">5.0</span>
-              <svg aria-hidden="true" class="h-5 w-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-              </svg>
-              <svg aria-hidden="true" class="h-5 w-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-              </svg>
-              <svg aria-hidden="true" class="h-5 w-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-              </svg>
-              <svg aria-hidden="true" class="h-5 w-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-              </svg>
-              <svg aria-hidden="true" class="h-5 w-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-              </svg>
-            </div> */}
-            <div class="flex items-center justify-between">
+ 
+            <div className="flex items-center justify-between">
               <p>
-                <span class="text-3xl font-bold text-slate-900">$25</span>
-                <span class="text-sm text-slate-900 line-through">$50</span>
+                <span className="text-3xl font-bold text-slate-900">$25</span>
+                <span className="text-sm text-slate-900 line-through">$50</span>
               </p>
-              <button data-tally-open="3jo994" data-tally-layout="modal" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">   <a href="#/" class="flex items-center rounded-md bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300">
-                <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
-                Buy</a
-              ></button>
+     
+              <Modal
+                componentIdentifier="Instagram"
+                onAccept={handleAccept} />
+
             </div>
           </div>
         </div>
 
 
 
-        <div class="relative hiden logo m-10 w-full max-w-xs overflow-hidden rounded-lg bg-white shadow-md">
+        <div className="relative hiden logo m-10 w-full max-w-xs overflow-hidden rounded-lg bg-white shadow-md">
 
-        <div class="mt-4 px-5 pb-5">
+          <div className="mt-4 px-5 pb-5">
             <a href="#/">
-              <h5 class="text-xl font-semibold tracking-tight text-slate-900">Random</h5>
+              <h5 className="text-xl font-semibold tracking-tight text-slate-900">Random</h5>
             </a>
           </div>
 
           <a href="#/">
-            <img class="h-60 rounded-t-lg object-cover" src={Chellenge} alt="product" />
+            <img className="h-60 rounded-t-lg object-cover" src={Chellenge} alt="Challenge Calender" loading="lazy" />
           </a>
-          {/* <span class="absolute top-0 left-0 w-28 translate-y-4 -translate-x-6 -rotate-45 bg-black text-center text-sm text-white">Sale</span> */}
-          <div class="mt-4 px-5 pb-5">
+          {/* <span className="absolute top-0 left-0 w-28 translate-y-4 -translate-x-6 -rotate-45 bg-black text-center text-sm text-white">Sale</span> */}
+          <div className="mt-4 px-5 pb-5">
             <a href="#/">
-              <h5 class="text-xl font-semibold tracking-tight text-slate-900">24-Day Crypto
-Challenge </h5>
+              <h5 className="text-xl font-semibold tracking-tight text-slate-900">24-Day Crypto
+                Challenge </h5>
             </a>
-            {/* <div class="mt-2.5 mb-5 flex items-center">
-              <span class="mr-2 rounded bg-yellow-200 px-2.5 py-0.5 text-xs font-semibold">5.0</span>
-              <svg aria-hidden="true" class="h-5 w-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            {/* <div className="mt-2.5 mb-5 flex items-center">
+              <span className="mr-2 rounded bg-yellow-200 px-2.5 py-0.5 text-xs font-semibold">5.0</span>
+              <svg aria-hidden="true" className="h-5 w-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
               </svg>
-              <svg aria-hidden="true" class="h-5 w-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <svg aria-hidden="true" className="h-5 w-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
               </svg>
-              <svg aria-hidden="true" class="h-5 w-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <svg aria-hidden="true" className="h-5 w-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
               </svg>
-              <svg aria-hidden="true" class="h-5 w-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <svg aria-hidden="true" className="h-5 w-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
               </svg>
-              <svg aria-hidden="true" class="h-5 w-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <svg aria-hidden="true" className="h-5 w-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
               </svg>
             </div> */}
-            <div class="flex items-center justify-between">
+            <div className="flex items-center justify-between">
               <p>
-                <span class="text-3xl font-bold text-slate-900">$25</span>
-                <span class="text-sm text-slate-900 line-through">$50</span>
+                <span className="text-3xl font-bold text-slate-900">$25</span>
+                <span className="text-sm text-slate-900 line-through">$50</span>
               </p>
-              <button data-tally-open="3jo994" data-tally-layout="modal" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">   <a href="#/" class="flex items-center rounded-md bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300">
-                <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
-                Buy</a
-              ></button>
+        
+              <Modal
+                componentIdentifier="Discord"
+                onAccept={handleAccept}
+              />
+
+
+
             </div>
           </div>
         </div>
 
-
-
-
-
-        {/* <div class="card my-14  special-card">
-          <div class="image rounded-full">
-            <img className=' ' href="#/" src="{calendar}" />
-          </div>
-          <div class="content">
-            <h3 className=' sm:text-2xl text-gray-500 mb-5'>Christmas Calender</h3>
-            <p>  <button className='hover:bg-yellow-500 bg-yellow-400 py-2 max-sm:text-1xl px-8 rounded-xl shadow-sm  text-gray-100 hover:text-gray-50 text-bold text-2xl'>Buy Now</button> </p>
-          </div>
-        </div>
-
-        <div class="card my-14 special-card">
-          <div class="image rounded-full">
-            <img className='' href="#/" src="{ChristmasGift}" />
-          </div>
-          <div class="content">
-            <h3 className=' sm:text-2xl text-gray-500 mb-5'>Christmas Gift</h3>
-            <p>  <button className='hover:bg-yellow-500 bg-yellow-400 py-2 max-sm:text-1xl px-8 rounded-xl shadow-sm  text-gray-100 hover:text-gray-50 text-bold text-2xl'>Buy Now</button> </p>
-          </div>
-        </div>
-
-        <div class="card my-14 special-card ml-10">
-          <div class="image  rounded-full">
-            <img className='bg-transparent  ' href="#/" src="{ChallengeCalender}" />
-          </div>
-          <div class="content">
-            <h3 className=' sm:text-2xl text-gray-500 mb-5'>Challenge Calender</h3>
-            <p>  <button className='hover:bg-yellow-500 bg-yellow-400 py-2 max-sm:text-1xl px-8 rounded-xl shadow-sm  text-gray-100 hover:text-gray-50 text-bold text-2xl'>Buy Now</button> </p>
-          </div>
-        </div>
-
-        <div class="card my-14 special-card">
-          <div class="image rounded-full">
-            <img className='' href="#/" src="{SurpriseGift}" />
-          </div>
-          <div class="content">
-            <h3 className=' sm:text-2xl text-gray-500 mb-5'>Surprise Gift</h3>
-            <p>  <button className='hover:bg-yellow-500 bg-yellow-400 py-2 max-sm:text-1xl px-8 rounded-xl shadow-sm  text-gray-100 hover:text-gray-50 text-bold text-2xl'>Buy Now</button> </p>
-          </div>
-        </div> */}
       </div>
       <p className='text-yel-600 text-5xl  hiden  px-3 max-sm:text-xl sm:text-3xl   text-center'>Value of goods: $50 <br />  </p>
 
       <p className='text-yel-600 text-5xl hiden py-4 px-3 max-sm:text-xl sm:text-3xl   text-center'>All options have the same content, only the arrangement and layout differs. <br />
-      <button data-tally-open="3jo994" data-tally-layout="modal" data-tally-emoji-text="👋" data-tally-emoji-animation="wave" className='bg-yellow-400 hiden text-yel-600 text-white font max-sm:text-xl sm:text-2xl  bold px-7 my-4 hover:bg-yellow-500  rounded-xl text-2xl py-3'>STAY UPDATED</button>
+        <button data-tally-open="3jo994" data-tally-layout="modal" data-tally-emoji-text="👋" data-tally-emoji-animation="wave" className='bg-yellow-400 hiden shadow-2xl text-yel-600 text-white font max-sm:text-xl sm:text-2xl  bold px-7 my-4 hover:bg-yellow-500  rounded-xl text-2xl py-3'>STAY UPDATED</button>
 
-     
+
 
       </p>
+
 
     </div>
   )

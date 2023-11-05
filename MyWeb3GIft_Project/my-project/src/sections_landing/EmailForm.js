@@ -78,25 +78,25 @@ const EmailForm = () => {
     return (
 
 
-<div className='bg-blue-600  dark:bg-gray-800'>
+<div className='bg-sky-950  dark:bg-gray-800'>
 
-<div className="bg-blue-600 w-full mx-auto  max-w-screen-xl dark:bg-gray-800">
-            <div className="relative px-4 bg-blue-600 rounded-3xl py-6 overflow-hidden sm:px-6 sm:py-8 lg:p-12 xl:p-16">
-                <h2 className="text-2xl text-white font-semibold font-display  dark:text-white sm:text-3xl">
-                    We&#x27;ve got more coming...
+<div className="bg-sky-950 w-full mx-auto  max-w-screen-xl dark:bg-gray-800">
+            <div className="relative  bg-sky-950  overflow-hidden  ">
+                <h2 className="text-xl text-white font-semibold font-display  dark:text-white sm:text-xl">
+                  SUBSCRIBE TO OUR NEWSLETTER
                 </h2>
-                {/* <p className="mt-2 max-w-xl text-base text-gray-400">
-                    Want to hear from us when we add new components? Sign up for our newsletter and we&#x27;ll email you every time we release a new batch of components.
-                </p> */}
-                <form>
-                    <div className="mt-6 sm:flex jusitfy-start">
-                        <form className="flex flex-col justify-center w-3/4 max-w-sm space-y-3 md:flex-row md:w-full md:space-x-3 md:space-y-0">
+                <p className="mt-2 max-w-xl text-base text-gray-400">
+                     Sign up for our newsletter and we&#x27;ll email you every time we release a new gifts.
+                </p>
+          
+                    <div className="mt-6 sm:flex justify-start">
+                        <form className="flex flex-col  w-3/4 max-w-sm space-y-3 md:flex-row md:w-full md:space-x-3 md:space-y-0">
                             <div className=" relative ">
                                 <input type="email" id="&quot;form-subscribe-Subscribe" className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:border-transparent" placeholder="Email" 
                                   name="email"
                                   value={user.email}
                                    onChange={getUserData}
-                                
+                                   autoComplete="email"
                                 />
                             </div>
                             <button className="flex-shrink-0 px-4   py-2 text-base font-semibold text-white bg-yellow-500 rounded-lg shadow-md hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 focus:ring-offset-purple-200" type="submit"
@@ -108,7 +108,7 @@ const EmailForm = () => {
                             </button>
                         </form>
                     </div>
-                </form>
+                
                 {/* <div className="absolute inset-y-0 right-0 hidden lg:block lg:left-2/3 xl:left-1/2">
                     <picture>
                     

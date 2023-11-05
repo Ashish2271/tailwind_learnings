@@ -4,3 +4,9 @@
 .Logo_heading{
     font-family: 'Oswald', sans-serif;
 }
+
+.navbar.active {
+    /* background: linear-gradient(90deg, rgb(66, 2, 194) 0%, rgb(0, 78, 194) 100%); */
+
+background-color:  #082f49;
+}

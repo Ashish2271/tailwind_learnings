@@ -1,6 +1,5 @@
 import React from 'react';
-import {  LogoSlider, VideoUSP, EmailForm, GiftDetails,  TrustSymbols, CountDownTimer,  FaqSection, Footer, HeroSection,    Blog, IconsDetails, WhoForSection, Steps } from './index.js'
-// import Nav from '../Components/Nav.js' 
+import {   VideoUSP,  GiftDetails,  TrustSymbols, CountDownTimer,  FaqSection, Footer, HeroSection,    Blog, IconsDetails, WhoForSection, Steps } from './index.js'
 import Nav01 from '../Components/Nav01.js'
 
 const Main = () => {
@@ -105,9 +104,9 @@ const Main = () => {
 </section> */}
 
 
-<section>
+{/* <section>
   <LogoSlider/>
-</section>
+</section> */}
 
 
 
@@ -154,9 +153,9 @@ const Main = () => {
 </section> */}
 
 
-<section>
+{/* <section>
 <EmailForm/>
-</section>
+</section> */}
 
 
 <section>
