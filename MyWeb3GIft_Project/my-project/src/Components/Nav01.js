@@ -112,7 +112,6 @@ const Nav01 = () => {
 
                             </h1>
 
-
                             {/* <ul className="max-md:hidden w-8/12 md:flex items-center justify-center space-x-8">
                                     <li>
                                         <a href="javascript:void(0)" className=" text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
@@ -212,8 +211,8 @@ const Nav01 = () => {
                         </div>
                     </div>
                     {/* For small screen */}
-                    <div id="mobile-menu" className={`${showMenu ? "flex" : "hidden"} absolute  z-10 inset-0 md:hidden bg-blue-950 text-white flex-col h-screen w-full`}>
-                        <div className="flex items-center justify-between border-b border-gray-200  pb-4 p-4">
+                    <div id="mobile-menu" className={`${showMenu ? "flex" : "hidden"} absolute  z-50 inset-0 md:hidden bg-blue-950 text-white flex-col h-screen w-full`}>
+                        <div className="flex items-center justify-between z-50 border-b border-gray-200  pb-4 p-4">
                             {/* <div className="flex items-center space-x-3">
                                 <div>
                                     <svg className="fill-stroke text-gray-800 " width={20} height={20} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
