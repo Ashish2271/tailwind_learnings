@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Video1 } from '../assets/Videos';
-import { Thumbnail } from '../assets/Images';
+import { Myweb3gift} from '../assets/Images';
+import EmailModal from './EmailModal';
 
 const VideoUSP = () => {
 
@@ -20,18 +21,17 @@ const VideoUSP = () => {
       <div className='bg-sky-950'>
         <div className='min-h-[60vh] flex flex-col max-w-screen-xl mx-auto justify-center items-center sm:flex-row max-sm:flex-wrap'>
 
-          <div className='sm:w-1/2 max-sm:w-full text-white sm:py-10 p-4 sm:px-10'>
-            <h1 className='font-bold text-4xl sm:text-4xl pb-5 sm:pb-10'>Future of Gifting with MyWeb3Gift</h1>
-            <h2 className='text-lg  sm:text-2xl pb-5'>Discover a World of Possibilities in Every Door</h2>
-            <button
-              data-tally-open="3jo994"
-              data-tally-layout="modal"
-              data-tally-emoji-text="👋"
-              data-tally-emoji-animation="wave"
-              className='bg-yellow-400 hover:bg-yellow-500 text-white  text-xl sm:text-2xl py-3 px-10 rounded mt-4'
-            >
-              GET NOW
-            </button>
+          <div className='sm:w-1/2 max-sm:w-full flex flex-col justify-start text-white sm:py-10 p-4 sm:px-10'>
+            <h1 className='font-bold text-4xl sm:text-4xl pb-5 sm:pb-10'>Watch our video to get a taste of future of gifting</h1>
+            <h2 className='text-lg  sm:text-2xl pb-5'>We combine the crypto space with the <br /> joy of gifting</h2>
+       
+<div>
+<EmailModal label="STAY UPDATED" className='bg-yellow-400 hover:bg-yellow-500 text-white  text-xl sm:text-2xl py-3 px-10 rounded mt-4' />
+
+
+
+</div>
+          
           </div>
 
           <div className='sm:w-1/2 max-sm:w-full p-4'>
@@ -45,7 +45,7 @@ const VideoUSP = () => {
        
         type="button"
       >
-       <img src={Thumbnail} className='rounded-3xl  shadow-xl ' alt="Web3 Gift Video Intro Thumbnail" />
+       <img src={Myweb3gift} className='rounded-3xl  shadow-xl ' alt="Web3 Gift Video Intro Thumbnail" />
       </button>
 
 

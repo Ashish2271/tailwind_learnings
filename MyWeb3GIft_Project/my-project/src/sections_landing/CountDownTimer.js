@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import EmailModal from './EmailModal';
 
 const CountDownTimer = () => {
   // Define the target date and time
@@ -52,12 +53,11 @@ const CountDownTimer = () => {
                 @ 10:00 AM
               </h3>
               <div className="w-full mt-4 md:w-44">
-                <button
-                  type="button"
-                  className="py-2 px-4  bg-yellow-400 hover:bg-yellow-500 focus:ring-yellow-200 focus:ring-offset-indigo-200 text-indigo-500 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg "
-                >
-                EARLY BIRD
-                </button>
+               
+
+                <EmailModal label="EARLY BIRD"   className="py-2 px-4  bg-yellow-400 hover:bg-yellow-500 focus:ring-yellow-200 focus:ring-offset-indigo-200  text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg " />
+
+
               </div>
             </div>
             <div className="w-full px-5 md:w-auto">
