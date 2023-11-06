@@ -9,7 +9,7 @@ const Footer = () => {
         <div>
 
 
-            <footer className="bg-sky-950 dark:bg-gray-700">
+            <footer className="bg-sky-950 dark:bg-sky-950">
                 <div className="mx-auto w-full max-w-screen-xl">
 
                 <div className=" py-4 px-4 sm:hidden"> <EmailForm />  </div>
@@ -93,7 +93,7 @@ const Footer = () => {
 
 
 
-                    <div className="px-4 py-6 bg-sky-950 dark:bg-gray-700 md:flex md:items-center md:justify-between">
+                    <div className="px-4 py-6 bg-sky-950 dark:bg-sky-950 md:flex md:items-center md:justify-between">
                         <span className="text-sm text-gray-100 dark:text-gray-300 sm:text-center">© 2023 <a href="https://flowbite.com/">MyWeb3Gift™</a>. All Rights Reserved.
                         </span>
                         <div className="flex mt-4 space-x-5 sm:justify-center md:mt-0">
