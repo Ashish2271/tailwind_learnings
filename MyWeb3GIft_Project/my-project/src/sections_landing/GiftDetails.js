@@ -11,7 +11,7 @@ const GiftDetails = () => {
 
 
 
-      <div className="relative max-w-screen-xl sm:rounded-3xl p-4 px-4 mx-auto bg-white dark:bg-gray-800 sm:px-6 lg:px-8 py-26 lg:mt-20">
+      <div className="relative max-w-screen-xl sm:rounded-3xl p-4 px-4 mx-auto bg-white dark:bg-sky-950 sm:px-6 lg:px-8 py-26 lg:mt-20">
         <div className="relative">
           <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
             <div className="ml-auto lg:col-start-2 lg:max-w-2xl">
@@ -22,7 +22,7 @@ const GiftDetails = () => {
                 What do the receivers get?
               </h4>
               <p className="mt-4 text-base leading-6 dark:text-gray-300">
-                They’ll experience the magic of blockchain in an entertaining 25-day journey.
+                They’ll experience the magic of blockchain in an entertaining 24-day journey. Our surprise boxes and calendars may include:
               </p>
               <ul className="gap-6 mt-8 md:grid md:grid-cols-2">
        
@@ -36,49 +36,11 @@ const GiftDetails = () => {
                       </svg>
                     </span>
                     <span className="ml-4 text-base  leading-6  dark:text-gray-200">
-                    25 Learnings
+                    24 Learnings (All)
                     </span>
                   </div>
                 </li>
-                <li className="mt-6 lg:mt-0">
-                  <div className="flex">
-                    <span className="flex items-center justify-center flex-shrink-0 w-6 h-6 text-green-800 bg-green-100 rounded-full dark:text-green-500 drark:bg-transparent">
-                      <svg className="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd">
-                        </path>
-                      </svg>
-                    </span>
-                    <span className="ml-4 text-base  leading-6  dark:text-gray-200">
-                    2 Perks from Partners
-                    </span>
-                  </div>
-                </li>
-                <li className="mt-6 lg:mt-0">
-                  <div className="flex">
-                    <span className="flex items-center justify-center flex-shrink-0 w-6 h-6 text-green-800 bg-green-100 rounded-full dark:text-green-500 drark:bg-transparent">
-                      <svg className="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd">
-                        </path>
-                      </svg>
-                    </span>
-                    <span className="ml-4 text-base  leading-6  dark:text-gray-200">
-                    5 Art of KI generated NFTs
-                    </span>
-                  </div>
-                </li>
-                <li className="mt-6 lg:mt-0">
-                  <div className="flex">
-                    <span className="flex items-center justify-center flex-shrink-0 w-6 h-6 text-green-800 bg-green-100 rounded-full dark:text-green-500 drark:bg-transparent">
-                      <svg className="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd">
-                        </path>
-                      </svg>
-                    </span>
-                    <span className="ml-4 text-base  leading-6  dark:text-gray-200">
-                    3 Gaming NFTs
-                    </span>
-                  </div>
-                </li>
+
 
                 <li className="mt-6 lg:mt-0">
                   <div className="flex">
@@ -94,6 +56,51 @@ const GiftDetails = () => {
                   </div>
                 </li>
 
+
+                <li className="mt-6 lg:mt-0">
+                  <div className="flex">
+                    <span className="flex items-center justify-center flex-shrink-0 w-6 h-6 text-green-800 bg-green-100 rounded-full dark:text-green-500 drark:bg-transparent">
+                      <svg className="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd">
+                        </path>
+                      </svg>
+                    </span>
+                    <span className="ml-4 text-base  leading-6  dark:text-gray-200">
+                    Art or KI generated NFT's
+                    </span>
+                  </div>
+                </li>
+                <li className="mt-6 lg:mt-0">
+                  <div className="flex">
+                    <span className="flex items-center justify-center flex-shrink-0 w-6 h-6 text-green-800 bg-green-100 rounded-full dark:text-green-500 drark:bg-transparent">
+                      <svg className="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd">
+                        </path>
+                      </svg>
+                    </span>
+                    <span className="ml-4 text-base  leading-6  dark:text-gray-200">
+                     Gaming NFTs
+                    </span>
+                  </div>
+                </li>
+
+                <li className="mt-6 lg:mt-0">
+                  <div className="flex">
+                    <span className="flex items-center justify-center flex-shrink-0 w-6 h-6 text-green-800 bg-green-100 rounded-full dark:text-green-500 drark:bg-transparent">
+                      <svg className="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd">
+                        </path>
+                      </svg>
+                    </span>
+                    <span className="ml-4 text-base  leading-6  dark:text-gray-200">
+                     Perks from Partners
+                    </span>
+                  </div>
+                </li>
+        
+
+          
+
                 <li className="mt-6 lg:mt-0">
                   <div className="flex">
                     <span className="flex items-center justify-center flex-shrink-0 w-6 h-6 text-green-800 bg-green-100 rounded-full dark:text-green-500 drark:bg-transparent">
@@ -107,6 +114,23 @@ const GiftDetails = () => {
                     </span>
                   </div>
                 </li>
+
+
+                <li className="mt-6 sm:hidden lg:mt-0">
+                  <div className="flex">
+                    <span className="flex items-center justify-center flex-shrink-0 w-6 h-6 text-green-800 bg-green-100 rounded-full dark:text-green-500 drark:bg-transparent">
+                      <svg className="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd">
+                        </path>
+                      </svg>
+                    </span>
+                    <span className="ml-4 text-base  leading-6  dark:text-gray-200">
+                    Access to an extensive learning section (still in construction)
+                    </span>
+                  </div>
+                </li>
+
+
               </ul>
             </div>
             <div className="relative mt-10 lg:-mx-4 relative-20 lg:mt-0 lg:col-start-1">

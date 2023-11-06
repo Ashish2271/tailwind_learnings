@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Picture1, Picture2, Picture3, Picture4 } from "../assets/Images";
 import "./Styles/Hero.css";
-import  {Link}  from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import EmailModal from './EmailModal';
 
 const images = [Picture1, Picture2, Picture3, Picture4];
 
@@ -30,8 +31,8 @@ const HeroSection = () => {
               </strong>
             </h1> */}
 
-<h1 className=" py-4 text-gray-100 text-3xl">
-           Welcome to MyWeb3Gift.com
+            <h1 className=" py-4 text-gray-100 text-3xl">
+              Welcome to MyWeb3Gift.com
             </h1>
             <h1 className=" py-4 text-gray-100 text-3xl">
               Surprise your loved ones with a unique digital gift box to <br className='max-sm:hidden' /> discover the magic of blockchain
@@ -52,20 +53,19 @@ const HeroSection = () => {
                 GIVE A GIFT
               </a> */}
 
-<Link to="/gift"> <button className='block   sm:w-auto rounded bg-yellow-500 px-6 py-2 text-sm  text-white shadow hover:bg-yellow-600 focus:outline-none focus:ring active:bg-red-500'>
-GIVE A GIFT
-  </button> </Link>
+              <Link to="/gift"> <button className='block   sm:w-auto rounded bg-yellow-500 px-6 py-2 text-sm  text-white shadow hover:bg-yellow-600 focus:outline-none focus:ring active:bg-red-500'>
+                GIVE A GIFT
+              </button> </Link>
 
-              <button data-tally-open="3jo994" data-tally-layout="modal" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">
+              {/* <button data-tally-open="3jo994" data-tally-layout="modal" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">
                 <a
                   className="block w-full   sm:w-auto rounded px-6 py-2 text-sm  bg-slate-100 text-yellow-500 shadow hover:bg-yellow-600 focus:outline-none focus:ring active:text-red-500 dark:bg-yellow-500 dark:text-white"
                   href="/about"
                 >
                  GET BENEFITS
                 </a>
-
-
-              </button>
+              </button> */}
+              <EmailModal label=" GET BENEFITS" className="block w-full   sm:w-auto rounded px-6 py-2 text-sm  bg-slate-100 text-yellow-500 shadow hover:bg-yellow-600 focus:outline-none focus:ring active:text-red-500 dark:bg-yellow-500 dark:text-white" />
 
 
             </div>

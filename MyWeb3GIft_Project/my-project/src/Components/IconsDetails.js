@@ -3,7 +3,7 @@ import "./Style/IconsDetails.css"
 import { AllOcassions, Chellenge } from '../assets/Images/Compressed';
 import Modal from './Modal';
 
-
+import { EmailModal } from '../sections_landing';
 
 
 const IconsDetails = () => {
@@ -32,15 +32,15 @@ const IconsDetails = () => {
     switch (componentIdentifier) {
       case 'Facebook':
         console.log("1");
-        window.location.href = "https://buy.stripe.com/test_cN27tcaqreAFg7e145";
+        window.location.href = "https://buy.stripe.com/eVa9BQ0ete5c4nefZ0";
         break;
       case 'Instagram':
         console.log("2");
-        window.location.href = "https://buy.stripe.com/test_cN27tcaqreAFg7e145";
+        window.location.href = "https://buy.stripe.com/8wM15k6CR2mu06YbIM";
         break;
       case 'Discord':
         console.log("3");
-        window.location.href = "https://buy.stripe.com/test_cN27tcaqreAFg7e145";
+        window.location.href = "https://buy.stripe.com/aEUaFUaT72mu2f69AF";
         break;
       default:
         break;
@@ -180,10 +180,11 @@ const IconsDetails = () => {
       <p className='text-yel-600 text-5xl  hiden  px-3 max-sm:text-xl sm:text-3xl   text-center'>Value of goods: $50 <br />  </p>
 
       <p className='text-yel-600 text-5xl hiden py-4 px-3 max-sm:text-xl sm:text-3xl   text-center'>All options have the same content, only the arrangement and layout differs. <br />
-        <button data-tally-open="3jo994" data-tally-layout="modal" data-tally-emoji-text="👋" data-tally-emoji-animation="wave" className='bg-yellow-400 hiden shadow-2xl text-yel-600 text-white font max-sm:text-xl sm:text-2xl  bold px-7 my-4 hover:bg-yellow-500  rounded-xl text-2xl py-3'>STAY UPDATED</button>
 
+     <div className='flex flex-row justify-center'>
+     <EmailModal label="STAY UPDATED" className='bg-yellow-400 hiden shadow-2xl text-yel-600 text-white font max-sm:text-xl sm:text-2xl  bold px-7 my-4 hover:bg-yellow-500  rounded-xl text-2xl py-3' />
 
-
+     </div>
       </p>
 
 

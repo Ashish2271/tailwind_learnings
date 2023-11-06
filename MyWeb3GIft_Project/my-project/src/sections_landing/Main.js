@@ -1,5 +1,5 @@
 import React from 'react';
-import {   VideoUSP,  GiftDetails,  TrustSymbols, CountDownTimer,  FaqSection, Footer, HeroSection,    Blog, IconsDetails, WhoForSection, Steps } from './index.js'
+import { VideoUSP, GiftDetails,  EmailModal, TrustSymbols, CountDownTimer, FaqSection, Footer, HeroSection, Blog, IconsDetails, WhoForSection, Steps } from './index.js'
 import Nav01 from '../Components/Nav01.js'
 
 const Main = () => {
@@ -49,7 +49,7 @@ const Main = () => {
 
 
 
-
+<EmailModal></EmailModal>
 
 
 

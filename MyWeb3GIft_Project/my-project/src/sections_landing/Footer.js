@@ -9,7 +9,7 @@ const Footer = () => {
         <div>
 
 
-            <footer className="bg-sky-950 dark:bg-gray-700">
+            <footer className="bg-sky-950 dark:bg-sky-950">
                 <div className="mx-auto w-full max-w-screen-xl">
 
                 <div className=" py-4 px-4 sm:hidden"> <EmailForm />  </div>
@@ -93,13 +93,13 @@ const Footer = () => {
 
 
 
-                    <div className="px-4 py-6 bg-sky-950 dark:bg-gray-700 md:flex md:items-center md:justify-between">
+                    <div className="px-4 py-6 bg-sky-950 dark:bg-sky-950 md:flex md:items-center md:justify-between">
                         <span className="text-sm text-gray-100 dark:text-gray-300 sm:text-center">© 2023 <a href="https://flowbite.com/">MyWeb3Gift™</a>. All Rights Reserved.
                         </span>
                         <div className="flex mt-4 space-x-5 sm:justify-center md:mt-0">
                             <a href="https://www.linkedin.com/company/web3gift" className="text-gray-100 hover:text-gray-900 dark:hover:text-white">
                             <svg className="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 22">
-  <path d="M20.593 0H1.406A1.408 1.408 0 0 0 0 1.407v19.187c0 .779.629 1.406 1.406 1.406h19.187c.778 0 1.407-.627 1.407-1.406V1.407A1.408 1.408 0 0 0 20.593 0zM6.938 19.187H3.374V9.265h3.564v9.922H6.938zm-1.781-11.63a1.783 1.783 0 1 1-.001-3.566 1.783 1.783 0 0 1 .001 3.566zm14.375 11.63h-3.563v-5.235c0-1.253-.447-2.107-1.568-2.107-1.08 0-1.724.726-2.005 1.43-.104.254-.129.606-.129.961v5.951H8.28s.046-9.515 0-10.496h3.563v1.483c.473-.726 1.317-1.768 3.226-1.768 2.357 0 4.126 1.545 4.126 4.86v5.921h-.001z" fill-rule="evenodd"/>
+  <path d="M20.593 0H1.406A1.408 1.408 0 0 0 0 1.407v19.187c0 .779.629 1.406 1.406 1.406h19.187c.778 0 1.407-.627 1.407-1.406V1.407A1.408 1.408 0 0 0 20.593 0zM6.938 19.187H3.374V9.265h3.564v9.922H6.938zm-1.781-11.63a1.783 1.783 0 1 1-.001-3.566 1.783 1.783 0 0 1 .001 3.566zm14.375 11.63h-3.563v-5.235c0-1.253-.447-2.107-1.568-2.107-1.08 0-1.724.726-2.005 1.43-.104.254-.129.606-.129.961v5.951H8.28s.046-9.515 0-10.496h3.563v1.483c.473-.726 1.317-1.768 3.226-1.768 2.357 0 4.126 1.545 4.126 4.86v5.921h-.001z" fillRule="evenodd"/>
 </svg>
 
                                 <span className="sr-only">LinkedIn page</span>

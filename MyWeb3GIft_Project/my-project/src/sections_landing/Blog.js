@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Blog = () => {
   return (
     <>
-      <section className="pt-20 pb-10 w-full bg-gray-50 flex justify-center dark:bg-gray-800 dark:text-white lg:pb-20">
+      <section className="pt-20 pb-10 w-full bg-gray-50 flex justify-center dark:bg-sky-950 dark:text-white lg:pb-20">
         <div className="container">
           <div className="flex flex-wrap -mx-4">
             <div className="w-full px-4">
