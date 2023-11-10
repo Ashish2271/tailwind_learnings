@@ -56,7 +56,7 @@ const VideoUSP = () => {
          <div class="flex flex-col items-start sm:p-4 rounded-t dark:border-gray-600">
            <button
              onClick={closeModal}
-             class="text-gray-400 bg-transparent hover:bg-gray-200 hover-text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover-bg-gray-600 dark:hover-text-white"
+             class="text-gray-400 bg-gray-500 hover:bg-gray-200 hover-text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover-bg-gray-200 dark:hover-text-white"
            >
              <svg
                class="w-3 h-3"
