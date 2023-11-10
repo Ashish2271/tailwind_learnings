@@ -80,7 +80,7 @@ const Modal = ({ onAccept, componentIdentifier }) => {
                   🎁 Perfect presents: Surprise your friends and family with an educational and entertaining gift.
                 </p>
                 <p className="text-base leading-relaxed text-gray-500 dark-text-gray-400">
-                  Please note that you will receive your Crypto Christmas Calendar in End-of-November.
+                Please note that you will receive your Crypto Christmas Calendar by the end of November.
                 </p>
               </div>
 
