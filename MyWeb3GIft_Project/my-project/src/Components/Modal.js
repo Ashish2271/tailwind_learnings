@@ -76,11 +76,11 @@ const Modal = ({ onAccept, componentIdentifier }) => {
               <div className="p-6 space-y-6">
                   <h2 className="font-bold text-black">Why Grab It Now?</h2>
                 <p className="text-base leading-relaxed text-gray-500 dark-text-gray-400">
-                  ✨ Be ahead of the crowd: Secure your unique gift calendar today and be the first to receive it in mid-December. <br />
+                  ✨ Be ahead of the crowd: Secure your unique gift calendar today and be the first to receive it. <br />
                   🎁 Perfect presents: Surprise your friends and family with an educational and entertaining gift.
                 </p>
                 <p className="text-base leading-relaxed text-gray-500 dark-text-gray-400">
-                  Please note that you will receive your Crypto Christmas Calendar in mid-December, right on time to celebrate the holiday season.
+                Please note that you will receive your Crypto Christmas Calendar by the end of November.
                 </p>
               </div>
 
