@@ -16,8 +16,8 @@ import BlogPage1 from './pages/BlogPages/BlogPage1/BlogPage1.js';
 import BlogPage2 from './pages/BlogPages/BlogPage2/BlogPage2.js';
 import BlogPage3 from './pages/BlogPages/BlogPage3/BlogPage3.js';
 import ScrollToTop from './pages/ScrollToTop/ScrollToTop.js';
-
-
+import Imprint from './pages/Imprint.js';
+import PrivacyPolicy from './pages/PrivacyPolicy.js';
 
 import {
   ClerkProvider,
@@ -92,7 +92,8 @@ function ClerkProviderWithRoutes() {
 
           <Route path="/ClaimGift" element={<ClaimGift />} />
 
-
+          <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+          <Route path="/Imprint" element={<Imprint />} />
 
           <Route path="/Blog1" element={<BlogPage1/>} />
           <Route path="/Blog2" element={<BlogPage2/>} />

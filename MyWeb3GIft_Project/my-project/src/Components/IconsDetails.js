@@ -76,8 +76,8 @@ const IconsDetails = () => {
        
             <div className="flex items-center justify-between">
               <p>
-                <span className="text-3xl font-bold text-slate-900">$25</span>
-                <span className="text-sm text-slate-900 line-through">$50</span>
+                <span className="text-3xl font-bold text-slate-900">Free</span>
+                <span className="text-sm text-slate-900 line-through">$25</span>
               </p>
 
               <Modal
@@ -110,8 +110,8 @@ const IconsDetails = () => {
  
             <div className="flex items-center justify-between">
               <p>
-                <span className="text-3xl font-bold text-slate-900">$25</span>
-                <span className="text-sm text-slate-900 line-through">$50</span>
+                <span className="text-3xl font-bold text-slate-900">Free</span>
+                <span className="text-sm text-slate-900 line-through">$25</span>
               </p>
      
               <Modal
@@ -161,8 +161,8 @@ const IconsDetails = () => {
             </div> */}
             <div className="flex items-center justify-between">
               <p>
-                <span className="text-3xl font-bold text-slate-900">$25</span>
-                <span className="text-sm text-slate-900 line-through">$50</span>
+                <span className="text-3xl font-bold text-slate-900">Free</span>
+                <span className="text-sm text-slate-900 line-through">$25</span>
               </p>
         
               <Modal
@@ -177,7 +177,7 @@ const IconsDetails = () => {
         </div>
 
       </div>
-      <p className='text-yel-600 text-5xl  hiden  px-3 max-sm:text-xl sm:text-3xl   text-center'>Value of goods: $50 <br />  </p>
+      <p className='text-yel-600 text-5xl  hiden  px-3 max-sm:text-xl sm:text-3xl   text-center'>Limited time offer for early users grab this deal for free now <br />  </p>
 
       <p className='text-yel-600 text-5xl hiden py-4 px-3 max-sm:text-xl sm:text-3xl   text-center'>All options have the same content, only the arrangement and layout differs. <br />
 
