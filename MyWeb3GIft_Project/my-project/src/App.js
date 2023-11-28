@@ -38,6 +38,9 @@ import {
   UserButton,
 } from "@clerk/clerk-react";
 import { BrowserRouter, Route, Routes, useNavigate} from "react-router-dom";
+import { useEffect } from 'react';
+import { getAuth } from 'firebase/auth';
+import RegistrationForm from './sections_landing/Registration.js';
 // import ClaimGift from "./pages/ClaimGift.js";
  
 if (!process.env.REACT_APP_CLERK_PUBLISHABLE_KEY) {
@@ -61,6 +64,12 @@ const clerkPubKey = process.env.REACT_APP_CLERK_PUBLISHABLE_KEY;
 // }
  
 function ProtectedPage() {
+  useEffect(() => {
+    const auth = getAuth();
+    // Access Firebase auth features with `auth.currentUser`
+    const user = auth.currentUser;
+    console.log("Current user:", user);
+  }, []);
   return (
     <>
       <h1>Protected page</h1>
@@ -105,7 +114,7 @@ function ClerkProviderWithRoutes() {
           <Route path="/Gift" element={<Gift />} />
 
           <Route path="/ClaimGift" element={<ClaimGift />} />
-
+          <Route path="/register" element={<RegistrationForm />} />
           <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
           <Route path="/Imprint" element={<Imprint />} />
 

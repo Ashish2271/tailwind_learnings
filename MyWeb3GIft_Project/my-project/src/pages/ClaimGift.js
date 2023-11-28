@@ -25,14 +25,16 @@ const ClaimGift = () => {
       if (isSignedIn) {
         try {
 
-          const response = await fetch(`https://myweb3gift-bd98e-default-rtdb.firebaseio.com/submitemails/${user.id}.json`);
+          const response = await fetch(`https://myweb3gift-bd98e-default-rtdb.firebaseio.com/users/${user.id}.json`);
+          console.log(response)
+          // const response = await fetch(`https://myweb3gift-bd98e-default-rtdb.firebaseio.com/submitemails/-NkJIn1tg7RhVEh-7-IF.json`);
           
-
+          console.log(response)
           if (response.ok) {
             const data = await response.json();
             console.log('Fetch URL:', `https://myweb3gift-bd98e-default-rtdb.firebaseio.com/submitemails/${user.id}.json`);
-
-
+          console.log('data',data)
+         console.log(user.id)
     
             if (data && data.approve !== undefined) {
               setIsApproved(data.approve);
