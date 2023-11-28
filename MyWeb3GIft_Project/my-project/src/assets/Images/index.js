@@ -13,7 +13,8 @@ import Gift from "./gift.png"
 import GiftBox from "./Giftbox (HD).png"
 import Thumbnail from "./Thumbnail.png"
 import Myweb3gift from "./MyWeb3Gift.png"
+import QR_CODE from "./QR_CODE.png"
+import Manisha from "./Manisha.jpg"
 
 
-
-export { Surprise,Myweb3gift,  Gift ,  Connection, GiftBox, Thumbnail, Crpto1,  Crpto2 ,  Crpto3 , Crpto4 ,   Picture1, Picture2, Picture3, Picture4 }
+export { Surprise,Myweb3gift, Manisha, Gift ,   QR_CODE,  Connection, GiftBox, Thumbnail, Crpto1,  Crpto2 ,  Crpto3 , Crpto4 ,   Picture1, Picture2, Picture3, Picture4 }

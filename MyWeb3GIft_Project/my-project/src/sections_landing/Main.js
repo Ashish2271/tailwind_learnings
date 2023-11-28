@@ -141,9 +141,6 @@ const Main = () => {
 
 
 
-
-
-
 {/* <section>
 <ValueProposition/>
 </section> */}

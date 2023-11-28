@@ -27,6 +27,7 @@ import MyGifts from './pages/MyGifts.js';
 import LoginForm from './pages/LoginForm.js';
 import SignUpForm from './pages/SignUp.js';
 import CalendarGiftForm from './pages/CalendarGiftForm.js';
+import CreateGiftCard from './pages/CreateGiftCard.js';
 
 import {
   ClerkProvider,
@@ -131,6 +132,7 @@ function ClerkProviderWithRoutes() {
           <Route path="/CalendarGiftForm" element={<CalendarGiftForm />} />
 
           <Route path="TransferedGifts" element={<TransferedGifts/>} />
+          <Route path="/CreateGiftCard" element={<CreateGiftCard />} />
 
 
 

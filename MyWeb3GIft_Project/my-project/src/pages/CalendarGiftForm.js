@@ -23,6 +23,10 @@ const CalendarGiftForm = () => {
                     <img class="max-h-80 min-w-[95vw] overflow-hidden object-cover " src="https://img.freepik.com/free-photo/top-view-calendar-concept-bags-arrangement_23-2149758824.jpg?w=1380&t=st=1701160272~exp=1701160872~hmac=2485584478953fde0515ab1ba1066fe132e608ad41f1ec6a1787070e8e480480" width="" alt="" />
                 </div>
 
+
+
+
+
                 <div class="grid grid-cols-2 max-md:grid-cols-1 max-md:justify-items-center  gap-6">
                     <div class="flex md:min-w-[500px] flex-col">
                         <label class="mx-12 my-2 text-lg font-bold text-gray-500">Enter Your Name</label>

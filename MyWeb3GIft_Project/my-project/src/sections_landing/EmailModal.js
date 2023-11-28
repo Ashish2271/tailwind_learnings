@@ -35,8 +35,9 @@ const EmailModal = ({label, className}) => {
 
 
     // Get USER dATA 
+    // const [userDetails, setuserDetails] = useState(
 
-    const [userDetails, setuserDetails] = useState(
+    const [ setuserDetails] = useState(
 
         {
             name: "",
@@ -124,6 +125,8 @@ const EmailModal = ({label, className}) => {
     
           console.log("User details stored in Firebase successfully!");
     
+          setIsModalOpen(false);
+            setIsThanksModalOpen(true);
           // Close the modal
           closeModal();
         } catch (error) {
@@ -141,7 +144,6 @@ const EmailModal = ({label, className}) => {
         <div className='flex flex-row '>
 
             <button className={`${defaultClasses} ${className}`} onClick={OpenModal} >  {label}   </button>
-
             {isModalOpen && (
                 <div className='fixed top-0 left-0 right-0 z-50 w-full p-4 overflow-x-hidden backdrop-blur-xl bg-white/30 overflow-y-auto md:inset-0 h-[calc(100%-1rem)] min-h-full flex justify-center items-center'>
 
