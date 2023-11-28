@@ -3,21 +3,38 @@ import { useState } from 'react'
 import { ChristmasCalendar } from '../assets/icons';
 import { useUser } from "@clerk/clerk-react";
 import { getDatabase, ref, set } from "firebase/database";
+import { Navigate, useNavigate } from 'react-router-dom';
+import { useApproval } from '../states/ApprovalContext';
 
 const EmailModal = ({label, className}) => {
     const { isSignedIn, user } = useUser();
     const [isModalOpen, setIsModalOpen] = useState(false)
-
+    const { isApproved} = useApproval();
+    const navigate = useNavigate();
     const OpenModal = () => {
         setIsModalOpen(true);
         // console.log("Modal open");
     }
 
-
-    const closeModal = () => {
-        setIsModalOpen(false);
-        // console.log("Modal not open");
-    }
+    const handleBuyButtonClick = () => {
+        if (isSignedIn) {
+          if (isApproved === undefined) {
+            // Open the modal
+            OpenModal();
+          } else if (isApproved === false) {
+            // Redirect to /claimgifts
+            navigate('/ClaimGift');
+          } else {
+            // Redirect to /gifts
+            navigate('/CalendarGiftForm');
+          }
+        } else {
+          // Redirect to sign-up if not signed in
+          navigate('/sign-up/*');
+        }
+      };
+      
+    
 
     const [isThanksModalOpen, setIsThanksModalOpen] = useState(false)
 
@@ -29,6 +46,7 @@ const EmailModal = ({label, className}) => {
 
     const closeThanksModal = () => {
         setIsThanksModalOpen(false);
+        navigate('/');
         // console.log("Thanks Modal not open");
     }
 
@@ -94,7 +112,7 @@ const EmailModal = ({label, className}) => {
     //         alert("Please Write your proper email");
     //     }
     // };
-
+    
     const postData = async (e) => {
         e.preventDefault();
     
@@ -128,12 +146,20 @@ const EmailModal = ({label, className}) => {
           setIsModalOpen(false);
             setIsThanksModalOpen(true);
           // Close the modal
+          setIsModalOpen(false);
+          setIsThanksModalOpen(true);
           closeModal();
+          
+      
         } catch (error) {
           console.error("Error storing user details:", error.message);
         }
       };
-
+      const closeModal = () => {
+        setIsModalOpen(false);
+        
+        // console.log("Modal not open");
+    }
 
 
     const defaultClasses = '';
@@ -143,7 +169,8 @@ const EmailModal = ({label, className}) => {
     return (
         <div className='flex flex-row '>
 
-            <button className={`${defaultClasses} ${className}`} onClick={OpenModal} >  {label}   </button>
+            <button className={`${defaultClasses} ${className}`} onClick={handleBuyButtonClick} >  {label}   </button>
+
             {isModalOpen && (
                 <div className='fixed top-0 left-0 right-0 z-50 w-full p-4 overflow-x-hidden backdrop-blur-xl bg-white/30 overflow-y-auto md:inset-0 h-[calc(100%-1rem)] min-h-full flex justify-center items-center'>
 

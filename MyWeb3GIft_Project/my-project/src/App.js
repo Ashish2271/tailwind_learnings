@@ -27,8 +27,8 @@ import MyGifts from './pages/MyGifts.js';
 import LoginForm from './pages/LoginForm.js';
 import SignUpForm from './pages/SignUp.js';
 import CalendarGiftForm from './pages/CalendarGiftForm.js';
-import CreateGiftCard from './pages/CreateGiftCard.js';
-
+import { ApprovalProvider } from './states/ApprovalContext.js'; // Adjust the path
+// import CreateGiftCard from './pages/CreateGiftCard.js';
 import {
   ClerkProvider,
   SignedIn,
@@ -42,6 +42,7 @@ import { BrowserRouter, Route, Routes, useNavigate} from "react-router-dom";
 import { useEffect } from 'react';
 import { getAuth } from 'firebase/auth';
 import RegistrationForm from './sections_landing/Registration.js';
+import CreateGiftCard from './pages/CreateGiftCard.js';
 // import ClaimGift from "./pages/ClaimGift.js";
  
 if (!process.env.REACT_APP_CLERK_PUBLISHABLE_KEY) {
@@ -181,13 +182,13 @@ age: 21,
 
  
   return (
-    <BrowserRouter>
-       <ScrollToTop />
+     <BrowserRouter>
+    <ScrollToTop />
+    <ApprovalProvider>
       <ClerkProviderWithRoutes />
-
-{/* <button className='bg-blue-400 rounded-r-xl' onClick={putData}>Put data</button> */}
-
-    </BrowserRouter>
+    </ApprovalProvider>
+    {/* <button className='bg-blue-400 rounded-r-xl' onClick={putData}>Put data</button> */}
+  </BrowserRouter>
   );
 }
  
