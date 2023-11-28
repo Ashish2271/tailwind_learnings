@@ -24,6 +24,9 @@ import Imprint from './pages/Imprint.js';
 import PrivacyPolicy from './pages/PrivacyPolicy.js';
 import TransferedGifts from './pages/TransferedGifts.js';
 import MyGifts from './pages/MyGifts.js';
+import LoginForm from './pages/LoginForm.js';
+import SignUpForm from './pages/SignUp.js';
+import CalendarGiftForm from './pages/CalendarGiftForm.js';
 
 import {
   ClerkProvider,
@@ -91,11 +94,6 @@ function ClerkProviderWithRoutes() {
     >
       <Routes>
 
-
-   
-
-
-
       <Route path="/" element={<Main />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
@@ -118,6 +116,11 @@ function ClerkProviderWithRoutes() {
           <Route path="*" element={<ErrorPage />} />
 
           <Route path="/MyGifts" element={<MyGifts />} />
+
+          <Route path="/LoginForm" element={<LoginForm />} />
+          <Route path="/SignUpForm" element={<SignUpForm />} />
+          <Route path="/CalendarGiftForm" element={<CalendarGiftForm />} />
+
           <Route path="TransferedGifts" element={<TransferedGifts/>} />
 
 
@@ -163,7 +166,6 @@ name: "Piyush Gupta",
 age: 21,
 });
 };
-
 
 
  
