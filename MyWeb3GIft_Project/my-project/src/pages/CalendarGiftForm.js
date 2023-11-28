@@ -1,10 +1,24 @@
 // CalendarGiftForm.js
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Nav01 from '../Components/Nav01';
 import { Footer } from '../sections_landing';
+import { useAuth, useUser } from '@clerk/clerk-react';
+import { useApproval } from '../states/ApprovalContext';
 
 const CalendarGiftForm = () => {
+
+ 
+    
+  
+    
+    const { isApproved } = useApproval();
+  
+    
+    if(isApproved===false){
+        return "loading"
+    }
+    
     return (
 
 <>
