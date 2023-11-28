@@ -1,11 +1,11 @@
 import React from 'react'
 import { useState } from 'react'
 import { ChristmasCalendar } from '../assets/icons';
-
-
+import { useUser } from "@clerk/clerk-react";
+import { getDatabase, ref, set } from "firebase/database";
 
 const EmailModal = ({label, className}) => {
-
+    const { isSignedIn, user } = useUser();
     const [isModalOpen, setIsModalOpen] = useState(false)
 
     const OpenModal = () => {
@@ -36,7 +36,7 @@ const EmailModal = ({label, className}) => {
 
     // Get USER dATA 
 
-    const [user, setUser] = useState(
+    const [userDetails, setuserDetails] = useState(
 
         {
             name: "",
@@ -50,51 +50,86 @@ const EmailModal = ({label, className}) => {
 
         name = event.target.name;
         value = event.target.value;
-        setUser({ ...user, [name]: value });
+        setuserDetails({ ...user, [name]: value });
     };
+
+    // const postData = async (e) => {
+
+    //     e.preventDefault();
+
+    //     const { name, email } = user;
+
+    //     if (name && email) {
+
+    //         const res = await fetch("https://myweb3gift-bd98e-default-rtdb.firebaseio.com/submitemails.json",
+
+    //             {
+    //                 method: "POST",
+    //                 headers: {
+    //                     "Content-Type": "application/json"
+    //                 },
+
+    //                 body: JSON.stringify({
+    //                     name,
+    //                     email,
+    //                     approve: false  // Adding the 'approve' field with the default value of false
+
+    //                 })
+    //             }
+    //         );
+    //         if (res) {
+    //             setUser(
+    //                 {
+    //                     name: "",
+    //                     email: "",
+
+    //                 });
+    //             setIsModalOpen(false);
+    //             setIsThanksModalOpen(true);
+    //             // alert("We will contact you, Thankyou 🙂");
+    //         }
+    //     } else {
+
+    //         alert("Please Write your proper email");
+    //     }
+    // };
 
     const postData = async (e) => {
-
         e.preventDefault();
-
-        const { name, email } = user;
-
-        if (name && email) {
-
-            const res = await fetch("https://myweb3gift-bd98e-default-rtdb.firebaseio.com/submitemails.json",
-
-                {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json"
-                    },
-
-                    body: JSON.stringify({
-                        name,
-                        email,
-                        approve: false  // Adding the 'approve' field with the default value of false
-
-                    })
-                }
-            );
-            if (res) {
-                setUser(
-                    {
-                        name: "",
-                        email: "",
-
-                    });
-                setIsModalOpen(false);
-                setIsThanksModalOpen(true);
-                // alert("We will contact you, Thankyou 🙂");
-            }
-        } else {
-
-            alert("Please Write your proper email");
+    
+        try {
+          // Ensure the user is authenticated with Clerk
+          if (!isSignedIn) {
+            console.error("User not authenticated with Clerk.");
+            return;
+          }
+    
+          // Store additional details in Firebase Realtime Database
+          const db = getDatabase();
+          const userRef = ref(db, `users/${user.id}`);
+    
+          // Customize this structure based on your form fields
+          const userData = {
+            email: user.primaryEmailAddress.emailAddress,
+            name: name || `${user.firstName} ${user.lastName}`,
+            approve : false
+            // Add other form fields as needed
+          };
+    
+          await set(userRef, userData);
+    
+          // Reset form fields after successful registration
+        //   setName("");
+        //   setEmail("");
+    
+          console.log("User details stored in Firebase successfully!");
+    
+          // Close the modal
+          closeModal();
+        } catch (error) {
+          console.error("Error storing user details:", error.message);
         }
-    };
-
-
+      };
 
 
 
