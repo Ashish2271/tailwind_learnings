@@ -27,7 +27,7 @@ import MyGifts from './pages/MyGifts.js';
 import LoginForm from './pages/LoginForm.js';
 import SignUpForm from './pages/SignUp.js';
 import CalendarGiftForm from './pages/CalendarGiftForm.js';
-
+import { ApprovalProvider } from './states/ApprovalContext.js'; // Adjust the path
 import {
   ClerkProvider,
   SignedIn,
@@ -179,13 +179,13 @@ age: 21,
 
  
   return (
-    <BrowserRouter>
-       <ScrollToTop />
+     <BrowserRouter>
+    <ScrollToTop />
+    <ApprovalProvider>
       <ClerkProviderWithRoutes />
-
-{/* <button className='bg-blue-400 rounded-r-xl' onClick={putData}>Put data</button> */}
-
-    </BrowserRouter>
+    </ApprovalProvider>
+    {/* <button className='bg-blue-400 rounded-r-xl' onClick={putData}>Put data</button> */}
+  </BrowserRouter>
   );
 }
  
