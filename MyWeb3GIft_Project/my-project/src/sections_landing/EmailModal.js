@@ -72,6 +72,7 @@ const EmailModal = ({label, className}) => {
                     body: JSON.stringify({
                         name,
                         email,
+                        approve: false  // Adding the 'approve' field with the default value of false
 
                     })
                 }

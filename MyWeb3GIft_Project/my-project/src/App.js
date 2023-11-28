@@ -1,6 +1,10 @@
 import ReactGA from 'react-ga';
 import Main from "./sections_landing/Main.js";
 
+import {getDatabase, ref, set} from "firebase/database"
+import { app } from "./firebase.js"
+
+
 import About from "./pages/About.js";
 import Contact from "./pages/Contact.js";
 // import Layout from "./pages/Layout.js";
@@ -18,6 +22,8 @@ import BlogPage3 from './pages/BlogPages/BlogPage3/BlogPage3.js';
 import ScrollToTop from './pages/ScrollToTop/ScrollToTop.js';
 import Imprint from './pages/Imprint.js';
 import PrivacyPolicy from './pages/PrivacyPolicy.js';
+import TransferedGifts from './pages/TransferedGifts.js';
+import MyGifts from './pages/MyGifts.js';
 
 import {
   ClerkProvider,
@@ -34,6 +40,11 @@ import { BrowserRouter, Route, Routes, useNavigate} from "react-router-dom";
 if (!process.env.REACT_APP_CLERK_PUBLISHABLE_KEY) {
   throw new Error("Missing Publishable Key")
 }
+
+
+
+
+const db= getDatabase(app);
  
 const clerkPubKey = process.env.REACT_APP_CLERK_PUBLISHABLE_KEY;
  
@@ -51,6 +62,7 @@ function ProtectedPage() {
     <>
       <h1>Protected page</h1>
       <UserButton />
+      <ClaimGift />
     </>
   );
 }
@@ -66,6 +78,10 @@ function ClerkProviderWithRoutes() {
 
   const TRACKING_ID = "G-G6P69YFVWZ"; // OUR_TRACKING_ID
   ReactGA.initialize(TRACKING_ID);
+
+
+
+
 
  
   return (
@@ -101,7 +117,8 @@ function ClerkProviderWithRoutes() {
 
           <Route path="*" element={<ErrorPage />} />
 
-
+          <Route path="/MyGifts" element={<MyGifts />} />
+          <Route path="TransferedGifts" element={<TransferedGifts/>} />
 
 
 
@@ -138,11 +155,25 @@ function ClerkProviderWithRoutes() {
 
 function App() {
 
+const putData = () => {
+set (ref(db, 'user/piyush'),
+{
+id: 1,
+name: "Piyush Gupta",
+age: 21,
+});
+};
+
+
+
  
   return (
     <BrowserRouter>
        <ScrollToTop />
       <ClerkProviderWithRoutes />
+
+{/* <button className='bg-blue-400 rounded-r-xl' onClick={putData}>Put data</button> */}
+
     </BrowserRouter>
   );
 }

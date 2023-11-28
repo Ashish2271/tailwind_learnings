@@ -3,7 +3,7 @@ import EmailModal from './EmailModal';
 
 const CountDownTimer = () => {
   // Define the target date and time
-  const targetDate = new Date('2023-12-01T10:00:00').getTime();
+  const targetDate = new Date('2023-12-15T10:00:00').getTime();
 
   // Initialize state for the countdown values
   const [days, setDays] = useState(0);
@@ -47,7 +47,7 @@ const CountDownTimer = () => {
                 Launch Date
               </h6>
               <h3 className="text-2xl font-bold text-white font-heading md:text-4xl">
-                December 1
+                December 15
               </h3>
               <h3 className="text-lg font-bold leading-tight text-white font-heading md:text-xl">
                 @ 10:00 AM

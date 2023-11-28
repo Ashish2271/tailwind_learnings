@@ -2,13 +2,28 @@ import React from 'react';
 import { VideoUSP, GiftDetails,  EmailModal, TrustSymbols, CountDownTimer, FaqSection, Footer, HeroSection, Blog, IconsDetails, WhoForSection, Steps } from './index.js'
 import Nav01 from '../Components/Nav01.js'
 
+
+
+
+
+
+
+
 const Main = () => {
+
+
+
+    
+    
+
 
 
   return (
     <main  >
 
     <Nav01/>
+
+
 
 <section>
 < HeroSection />
