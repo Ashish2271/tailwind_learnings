@@ -44,6 +44,7 @@ import { getAuth } from 'firebase/auth';
 import RegistrationForm from './sections_landing/Registration.js';
 import CreateGiftCard from './pages/CreateGiftCard.js';
 // import ClaimGift from "./pages/ClaimGift.js";
+import YourGifts from './pages/yourGifts.js';
 
 
 import CryptoAdventCalendar from './pages/CryptoAdventCalendar.js';
@@ -141,11 +142,9 @@ function ClerkProviderWithRoutes() {
 
           <Route path="TransferedGifts" element={<TransferedGifts/>} />
           <Route path="/CreateGiftCard" element={<CreateGiftCard />} />
-          <Route path="/CryptoSurpriseGiftBox" element={<CryptoSurpriseGiftBox />} />
-          <Route path="/CryptoChallenge" element={<CryptoChallenge />} />
-          <Route path="/CryptoAdventCalendar" element={<CryptoAdventCalendar />} />
 
-          <Route path="/ReceiverGiftCard" element={<ReceiverGiftCard/>} />
+
+
 
         {/* <Route path="/" element={<PublicPage />} /> */}
         <Route

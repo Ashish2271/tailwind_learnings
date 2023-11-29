@@ -3,9 +3,44 @@ import html2canvas from 'html2canvas';
 import Nav01 from '../Components/Nav01';
 import { Footer } from '../sections_landing';
 import { QR_CODE } from '../assets/Images';
+import { getFirestore, collection, addDoc, doc } from "firebase/firestore";
+import { useUser } from '@clerk/clerk-react';
 
 const CreateGiftCard = () => {
+    const {user} = useUser()
+    
+    const senderUserId = user ? user.id : null
 
+    const addGift = async (senderUserId, giftData) => {
+        try {
+          const db = getFirestore();
+      
+          // Reference to the user's gifts collection
+          const userGiftsRef = collection(db, `users/${senderUserId}/gifts`);
+      
+          // Add a new document to the gifts collection
+          const giftDocRef = await addDoc(userGiftsRef, giftData);
+      
+          console.log("Gift added with ID:", giftDocRef.id);
+        } catch (error) {
+          console.error("Error adding gift:", error);
+        }
+      };
+      
+      // Example usage
+    ; // Replace with the actual sender's user ID
+      
+      const giftData = {
+        senderName: "Sender's Name",
+        senderEmail: "ashishpandey46209@gmail.com",
+        receiverName: "Receiver's Name",
+        receiverEmail: "ashispandey138c@gmail.com",
+        greeting: "Short Greeting",
+        date: "2023-12-01", // Replace with the actual date
+      };
+      
+      // Call the function to add the gift to the database
+    //   addGift(senderUserId, giftData);
 
     const [selectedImage, setSelectedImage] = useState(
         'https://img.freepik.com/free-photo/portrait-beautiful-teen-dark-haired-woman_155003-8196.jpg?w=900&t=st=1701185941~exp=1701186541~hmac=140663c065997c6f2150e2f9957ead5b435db8489b2b733453ca4f288a443b3b' // Replace with the URL of your dummy image
@@ -165,6 +200,9 @@ const CreateGiftCard = () => {
           document.body.removeChild(downloadLink);
         });
       };
+      const handlesave =()=>{
+        addGift(senderUserId, giftData);
+      }
       
       
 
@@ -217,7 +255,7 @@ const CreateGiftCard = () => {
                             <div className=" flex flex-row max-w-[35vw] justify-between">
                                 <button onClick={handleDownload} className="mx-auto my-11 items-center rounded-3xl bg-yellow-300 px-9 py-2 text-xl font-bold text-white hover:bg-yellow-400 focus:ring-2">Print</button>
 
-                                <button className="mx-auto my-11 items-center rounded-3xl bg-yellow-300 px-9 py-2 text-xl font-bold text-white hover:bg-yellow-400 focus:ring-2">Save</button>
+                                <button className="mx-auto my-11 items-center rounded-3xl bg-yellow-300 px-9 py-2 text-xl font-bold text-white hover:bg-yellow-400 focus:ring-2" onClick={handlesave}>Save</button>
 
                                 <button className="mx-auto my-11 items-center rounded-3xl bg-yellow-300 px-9 py-2 text-xl font-bold text-white hover:bg-yellow-400 focus:ring-2">Send Email</button>
                             </div>
