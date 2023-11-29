@@ -142,6 +142,11 @@ function ClerkProviderWithRoutes() {
 
           <Route path="TransferedGifts" element={<TransferedGifts/>} />
           <Route path="/CreateGiftCard" element={<CreateGiftCard />} />
+          <Route path="/CryptoSurpriseGiftBox" element={<CryptoSurpriseGiftBox />} />
+          <Route path="/CryptoChallenge" element={<CryptoChallenge />} />
+          <Route path="/CryptoAdventCalendar" element={<CryptoAdventCalendar />} />
+
+          <Route path="/ReceiverGiftCard" element={<ReceiverGiftCard/>} />
 
 
 
