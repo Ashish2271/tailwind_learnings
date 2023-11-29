@@ -44,6 +44,13 @@ import { getAuth } from 'firebase/auth';
 import RegistrationForm from './sections_landing/Registration.js';
 import CreateGiftCard from './pages/CreateGiftCard.js';
 // import ClaimGift from "./pages/ClaimGift.js";
+
+
+import CryptoAdventCalendar from './pages/CryptoAdventCalendar.js';
+import CryptoChallenge from './pages/CryptoChallenge.js';
+import CryptoSurpriseGiftBox from './pages/CryptoSurpriseGiftBox.js';
+import ReceiverGiftCard from './pages/ReceiverGiftCard.js';
+
  
 if (!process.env.REACT_APP_CLERK_PUBLISHABLE_KEY) {
   throw new Error("Missing Publishable Key")
@@ -134,9 +141,11 @@ function ClerkProviderWithRoutes() {
 
           <Route path="TransferedGifts" element={<TransferedGifts/>} />
           <Route path="/CreateGiftCard" element={<CreateGiftCard />} />
+          <Route path="/CryptoSurpriseGiftBox" element={<CryptoSurpriseGiftBox />} />
+          <Route path="/CryptoChallenge" element={<CryptoChallenge />} />
+          <Route path="/CryptoAdventCalendar" element={<CryptoAdventCalendar />} />
 
-
-
+          <Route path="/ReceiverGiftCard" element={<ReceiverGiftCard/>} />
 
         {/* <Route path="/" element={<PublicPage />} /> */}
         <Route

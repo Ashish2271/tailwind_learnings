@@ -30,6 +30,7 @@ const Main = () => {
  
   //   signInWithClerk();
   // }, []);
+  
   const { isLoaded  } = useAuth();
   const {  isSignedIn, user } = useUser();
   const { isApproved, setApproval } = useApproval();
