@@ -3,12 +3,13 @@ import { Picture1, Picture2, Picture3, Picture4 } from "../assets/Images";
 import "./Styles/Hero.css";
 import { Link } from 'react-router-dom';
 import EmailModal from './EmailModal';
+import { useApproval } from '../states/ApprovalContext';
 
 const images = [Picture1, Picture2, Picture3, Picture4];
 
 const HeroSection = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
+  const { isApproved } = useApproval();
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) =>
@@ -18,6 +19,7 @@ const HeroSection = () => {
 
     return () => clearInterval(interval);
   }, []);
+  
 
   return (
     <div className="relative   ">
@@ -65,7 +67,26 @@ const HeroSection = () => {
                  GET BENEFITS
                 </a>
               </button> */}
-              <EmailModal label=" GET BENEFITS" className="block w-full   sm:w-auto rounded px-6 py-2 text-sm  bg-slate-100 text-yellow-500 shadow hover:bg-yellow-600 focus:outline-none focus:ring active:text-red-500 dark:bg-yellow-500 dark:text-white" />
+
+              {/* {isApproved?("you are on waitlist"):(<EmailModal label=" GET BENEFITS" className="block w-full   sm:w-auto rounded px-6 py-2 text-sm  bg-slate-100 text-yellow-500 shadow hover:bg-yellow-600 focus:outline-none focus:ring active:text-red-500 dark:bg-yellow-500 dark:text-white" /> */}
+
+               {/* <EmailModal label=" GET BENEFITS" className="block w-full   sm:w-auto rounded px-6 py-2 text-sm  bg-slate-100 text-yellow-500 shadow hover:bg-yellow-600 focus:outline-none focus:ring active:text-red-500 dark:bg-yellow-500 dark:text-white" /> */}
+               {typeof isApproved === "undefined" ? (
+  // Show this if the approval status is undefined
+  <EmailModal label="GET BENEFITS" className="block w-full sm:w-auto rounded px-6 py-2 text-sm bg-slate-100 text-yellow-500 shadow hover:bg-yellow-600 focus:outline-none focus:ring active:text-red-500 dark:bg-yellow-500 dark:text-white" />
+) : isApproved ? (
+  // Show this if the user is approved
+  // <YourApprovedComponent /> 
+  // {/* Replace with your actual component or button */}
+  <Link to="/ClaimGift"> <button className='block   sm:w-auto rounded bg-yellow-500 px-6 py-2 text-sm  text-white shadow hover:bg-yellow-600 focus:outline-none focus:ring active:bg-red-500'>
+                APPROVED
+              </button> </Link>
+) : (
+  // Show this if the user is still on the waitlist
+  <div>  <Link to="/ClaimGift"> <button className='block   sm:w-auto rounded bg-yellow-500 px-6 py-2 text-sm  text-white shadow hover:bg-yellow-600 focus:outline-none focus:ring active:bg-red-500'>
+  WAITLIST
+</button> </Link></div>
+)}
 
 
             </div>

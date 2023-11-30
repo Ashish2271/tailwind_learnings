@@ -46,7 +46,7 @@ const VideoUSP = () => {
        
         type="button"
       >
-       <img src={Myweb3gift} className='rounded-3xl  shadow-xl ' alt="Web3 Gift Video Intro Thumbnail" />
+       <img src={Myweb3gift} className='rounded-3xl hover:scale-105  shadow-xl ' alt="Web3 Gift Video Intro Thumbnail" />
       </button>
 
 

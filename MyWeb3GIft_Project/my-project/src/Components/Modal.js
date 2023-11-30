@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
+import { useApproval } from '../states/ApprovalContext';
+import { useNavigate } from 'react-router-dom';
 
 const Modal = ({ onAccept, componentIdentifier }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-
+  const { isApproved } = useApproval();
+  const navigate = useNavigate()
   const openModal = () => {
     setIsModalOpen(true);
   };
@@ -16,11 +19,24 @@ const Modal = ({ onAccept, componentIdentifier }) => {
       onAccept(componentIdentifier); // Pass the component identifier as an argument
     }
   };
+  console.log('wow',isApproved)
+  const handleBuyButtonClick = () => {
+    if (isApproved === undefined) {
+      // Open the modal
+      openModal();
+    } else if (isApproved === false) {
+      // Redirect to /claimgifts
+      navigate('/claimgifts');
+    } else {
+      // Redirect to /gifts
+      navigate('/gifts');
+    }
+  };
 
   return (
     <div>
       <button
-        onClick={openModal}
+       onClick={handleBuyButtonClick}
         className="flex items-center rounded-md bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300"
         type="button"
       >

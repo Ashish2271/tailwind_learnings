@@ -1,23 +1,40 @@
 import React from 'react'
 import { useState } from 'react'
 import { ChristmasCalendar } from '../assets/icons';
-
-
+import { useUser } from "@clerk/clerk-react";
+import { getDatabase, ref, set } from "firebase/database";
+import { Navigate, useNavigate } from 'react-router-dom';
+import { useApproval } from '../states/ApprovalContext';
 
 const EmailModal = ({label, className}) => {
-
+    const { isSignedIn, user } = useUser();
     const [isModalOpen, setIsModalOpen] = useState(false)
-
+    const { isApproved} = useApproval();
+    const navigate = useNavigate();
     const OpenModal = () => {
         setIsModalOpen(true);
         // console.log("Modal open");
     }
 
-
-    const closeModal = () => {
-        setIsModalOpen(false);
-        // console.log("Modal not open");
-    }
+    const handleBuyButtonClick = () => {
+        if (isSignedIn) {
+          if (isApproved === undefined) {
+            // Open the modal
+            OpenModal();
+          } else if (isApproved === false) {
+            // Redirect to /claimgifts
+            navigate('/ClaimGift');
+          } else {
+            // Redirect to /gifts
+            navigate('/CalendarGiftForm');
+          }
+        } else {
+          // Redirect to sign-up if not signed in
+          navigate('/sign-up/*');
+        }
+      };
+      
+    
 
     const [isThanksModalOpen, setIsThanksModalOpen] = useState(false)
 
@@ -29,14 +46,16 @@ const EmailModal = ({label, className}) => {
 
     const closeThanksModal = () => {
         setIsThanksModalOpen(false);
+        navigate('/');
         // console.log("Thanks Modal not open");
     }
 
 
 
     // Get USER dATA 
+    // const [userDetails, setuserDetails] = useState(
 
-    const [user, setUser] = useState(
+    const [ setuserDetails] = useState(
 
         {
             name: "",
@@ -50,51 +69,97 @@ const EmailModal = ({label, className}) => {
 
         name = event.target.name;
         value = event.target.value;
-        setUser({ ...user, [name]: value });
+        setuserDetails({ ...user, [name]: value });
     };
 
+    // const postData = async (e) => {
+
+    //     e.preventDefault();
+
+    //     const { name, email } = user;
+
+    //     if (name && email) {
+
+    //         const res = await fetch("https://myweb3gift-bd98e-default-rtdb.firebaseio.com/submitemails.json",
+
+    //             {
+    //                 method: "POST",
+    //                 headers: {
+    //                     "Content-Type": "application/json"
+    //                 },
+
+    //                 body: JSON.stringify({
+    //                     name,
+    //                     email,
+    //                     approve: false  // Adding the 'approve' field with the default value of false
+
+    //                 })
+    //             }
+    //         );
+    //         if (res) {
+    //             setUser(
+    //                 {
+    //                     name: "",
+    //                     email: "",
+
+    //                 });
+    //             setIsModalOpen(false);
+    //             setIsThanksModalOpen(true);
+    //             // alert("We will contact you, Thankyou 🙂");
+    //         }
+    //     } else {
+
+    //         alert("Please Write your proper email");
+    //     }
+    // };
+    
     const postData = async (e) => {
-
         e.preventDefault();
-
-        const { name, email } = user;
-
-        if (name && email) {
-
-            const res = await fetch("https://myweb3gift-bd98e-default-rtdb.firebaseio.com/submitemails.json",
-
-                {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json"
-                    },
-
-                    body: JSON.stringify({
-                        name,
-                        email,
-
-                    })
-                }
-            );
-            if (res) {
-                setUser(
-                    {
-                        name: "",
-                        email: "",
-
-                    });
-                setIsModalOpen(false);
-                setIsThanksModalOpen(true);
-                // alert("We will contact you, Thankyou 🙂");
-            }
-        } else {
-
-            alert("Please Write your proper email");
+    
+        try {
+          // Ensure the user is authenticated with Clerk
+          if (!isSignedIn) {
+            console.error("User not authenticated with Clerk.");
+            return;
+          }
+    
+          // Store additional details in Firebase Realtime Database
+          const db = getDatabase();
+          const userRef = ref(db, `users/${user.id}`);
+    
+          // Customize this structure based on your form fields
+          const userData = {
+            email: user.primaryEmailAddress.emailAddress,
+            name: name || `${user.firstName} ${user.lastName}`,
+            approve : false
+            // Add other form fields as needed
+          };
+    
+          await set(userRef, userData);
+    
+          // Reset form fields after successful registration
+        //   setName("");
+        //   setEmail("");
+    
+          console.log("User details stored in Firebase successfully!");
+    
+          setIsModalOpen(false);
+            setIsThanksModalOpen(true);
+          // Close the modal
+          setIsModalOpen(false);
+          setIsThanksModalOpen(true);
+          closeModal();
+          
+      
+        } catch (error) {
+          console.error("Error storing user details:", error.message);
         }
-    };
-
-
-
+      };
+      const closeModal = () => {
+        setIsModalOpen(false);
+        
+        // console.log("Modal not open");
+    }
 
 
     const defaultClasses = '';
@@ -104,7 +169,7 @@ const EmailModal = ({label, className}) => {
     return (
         <div className='flex flex-row '>
 
-            <button className={`${defaultClasses} ${className}`} onClick={OpenModal} >  {label}   </button>
+            <button className={`${defaultClasses} ${className}`} onClick={handleBuyButtonClick} >  {label}   </button>
 
             {isModalOpen && (
                 <div className='fixed top-0 left-0 right-0 z-50 w-full p-4 overflow-x-hidden backdrop-blur-xl bg-white/30 overflow-y-auto md:inset-0 h-[calc(100%-1rem)] min-h-full flex justify-center items-center'>

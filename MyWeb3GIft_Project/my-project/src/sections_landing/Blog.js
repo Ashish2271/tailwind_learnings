@@ -39,7 +39,7 @@ const Blog = () => {
                 CardTitle="Our gift boxes greatly reduce onboarding
                 complexity and time"
                 CardDescription="Read how we hold people’s hand during their
-                first steps in the space."
+                first steps in the space..."
                 image="https://images.unsplash.com/photo-1555421689-491a97ff2040?auto=format&fit=crop&q=80&w=2670&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               />
             </Link>
@@ -50,7 +50,7 @@ const Blog = () => {
                 Products"
                 CardDescription="Find out what your recipient can truly expect
                 when receiving one of our calendars or gift
-                boxes."
+                boxes..."
                 image="https://images.unsplash.com/photo-1485217988980-11786ced9454?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               />
             </Link>
@@ -58,8 +58,8 @@ const Blog = () => {
               <BlogCard
                 // date="Dec 22, 2023"
                 CardTitle="Our products are still in an experimental
-                phase."
-                CardDescription="Read how we plan to reward early users."
+                phase"
+                CardDescription="Read how we plan to reward early users..."
                 image="https://images.unsplash.com/photo-1580894723150-0ff6e9b907ea?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               />
             </Link>
@@ -76,7 +76,7 @@ const BlogCard = ({ image, date, CardTitle, CardDescription }) => {
   return (
     <>
       <div className="w-full px-4 ">
-        <div className="mx-auto mb-10 max-w-[370px]">
+        <div className="mx-auto mb-10 max-w-[370px]   hover:scale-110 hover:bg-slate-50 hover:shadow-2xl hover:rounded-2xl  ">
           <div className="mb-8 overflow-hidden rounded">
             <img src={image} alt="Easy Web3 Onboarding" className="w-full" loading="lazy"/>
           </div>
@@ -94,7 +94,7 @@ const BlogCard = ({ image, date, CardTitle, CardDescription }) => {
                 {CardTitle}
               </a>
             </h3>
-            <p className="text-base text-body-color">{CardDescription}</p>
+            <p className="text-base  text-body-color">{CardDescription}</p>
           </div>
         </div>
       </div>
