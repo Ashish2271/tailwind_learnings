@@ -246,23 +246,56 @@ import { useAuth } from "@clerk/clerk-react";
 import { useUser } from "@clerk/clerk-react";
 import { SignIn } from "@clerk/clerk-react";
 import { useApproval } from '../states/ApprovalContext';
+import LoadingSpinner from '../sections_landing/Loader';
 
 const ClaimGift = () => {
-  const { isLoaded } = useAuth();
-  const { isSignedIn, user } = useUser();
+  
+
+  const { isLoaded  } = useAuth();
+  const {  isSignedIn, user } = useUser();
   const { isApproved, setApproval } = useApproval();
+  console.log('hello',user)
+
+
 
   useEffect(() => {
-    // Fetch data and update isApproved using setApproval
-    // ...
+    const fetchUserData = async () => {
+      if (isSignedIn) {
+        try {
 
-    // Example:
-    // setApproval(true);
-  }, []);
+          const response = await fetch(`https://myweb3gift-bd98e-default-rtdb.firebaseio.com/users/${user.id}.json`);
+          console.log(response)
+          // const response = await fetch(`https://myweb3gift-bd98e-default-rtdb.firebaseio.com/submitemails/-NkJIn1tg7RhVEh-7-IF.json`);
+          
+          console.log(response)
+          if (response.ok) {
+            const data = await response.json();
+            console.log('Fetch URL:', `https://myweb3gift-bd98e-default-rtdb.firebaseio.com/submitemails/${user.id}.json`);
+          console.log('data',data)
+         console.log(user.id)
+    
+         if (data && typeof data.approve !== 'undefined') {
+          setApproval(data.approve);
+        }
+            console.log(isApproved)
+          } else {
+            console.error('Error fetching data:', response.statusText);
+          }
+        } catch (error) {
+          console.error('Error fetching data:', error);
+        }
+      }
+    };
+  
+    fetchUserData();
+  }, [isSignedIn, user]);
+  
+  console.log("Outside useEffect:", isApproved);
 
   if (!isLoaded) {
-    return <div>Loading...</div>;
+    return <div><LoadingSpinner/></div>;
   }
+
 
   if (!isSignedIn) {
     return (
