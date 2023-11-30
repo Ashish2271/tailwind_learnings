@@ -330,8 +330,8 @@ import html2canvas from 'html2canvas';
 import Nav01 from '../Components/Nav01';
 import { Footer } from '../sections_landing';
 import { QR_CODE } from '../assets/Images';
-import { Link, useLocation } from 'react-router-dom';
-import { Manisha } from '../assets/Images';
+import { Link} from 'react-router-dom';
+// import { Manisha } from '../assets/Images';
 
 const ReceiverGiftCard = ({gift}) => {
     
@@ -467,7 +467,7 @@ const ReceiverGiftCard = ({gift}) => {
                         <div className="rounded-card  relative mx-5 ml-16 my-10 h-[70vh] w-[44vh] overflow-hidden rounded-3xl bg-sky-950" ref={cardRef}  >
                             <div className="h-[25vh] w-[40vh] bg-sky-950"></div>
                             <div className="absolute mx-28 top-24 z-30 overflow-hidden rounded-3xl">
-                                <img className="max-h-[200px] shadow-2xl max-w-[160px]" src={gift.senderImage} alt={gift.senderName} />
+                                <img className="max-h-[200px] shadow-2xl max-w-[160px]" src={gift.image} alt={gift.senderName} />
                             </div>
                             <div className="relative h-[45vh] w-[44vh] rounded-t-[60px] bg-white">
                                 <div className="absolute top-28 px-6 py-2  font-bold text-gray-400">

@@ -68,7 +68,7 @@
 
 
 import React, { useEffect, useState } from 'react';
-import { getDocs, collection, query, where, getFirestore, collectionGroup } from 'firebase/firestore';
+import { getDocs,  query, where, getFirestore, collectionGroup } from 'firebase/firestore';
 import { useUser } from '@clerk/clerk-react';
 
 const YourGifts = () => {

@@ -325,8 +325,8 @@ const TransferedGifts = () => {
 
 const TransferedGiftsCard = ({ gift }) => {
   // Assuming that the 'gift' object has properties like 'date', 'greeting', 'receiverEmail', 'receiverName', 'senderEmail', and 'senderName'
-  const { date, greeting, receiverEmail, receiverName, senderEmail, senderName , image ,senderImage } = gift;
-
+  // const { date, greeting, receiverEmail, receiverName, senderEmail, senderName , image ,senderImage } = gift;
+  const {  greeting,  receiverName,  image ,senderImage } = gift;
   return (
     <div>
       <div className="border-1 min-h-[50px] max-w-[400px] overflow-hidden rounded-3xl border border-gray-300 py-4 shadow-2xl hover:scale-105">

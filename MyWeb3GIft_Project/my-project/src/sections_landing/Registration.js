@@ -1,7 +1,7 @@
 // Import necessary Clerk and Firebase functions
-import { useUser } from "@clerk/clerk-react";
-import { useState } from "react";
-import { collection, collectionGroup, getDocs, getFirestore, query, where } from "firebase/firestore"; 
+// import { useUser } from "@clerk/clerk-react";
+// import { useState } from "react";
+import {  collectionGroup, getDocs, getFirestore, query, where } from "firebase/firestore"; 
 
 // import { db } from "../firebase";
 

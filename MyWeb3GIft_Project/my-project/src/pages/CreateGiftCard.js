@@ -3,7 +3,7 @@ import html2canvas from 'html2canvas';
 import Nav01 from '../Components/Nav01';
 import { Footer } from '../sections_landing';
 import { QR_CODE } from '../assets/Images';
-import { getFirestore, collection, addDoc, doc } from "firebase/firestore";
+import { getFirestore, collection, addDoc} from "firebase/firestore";
 import { useUser } from '@clerk/clerk-react';
 import { useFormData } from '../states/FormDataContext';
 
@@ -86,9 +86,9 @@ const CreateGiftCard = () => {
     };
 
 
-    const [message, setMessage] = useState(
-        `Dear Manisha,\n\nI'm so lucky to get another year around the sun with you, Happy birthday to the love of my life, I'm so excited to celebrate my favorite person today.\n\nYour Best friend\nArpit Singh`
-    );
+    // const [message, setMessage] = useState(
+    //     `Dear Manisha,\n\nI'm so lucky to get another year around the sun with you, Happy birthday to the love of my life, I'm so excited to celebrate my favorite person today.\n\nYour Best friend\nArpit Singh`
+    // );
     const cardRef = useRef(null);
    
 
@@ -280,6 +280,7 @@ const sendEmail = (formData) => {
     window.location.href = mailtoLink;
   };
       
+
 
     return (
         <div>

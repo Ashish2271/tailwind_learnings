@@ -156,9 +156,9 @@ import React, { useEffect, useState } from 'react'
 import Nav01 from '../Components/Nav01'
 import { Footer } from '../sections_landing'
 import { Link } from 'react-router-dom'
-import { getDocs, collection, query, where, getFirestore, collectionGroup } from 'firebase/firestore';
+import { getDocs,  query, where, getFirestore, collectionGroup } from 'firebase/firestore';
 import { useUser } from '@clerk/clerk-react';
-import ReceiverGiftCard from './ReceiverGiftCard';
+// import ReceiverGiftCard from './ReceiverGiftCard';
 // ... (other imports)
 
 const MyGifts = () => {
@@ -217,7 +217,7 @@ const MyGifts = () => {
     <>
       <Nav01></Nav01>
       <div className="bg-sky-950 h-[90px] w-screen"></div>
-      <div className="relative mx-auto py-10 flex  bg-fixed flex-col items-center gap-9 rounded-3xl bg-cover bg-center" style={{ backgroundImage: "url('https://img.freepik.com/free-photo/rose-gold-birthday-3d-ribbons-greeting-card-beige-background_53876-129030.jpg?w=1380&t=st=1701182770~exp=1701183370~hmac=217ddf3161c0f9dfb431d4f46cc89f38f8187548de87ef64302b2acb85056019')", }}>
+      <div className="relative mx-auto py-10 flex min-h-screen  bg-fixed flex-col items-center gap-9 rounded-3xl bg-cover bg-center" style={{ backgroundImage: "url('https://img.freepik.com/free-photo/rose-gold-birthday-3d-ribbons-greeting-card-beige-background_53876-129030.jpg?w=1380&t=st=1701182770~exp=1701183370~hmac=217ddf3161c0f9dfb431d4f46cc89f38f8187548de87ef64302b2acb85056019')", }}>
         <div className='absolute top-0 left-2 font-extrabold text-3xl text-gray-800 '>Received Gift :{gifts.length} </div>
         {gifts.map((gift) => (
           <OpenGiftCard key={gift.id} gift={gift} />
@@ -229,7 +229,7 @@ const MyGifts = () => {
 }
 
 const OpenGiftCard = ({ gift }) => {
-  const { senderImage, greeting, image, receiverEmail, receiverName, senderEmail, senderName } = gift;
+  const { senderImage, greeting, image, senderName } = gift;
 
   return (
     <div class="my-12 mb-8 flex flex-col items-center justify-between gap-14">

@@ -102,7 +102,9 @@ const GiftById = () => {
       return;
     }
 
-    const receiverEmail = 'ashispandey138c@gmail.com'; // or use user.primaryEmailAddress.emailAddress;
+
+    // 'ashispandey138c@gmail.com';
+    const receiverEmail =  user.primaryEmailAddress.emailAddress;
     console.log('Receiver Email:', receiverEmail);
 
     fetchGiftsByReceiverEmail(receiverEmail);
