@@ -4,6 +4,7 @@ import Nav01 from '../Components/Nav01.js'
 // import { getAuth, signInWithCustomToken } from "firebase/auth";
 import { useAuth, useUser } from '@clerk/clerk-react';
 import { useApproval } from '../states/ApprovalContext.js';
+import LoadingSpinner from './Loader.js';
 
 
 
@@ -34,6 +35,7 @@ const Main = () => {
   const { isLoaded  } = useAuth();
   const {  isSignedIn, user } = useUser();
   const { isApproved, setApproval } = useApproval();
+  console.log('hello',user)
 
 
 
@@ -72,7 +74,7 @@ const Main = () => {
   console.log("Outside useEffect:", isApproved);
 
   if (!isLoaded) {
-    return <div>Loading...</div>;
+    return <div><LoadingSpinner/></div>;
   }
 
   return (

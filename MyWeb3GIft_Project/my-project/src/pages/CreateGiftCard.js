@@ -3,14 +3,74 @@ import html2canvas from 'html2canvas';
 import Nav01 from '../Components/Nav01';
 import { Footer } from '../sections_landing';
 import { QR_CODE } from '../assets/Images';
+import { getFirestore, collection, addDoc, doc } from "firebase/firestore";
+import { useUser } from '@clerk/clerk-react';
+import { useFormData } from '../states/FormDataContext';
+
+
 
 const CreateGiftCard = () => {
+    const { formData, setFormData } = useFormData();
+    const {user} = useUser()
+    console.log(formData)
+    const senderUserId = user ? user.id : null
 
+    const addGift = async (senderUserId, giftData) => {
+        try {
+          const db = getFirestore();
+      
+          // Reference to the user's gifts collection
+          const userGiftsRef = collection(db, `users/${senderUserId}/gifts`);
+      
+          // Add a new document to the gifts collection
+          const giftDocRef = await addDoc(userGiftsRef, giftData);
+      
+          console.log("Gift added with ID:", giftDocRef.id);
+        } catch (error) {
+          console.error("Error adding gift:", error);
+        }
+      };
+      const handleTextareaChange = (e) => {
+        const newText = e.target.value;
+        setFormData((prevData) => ({
+          ...prevData,
+          greeting: newText,
+        }));
+      };
+
+    //   const handleImageChange = (e) => {
+    //     const file = e.target.files[0];
+    
+    //     if (file) {
+    //       const reader = new FileReader();
+    
+    //       reader.onload = () => {
+    //         setSelectedImage(reader.result);
+    //       };
+    
+    //       reader.readAsDataURL(file);
+    //     }
+    //   };
+    
+      // Example usage
+     // Replace with the actual sender's user ID
+      
+    //   const giftData = {
+    //     senderName: "Sender's Name",
+    //     senderEmail: "ashishpandey46209@gmail.com",
+    //     receiverName: "Receiver's Name",
+    //     receiverEmail: "ashispandey138c@gmail.com",
+    //     greeting: "Short Greeting",
+    //     date: "2023-12-01", // Replace with the actual date
+    //   };
+      
+      // Call the function to add the gift to the database
+    //   addGift(senderUserId, giftData);
 
     const [selectedImage, setSelectedImage] = useState(
         'https://img.freepik.com/free-photo/portrait-beautiful-teen-dark-haired-woman_155003-8196.jpg?w=900&t=st=1701185941~exp=1701186541~hmac=140663c065997c6f2150e2f9957ead5b435db8489b2b733453ca4f288a443b3b' // Replace with the URL of your dummy image
     );
-
+     
     const handleImageChange = (e) => {
         const file = e.target.files[0];
 
@@ -30,11 +90,7 @@ const CreateGiftCard = () => {
         `Dear Manisha,\n\nI'm so lucky to get another year around the sun with you, Happy birthday to the love of my life, I'm so excited to celebrate my favorite person today.\n\nYour Best friend\nArpit Singh`
     );
     const cardRef = useRef(null);
-    const handleTextareaChange = (e) => {
-        const newText = e.target.value;
-        setMessage(newText);
-    };
-
+   
 
     // const handleShare = () => {
     //     if (!cardRef.current) return;
@@ -140,6 +196,7 @@ const CreateGiftCard = () => {
     //       document.body.removeChild(downloadLink);
     //     });
     //   };
+    
 
 
     const handleDownload = () => {
@@ -165,7 +222,63 @@ const CreateGiftCard = () => {
           document.body.removeChild(downloadLink);
         });
       };
-      
+      const handlesave =(formData)=>{
+              // Access form data from props.location.state
+    //   const formData = props.first.location.state;
+
+      // Use formData to save to the database
+      const giftData = {
+        senderName: formData.name,
+        senderEmail: formData.email,
+        senderImage: user.imageUrl,
+        receiverName: formData.receiverName,
+        receiverEmail: formData.receiverEmail,
+        greeting: formData.greeting,
+        date: formData.date,
+        image: selectedImage,
+        
+      };
+
+        addGift(senderUserId, giftData);
+
+        alert("your data is saved ")
+      }
+
+    //   const handleEmail = (formData) => {
+    //     sendEmail({
+    //         email: formData.receiverEmail,
+    //         subject: 'MyWeb3Gift',
+    //         message,
+    //       });
+    //   }
+//     const [status, setStatus] = useState('');
+
+//   const handleEmail = async (e) => {
+//     e.preventDefault();
+
+//     try {
+//       const result = await sendEmail({ email: formData.receiverEmail,
+//                 subject: 'MyWeb3Gift',
+//                 message,});
+//       setStatus(result ? 'Email sent successfully!' : 'Failed to send email.');
+//     } catch (error) {
+//       console.error('Error sending email:', error);
+//       setStatus('Failed to send email. Please check the console for details.');
+//     }
+//   };
+const sendEmail = (formData) => {
+    // Replace 'recipient@example.com' with the actual email address of the recipient
+    const recipientEmail = formData.receiverEmail;
+
+    // Replace 'Hello! This is a custom message.' with your custom message
+    const message = formData.greeting;
+
+    // Create the mailto link
+    const mailtoLink = `mailto:${recipientEmail}?subject=Subject&body=${encodeURIComponent(message)}`;
+
+    // Open the default email client with the mailto link
+    window.location.href = mailtoLink;
+  };
       
 
     return (
@@ -197,12 +310,8 @@ const CreateGiftCard = () => {
                                     </div>
                                 </div>
                                 <div className="py-5">
-                                    <textarea className="px-8 py-4" name="" id="" cols="30" rows="10" onChange={handleTextareaChange} >
-                                        Dear Manisha,
-                                        I'm so lucky to get another year around the sun with you, Happy birthday to the love of my life, I'm so excited to celebrate my favorite person today.
-
-                                        Your Best friend
-                                        Arpit Singh
+                                    <textarea className="px-8 py-4" name="" id="" cols="30" rows="10" value={formData.greeting} onChange={handleTextareaChange} >
+                                     
 
                                     </textarea>
                                 </div>
@@ -217,9 +326,9 @@ const CreateGiftCard = () => {
                             <div className=" flex flex-row max-w-[35vw] justify-between">
                                 <button onClick={handleDownload} className="mx-auto my-11 items-center rounded-3xl bg-yellow-300 px-9 py-2 text-xl font-bold text-white hover:bg-yellow-400 focus:ring-2">Print</button>
 
-                                <button className="mx-auto my-11 items-center rounded-3xl bg-yellow-300 px-9 py-2 text-xl font-bold text-white hover:bg-yellow-400 focus:ring-2">Save</button>
+                                <button className="mx-auto my-11 items-center rounded-3xl bg-yellow-300 px-9 py-2 text-xl font-bold text-white hover:bg-yellow-400 focus:ring-2" onClick={() => handlesave(formData)}>Save</button>
 
-                                <button className="mx-auto my-11 items-center rounded-3xl bg-yellow-300 px-9 py-2 text-xl font-bold text-white hover:bg-yellow-400 focus:ring-2">Send Email</button>
+                                <button className="mx-auto my-11 items-center rounded-3xl bg-yellow-300 px-9 py-2 text-xl font-bold text-white hover:bg-yellow-400 focus:ring-2" onClick={() => sendEmail(formData)}>Send Email</button>
                             </div>
                             <div>
                                 <span className="text-gray-500 font-semibold my-5 ">Share this card with your friend</span>
@@ -265,7 +374,7 @@ const CreateGiftCard = () => {
                                         >
                                     </span> */}
 
-                                    {message.split('\n').map((line, index) => (
+                                    {formData.greeting.split('\n').map((line, index) => (
                                         <React.Fragment key={index}>
                                             {index > 0 && <br />}
                                             <span className={index === 4 ? 'py-5' : ''}>{line}</span>

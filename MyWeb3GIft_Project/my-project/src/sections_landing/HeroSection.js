@@ -78,10 +78,14 @@ const HeroSection = () => {
   // Show this if the user is approved
   // <YourApprovedComponent /> 
   // {/* Replace with your actual component or button */}
-  <p>You are approved!</p>
+  <Link to="/ClaimGift"> <button className='block   sm:w-auto rounded bg-yellow-500 px-6 py-2 text-sm  text-white shadow hover:bg-yellow-600 focus:outline-none focus:ring active:bg-red-500'>
+                APPROVED
+              </button> </Link>
 ) : (
   // Show this if the user is still on the waitlist
-  <div>You are on the waitlist.</div>
+  <div>  <Link to="/ClaimGift"> <button className='block   sm:w-auto rounded bg-yellow-500 px-6 py-2 text-sm  text-white shadow hover:bg-yellow-600 focus:outline-none focus:ring active:bg-red-500'>
+  WAITLIST
+</button> </Link></div>
 )}
 
 
