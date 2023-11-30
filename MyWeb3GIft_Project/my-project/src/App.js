@@ -1,6 +1,9 @@
 import ReactGA from 'react-ga';
 import Main from "./sections_landing/Main.js";
 
+
+
+
 import {getDatabase, ref, set} from "firebase/database"
 import { app } from "./firebase.js"
 
@@ -51,7 +54,19 @@ import CryptoChallenge from './pages/CryptoChallenge.js';
 import CryptoSurpriseGiftBox from './pages/CryptoSurpriseGiftBox.js';
 import ReceiverGiftCard from './pages/ReceiverGiftCard.js';
 
- 
+
+
+import LockedDoor from './pages/AdventDoors/LockedDoor.js';
+import ADoor1 from './pages/AdventDoors/ADoor1.js';
+import ADoor2 from './pages/AdventDoors/ADoor2.js';
+import ADoor3 from './pages/AdventDoors/ADoor3.js'; 
+import ADoor4 from './pages/AdventDoors/ADoor4.js';
+import ADoor5 from './pages/AdventDoors/ADoor5.js';
+import ADoor6 from './pages/AdventDoors/ADoor6.js';
+
+
+
+
 if (!process.env.REACT_APP_CLERK_PUBLISHABLE_KEY) {
   throw new Error("Missing Publishable Key")
 }
@@ -147,6 +162,19 @@ function ClerkProviderWithRoutes() {
 
           <Route path="/ReceiverGiftCard" element={<ReceiverGiftCard/>} />
 
+
+          <Route path="/LockedDoor" element={<LockedDoor/>} />
+          <Route path="/ADoor1" element={<ADoor1/>} />
+          <Route path="/ADoor2" element={<ADoor2/>} />
+          <Route path="/ADoor3" element={<ADoor3/>} />
+          <Route path="/ADoor4" element={<ADoor4/>} />
+          <Route path="/ADoor5" element={<ADoor5/>} />
+          <Route path="/ADoor6" element={<ADoor6/>} />
+
+
+
+
+
         {/* <Route path="/" element={<PublicPage />} /> */}
         <Route
           path="/sign-in/*"
@@ -191,6 +219,11 @@ age: 21,
 
  
   return (
+
+
+
+
+    
      <BrowserRouter>
     <ScrollToTop />
     <ApprovalProvider>

@@ -86,6 +86,8 @@ const Contact = () => {
     <>
       <Nav01></Nav01>
 <div className="bg-sky-950 h-[90px] w-screen"></div>
+
+
       <section className="bg-white max-sm:px-5 sm:px-20  py-20 lg:py-[120px] overflow-hidden relative ">
 
 
