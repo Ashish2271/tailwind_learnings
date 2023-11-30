@@ -13,7 +13,7 @@ import FAQS from "./pages/FAQS.js";
 // import Team from "./pages/Team.js";
 import BlogPage from "./pages/BlogPage.js";
 import ClaimGift from "./pages/ClaimGift.js";
-import Gift from "./pages/Gift.js";
+
 // import Nav01 from "./Components/Nav01.js";
 
 import BlogPage1 from './pages/BlogPages/BlogPage1/BlogPage1.js';
@@ -44,12 +44,19 @@ import { getAuth } from 'firebase/auth';
 import RegistrationForm from './sections_landing/Registration.js';
 import CreateGiftCard from './pages/CreateGiftCard.js';
 // import ClaimGift from "./pages/ClaimGift.js";
+import YourGifts from './pages/yourGifts.js';
 
 
 import CryptoAdventCalendar from './pages/CryptoAdventCalendar.js';
 import CryptoChallenge from './pages/CryptoChallenge.js';
 import CryptoSurpriseGiftBox from './pages/CryptoSurpriseGiftBox.js';
 import ReceiverGiftCard from './pages/ReceiverGiftCard.js';
+import { FormDataProvider } from './states/FormDataContext.js';
+
+// import { Gift } from './assets/Images/index.js';
+import Giftbyid from './pages/Giftbyid.js';
+import Gift from './pages/Gift.js';
+
 
  
 if (!process.env.REACT_APP_CLERK_PUBLISHABLE_KEY) {
@@ -139,13 +146,18 @@ function ClerkProviderWithRoutes() {
           <Route path="/SignUpForm" element={<SignUpForm />} />
           <Route path="/CalendarGiftForm" element={<CalendarGiftForm />} />
 
-          <Route path="TransferedGifts" element={<TransferedGifts/>} />
+          <Route path="/TransferedGifts" element={<TransferedGifts/>} />
           <Route path="/CreateGiftCard" element={<CreateGiftCard />} />
           <Route path="/CryptoSurpriseGiftBox" element={<CryptoSurpriseGiftBox />} />
           <Route path="/CryptoChallenge" element={<CryptoChallenge />} />
           <Route path="/CryptoAdventCalendar" element={<CryptoAdventCalendar />} />
 
           <Route path="/ReceiverGiftCard" element={<ReceiverGiftCard/>} />
+          <Route path="/giftid/:id" element={<Giftbyid/>} />
+          <Route path="/yourgifts" element={<YourGifts/>} />
+
+
+
 
         {/* <Route path="/" element={<PublicPage />} /> */}
         <Route
@@ -193,9 +205,11 @@ age: 21,
   return (
      <BrowserRouter>
     <ScrollToTop />
+    <FormDataProvider>
     <ApprovalProvider>
       <ClerkProviderWithRoutes />
     </ApprovalProvider>
+    </FormDataProvider>
     {/* <button className='bg-blue-400 rounded-r-xl' onClick={putData}>Put data</button> */}
   </BrowserRouter>
   );
