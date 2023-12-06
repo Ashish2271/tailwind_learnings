@@ -238,25 +238,28 @@
 // export default ClaimGift
 
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Nav01 from '../Components/Nav01';
 import { EmailModal, Footer } from '../sections_landing';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from "@clerk/clerk-react";
 import { useUser } from "@clerk/clerk-react";
 import { SignIn } from "@clerk/clerk-react";
 import { useApproval } from '../states/ApprovalContext';
 import LoadingSpinner from '../sections_landing/Loader';
-
+import Modal from '../Components/Modal';
+import { Thumbnail } from '../assets/Images';
+import { getDatabase, ref, set } from 'firebase/database';
+import toast from 'react-hot-toast';
 const ClaimGift = () => {
   
-
+  const[name,setName]=useState()
   const { isLoaded  } = useAuth();
   const {  isSignedIn, user } = useUser();
   const { isApproved, setApproval } = useApproval();
   console.log('hello',user)
-
-
+  const navigate = useNavigate()
+  
 
   useEffect(() => {
     const fetchUserData = async () => {
@@ -304,6 +307,61 @@ const ClaimGift = () => {
       </div>
     );
   }
+ 
+
+ 
+
+  // ...
+  
+  const postData = async (e) => {
+    e.preventDefault();
+  
+    try {
+      // Ensure the user is authenticated with Clerk
+      if (!isSignedIn) {
+        console.error("User not authenticated with Clerk.");
+        return;
+      }
+  
+      // Store additional details in Firebase Realtime Database
+      const db = getDatabase();
+      const userRef = ref(db, `users/${user.id}`);
+  
+      // Customize this structure based on your form fields
+      const userData = {
+        email: user.primaryEmailAddress.emailAddress,
+        name: name,
+        approve: false,
+        // Add other form fields as needed
+      };
+  
+      await set(userRef, userData);
+  
+      // Reset form fields after successful registration
+      //   setName("");
+      //   setEmail("");
+  
+      console.log("User details stored in Firebase successfully!");
+  
+      // Show success toast message
+      toast.success('We have recevied your request!,your are added to waitlist ');
+    } catch (error) {
+      console.error("Error storing user details:", error.message);
+  
+      // Show error toast message
+      toast.error(`Please enter your name`);
+   
+    }
+    navigate('/')
+  };
+  
+  // ...
+  
+  
+  // if(isApproved===undefined){
+  //   // navigate ('/')
+  //   openModal()
+  // }
 
   return (
     <div className=''>
@@ -314,7 +372,48 @@ const ClaimGift = () => {
         // Render the form if isApproved is undefined
         <section className="bg-cover bg-center max-h-screen relative">
           {/* Your form JSX goes here */}
-          <EmailModal label=" GET BENEFITS" className="block w-full   sm:w-auto rounded px-6 py-2 text-sm  bg-slate-100 text-yellow-500 shadow hover:bg-yellow-600 focus:outline-none focus:ring active:text-red-500 dark:bg-yellow-500 dark:text-white" />
+          {/* <EmailModal label=" GET BENEFITS" className="block w-full   sm:w-auto rounded px-6 py-2 text-sm  bg-slate-100 text-yellow-500 shadow hover:bg-yellow-600 focus:outline-none focus:ring active:text-red-500 dark:bg-yellow-500 dark:text-white" /> */}
+        {/* <Link to ='/'></Link> */}
+        {/* {navigate ('/')} */}
+        {/* {openModal()} */}
+        <section className="  bg-cover bg-center max-h-screen relative ">
+         <img src={Thumbnail} className=' object-fit w-full h-screen  ' alt="My web3 gift Thumbnail " loading="lazy" />
+         <div className="flex absolute inset-0   flex-col backdrop-blur-xl bg-white/30 items-center justify-center px-6 py-8 mx-auto h-screen lg:py-0">
+           <a href="./" className="flex items-center mb-6 text-3xl font-semibold text-gray-100 ">
+           </a>
+           <div className="w-full bg-white rounded-lg shadow  md:mt-0 sm:max-w-md xl:p-0 ">
+             <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
+             <h5 className="text-2xl font-bold text-center text-gray-800 md:text-3xl lg:text-4xl mb-6">
+  <span className="text-primary-500">Join Our Waitlist</span> and Be the First to Get Exclusive Gifts!
+</h5>
+
+               <form className="space-y-4 md:space-y-6" method="POST">
+                 <div>
+                   <label for="name" className="block mb-2 text-sm font-medium text-gray-900 ">Your Name</label>
+                   {/* <input type="text" name="name" value={user.name} id="name" className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5  " placeholder="Jacob" required="" /> */}
+                   <input
+  type="text"
+  name="name"
+  value={user.name}
+  id="name"
+  className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+  placeholder="Jacob"
+  required=""
+  onChange={(e) => setName(e.target.value)}
+
+/>
+                 </div>
+                 <div>
+                   <label for="email" className="block mb-2 text-sm font-medium text-gray-900 ">Your Email</label>
+                   <input type="email" name="email" value={user.email} id="email" className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 " placeholder={user.primaryEmailAddress.emailAddress} required="" disabled/>
+                 </div>
+                 <button type="submit" onClick={postData} className="w-full text-white bg-yellow-500 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-lg px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">SUBMIT</button>
+           </form>
+          </div>
+          </div>       
+          </div>
+      </section>
+
         </section>
       ) : (
         // Render content based on isApproved value

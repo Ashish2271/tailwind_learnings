@@ -229,7 +229,7 @@ const MyGifts = () => {
 }
 
 const OpenGiftCard = ({ gift }) => {
-  const { senderImage, greeting, image, senderName } = gift;
+  const { senderImage, greeting, image, senderName,giftDetails } = gift;
 
   return (
     <div class="my-12 mb-8 flex flex-col items-center justify-between gap-14">
@@ -241,7 +241,11 @@ const OpenGiftCard = ({ gift }) => {
         <div class="h-[45vh] max-w-[900px] rounded-3xl bg-pink-300 px-4 py-14 sm:w-[80vw] sm:px-10 md:w-[60vw] md:px-20 lg:w-[60vw] lg:px-20 xl:w-[60vw] xl:px-20">
           <div class="relative flex max-w-3xl flex-grow items-center gap-5 overflow-hidden rounded-3xl bg-sky-950 p-0 pl-16 text-white shadow-md">
             <div class="relative flex flex-grow flex-col">
-              <h2 class="mb-2 text-xl font-semibold text-white">Crypto Advent Calendar</h2>
+              {/* <h2 class="mb-2 text-xl font-semibold text-white">{giftDetails}</h2> */}
+              <h2 className="mb-2 text-xl font-semibold text-white">
+  {giftDetails.split(' ').join(' ')}
+</h2>
+
               <p class="mb-4 py-9 pb-20 text-white">{greeting}</p>
               <Link to={`/giftid/${gift.id}`}>
                 <button class="absolute bottom-0 left-1 rounded-3xl bg-yellow-500 px-6 py-2 font-bold text-white">Open Gift</button>

@@ -10,6 +10,7 @@ export const FormDataProvider = ({ children }) => {
     receiverEmail: '',
     greeting: '',
     date: '',
+    giftDetails:'',
     // Add other form fields as needed
   });
 

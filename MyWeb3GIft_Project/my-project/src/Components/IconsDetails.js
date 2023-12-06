@@ -89,7 +89,7 @@ import { AllOcassions, Chellenge } from '../assets/Images/Compressed';
                 componentIdentifier="Facebook"
                 onAccept={handleAccept} /> */}
 
-<EmailModal label="Buy" className="flex items-center rounded-md bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300"  />
+<EmailModal label="Send" className="flex items-center rounded-md bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300"  props={"CryptoAdventCalendar"}/>
 
 
 
@@ -127,7 +127,8 @@ import { AllOcassions, Chellenge } from '../assets/Images/Compressed';
                 componentIdentifier="Instagram"
                 onAccept={handleAccept} /> */}
 
-<EmailModal label="Buy" className="flex items-center rounded-md bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300"  />
+          
+<EmailModal label="Buy" className="flex items-center rounded-md bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300" props={"CryptoSurpriseGiftBox"} />
 
               </div>
             </div>
@@ -181,7 +182,7 @@ import { AllOcassions, Chellenge } from '../assets/Images/Compressed';
                 onAccept={handleAccept}
               /> */}
 
-<EmailModal label="Buy" className="flex items-center rounded-md bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300"  />
+<EmailModal label="Buy" className="flex items-center rounded-md bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300" props={"CryptoChallenge"} />
               
 
               </div>
@@ -194,7 +195,7 @@ import { AllOcassions, Chellenge } from '../assets/Images/Compressed';
         <p className='text-yel-600 text-5xl hiden py-4 px-3 max-sm:text-xl sm:text-3xl   text-center'>All options have the same content, only the arrangement and layout differs. <br />
 
           <div className='flex flex-row justify-center'>
-            <EmailModal label="STAY UPDATED" className='bg-yellow-400 hiden shadow-2xl text-yel-600 text-white font max-sm:text-xl sm:text-2xl  bold px-7 my-4 hover:bg-yellow-500  rounded-xl text-2xl py-3' />
+            <EmailModal label="STAY UPDATED" className='bg-yellow-400 hiden shadow-2xl text-yel-600 text-white font max-sm:text-xl sm:text-2xl  bold px-7 my-4 hover:bg-yellow-500  rounded-xl text-2xl py-3' props= {4}/>
 
           </div>
         </p>

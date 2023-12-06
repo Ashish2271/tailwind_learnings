@@ -1,22 +1,48 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react'
 import { ChristmasCalendar } from '../assets/icons';
 import { useUser } from "@clerk/clerk-react";
 import { getDatabase, ref, set } from "firebase/database";
 import { Navigate, useNavigate } from 'react-router-dom';
 import { useApproval } from '../states/ApprovalContext';
+import { useFormData } from '../states/FormDataContext';
 
-const EmailModal = ({label, className}) => {
+const EmailModal = ({label, className,props = ''}) => {
     const { isSignedIn, user } = useUser();
+    const { formData, setFormData } = useFormData();
     const [isModalOpen, setIsModalOpen] = useState(false)
     const { isApproved} = useApproval();
     const navigate = useNavigate();
+    const[name,setName]=useState()
     const OpenModal = () => {
         setIsModalOpen(true);
         // console.log("Modal open");
     }
+    // console.log(label)
+//    const giftDetails = props
 
-    const handleBuyButtonClick = () => {
+//     console.log('hello',giftDetails)
+//     setFormData((prevData) => ({
+//         ...prevData,
+//         giftDetails: giftDetails,
+//       }));
+
+
+// useEffect(() => {
+//     console.log('props:', props);
+//     const giftDetails = props;
+
+//     console.log('hello', giftDetails);
+
+//     setFormData((prevData) => ({
+//       ...prevData,
+//       giftDetails: giftDetails,
+//     }));
+//   }, [props]);
+
+
+
+    const handleBuyButtonClick = (props) => {
         if (isSignedIn) {
           if (isApproved === undefined) {
             // Open the modal
@@ -26,7 +52,12 @@ const EmailModal = ({label, className}) => {
             navigate('/ClaimGift');
           } else {
             // Redirect to /gifts
+                setFormData((prevData) => ({
+        ...prevData,
+        giftDetails: props,
+      }));
             navigate('/CalendarGiftForm');
+
           }
         } else {
           // Redirect to sign-up if not signed in
@@ -64,13 +95,13 @@ const EmailModal = ({label, className}) => {
         }
     )
 
-    let name, value;
-    const getUserData = (event) => {
+    // let name, value;
+    // const getUserData = (event) => {
 
-        name = event.target.name;
-        value = event.target.value;
-        setuserDetails({ ...user, [name]: value });
-    };
+    //     name = event.target.name;
+    //     value = event.target.value;
+    //     setuserDetails({ ...user, [name]: value });
+    // };
 
     // const postData = async (e) => {
 
@@ -130,7 +161,7 @@ const EmailModal = ({label, className}) => {
           // Customize this structure based on your form fields
           const userData = {
             email: user.primaryEmailAddress.emailAddress,
-            name: name || `${user.firstName} ${user.lastName}`,
+            name: name,
             approve : false
             // Add other form fields as needed
           };
@@ -167,9 +198,10 @@ const EmailModal = ({label, className}) => {
 
 
     return (
+        
         <div className='flex flex-row '>
 
-            <button className={`${defaultClasses} ${className}`} onClick={handleBuyButtonClick} >  {label}   </button>
+            <button className={`${defaultClasses} ${className}`} onClick={() => handleBuyButtonClick(props)} >  {label}   </button>
 
             {isModalOpen && (
                 <div className='fixed top-0 left-0 right-0 z-50 w-full p-4 overflow-x-hidden backdrop-blur-xl bg-white/30 overflow-y-auto md:inset-0 h-[calc(100%-1rem)] min-h-full flex justify-center items-center'>
@@ -189,7 +221,11 @@ const EmailModal = ({label, className}) => {
 
 
                                 <div className="px-6 py-6   lg:px-8">
-                                    <h3 className="mb-4 max-sm:text-5xl sm:text-4xl font-medium text-gray-900 dark:text-white">Get Early Bird Benefits 🎁 </h3>
+                                    {/* <h3 className="mb-4 max-sm:text-5xl sm:text-4xl font-medium text-gray-900 dark:text-white">Join Our Waitlist and Be the First to Get Exclusive Gifts!🎁 </h3> */}
+                                    <h3 className="mb-4 text-4xl md:text-5xl font-extrabold text-primary-600 dark:text-white">
+  Join Our Waitlist and Be the First to Get Exclusive Gifts! 🎁
+</h3>
+
                                     <form className="space-y-6" method="POST">
                                         <div className='h-8'></div>
                                         <div >
@@ -200,7 +236,7 @@ const EmailModal = ({label, className}) => {
 </div>
 
                                             <input type="name" name="name" id="name" placeholder="Jacob milton" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-yellow-500 focus:border-yellow-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" value={user.name}
-                                                onChange={getUserData} required />
+                                                onChange={(e) => setName(e.target.value)} required />
                                         </div>
                                         <div className=''></div>
                                         <div>
@@ -209,8 +245,8 @@ const EmailModal = ({label, className}) => {
 <label htmlFor="email" className="block mb-2 text-xl font-medium text-gray-900 dark:text-white">Your email</label>
 </div>
 
-                                            <input type="email" name="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-yellow-500 focus:border-yellow-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="name@xyz.com" value={user.email}
-                                                onChange={getUserData} required />
+                                            <input type="email" name="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-yellow-500 focus:border-yellow-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="name@xyz.com" value={user.primaryEmailAddress.emailAddress}
+                                                 required disabled/>
                                         </div>
 
 

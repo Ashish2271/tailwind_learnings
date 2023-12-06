@@ -137,7 +137,7 @@ const CalendarGiftForm = () => {
   const { isApproved } = useApproval();
   const { formData, setFormData } = useFormData();
 
-
+console.log(formData.giftDetails)
   const handleInputChange = (e) => {
     const { name, value, type, checked } = e.target;
     setFormData((prevData) => ({

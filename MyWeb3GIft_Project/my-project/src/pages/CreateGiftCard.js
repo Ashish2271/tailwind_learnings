@@ -236,6 +236,7 @@ const CreateGiftCard = () => {
         greeting: formData.greeting,
         date: formData.date,
         image: selectedImage,
+        giftDetails:formData.giftDetails,
         
       };
 

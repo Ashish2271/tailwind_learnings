@@ -70,6 +70,7 @@ import ADoor3 from './pages/AdventDoors/ADoor3.js';
 import ADoor4 from './pages/AdventDoors/ADoor4.js';
 import ADoor5 from './pages/AdventDoors/ADoor5.js';
 import ADoor6 from './pages/AdventDoors/ADoor6.js';
+import { Toaster } from 'react-hot-toast';
 
 
 
@@ -244,6 +245,7 @@ age: 21,
     </ApprovalProvider>
     </FormDataProvider>
     {/* <button className='bg-blue-400 rounded-r-xl' onClick={putData}>Put data</button> */}
+    <Toaster />
   </BrowserRouter>
   );
 }

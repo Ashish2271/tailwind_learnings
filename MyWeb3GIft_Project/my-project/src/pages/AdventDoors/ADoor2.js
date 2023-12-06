@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import Nav01 from '../../Components/Nav01';
 import { Footer } from '../../sections_landing';
+import { useUser } from '@clerk/clerk-react';
+import { arrayUnion, doc, getDoc, getFirestore, updateDoc } from 'firebase/firestore';
 
 
 
@@ -9,8 +11,38 @@ import { Footer } from '../../sections_landing';
 
 
 const ADoor2 = () => {
-
-
+    const { user } = useUser();
+    const userId = user ? user.id : null
+    const handleDoorCompletion = async () => {
+        if (!userId) {
+            // Handle the case when there is no user
+            return;
+        }
+    
+        const db = getFirestore();
+        // const userProgressRef = doc(db, 'users', userId);
+        const userProgressRef = doc(db, `users/${userId}/progress/1`);
+    
+    
+        try {
+            // Fetch user's current progress
+            const userProgressDoc = await getDoc(userProgressRef);
+            const userProgress = userProgressDoc.data();
+    
+            // Increment currentDay by 1
+            const updatedCurrentDay = userProgress.currentDay + 1;
+    
+            // Update user's completed doors in Firestore and increase currentDay
+            await updateDoc(userProgressRef, {
+                completedDoors: arrayUnion(updatedCurrentDay),
+                currentDay: updatedCurrentDay,
+            });
+    
+            console.log('Door marked as completed for user:', userId);
+        } catch (error) {
+            console.error('Error updating user document:', error);
+        }
+    };
     const handleWalletSubmission = () => {
         const walletInput = document.getElementById('walletInput').value;
         // Add validation logic for a Web3 wallet here
@@ -110,7 +142,7 @@ const ADoor2 = () => {
                 </Link>
             </div>
 
-
+            <button onClick={handleDoorCompletion}>Complete Task</button>
 
             <Footer></Footer>
 

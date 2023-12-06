@@ -435,6 +435,7 @@ const ReceiverGiftCard = ({gift}) => {
                     window.open(instagramShareLink, '_blank');
                 });
             };
+            console.log(gift.giftDetails)
     return (
         <div>
             <Nav01></Nav01>
@@ -449,7 +450,13 @@ const ReceiverGiftCard = ({gift}) => {
                         <div className='flex flex-col items-center  '>
                             <div className="bottom-2 my-16 mt-10 w-[40vw] overflow-hidden rounded-3xl border-2 border-sky-100 bg-white">
                                 <div className=" px-5 flex flex-row max-w-[35vw] justify-items-center ">
-                                    <Link to="/CryptoAdventCalendar"><button className="mx-auto my-11 items-center rounded-3xl bg-yellow-300 px-9 py-2 text-xl font-bold text-white hover:bg-yellow-400 focus:ring-2">Open Crypto Calendar</button></Link>
+                                    {/* <Link to="/CryptoAdventCalendar"><button className="mx-auto my-11 items-center rounded-3xl bg-yellow-300 px-9 py-2 text-xl font-bold text-white hover:bg-yellow-400 focus:ring-2">{gift.giftDetails}</button></Link> */}
+                                    <Link to={`/${gift.giftDetails}`}>
+  <button className="mx-auto my-11 items-center rounded-3xl bg-yellow-300 px-9 py-2 text-xl font-bold text-white hover:bg-yellow-400 focus:ring-2">
+    {gift.giftDetails}
+  </button>
+</Link>
+
                                     <button onClick={handleDownload} className="mx-auto my-11 items-center rounded-3xl bg-yellow-300 px-9 py-2 text-xl font-bold text-white hover:bg-yellow-400 focus:ring-2">Print Card</button>
                                 </div>
                             </div>

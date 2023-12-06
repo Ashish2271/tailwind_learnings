@@ -14,11 +14,65 @@ import { Footer } from '../../sections_landing';
 
 
 import { Day1Wallet } from '../../assets/Images/Doors';
+import { arrayUnion, collection, doc, getDoc, getFirestore, updateDoc } from 'firebase/firestore';
+import { useUser } from '@clerk/clerk-react';
 
 
 
 const ADoor1 = () => {
+  const { user } = useUser();
+  const userId = user ? user.id : null
+  // const handleDoorCompletion = async () => {
+  //   if (!userId) {
+  //     // Handle the case when there is no user
+  //     return;
+  //   }
 
+  //   const db = getFirestore();
+  //   const userDocRef = doc(db, 'users', userId);
+
+  //   try {
+  //     // Update user's completed doors in Firestore
+  //     await updateDoc(userDocRef, {
+  //       completedDoors: arrayUnion(1), // Mark door 1 as completed
+  //     });
+
+  //     console.log('Door marked as completed for user:', userId);
+  //   } catch (error) {
+  //     console.error('Error updating user document:', error);
+  //   }
+  // };
+
+  const handleDoorCompletion = async () => {
+    if (!userId) {
+        // Handle the case when there is no user
+        return;
+    }
+
+    const db = getFirestore();
+    // const userProgressRef = doc(db, 'users', userId);
+    const userProgressRef = doc(db, `users/${userId}/progress/1`);
+
+
+    try {
+        // Fetch user's current progress
+        const userProgressDoc = await getDoc(userProgressRef);
+        const userProgress = userProgressDoc.data();
+
+        // Increment currentDay by 1
+        const updatedCurrentDay = userProgress.currentDay + 1;
+
+        // Update user's completed doors in Firestore and increase currentDay
+        await updateDoc(userProgressRef, {
+            completedDoors: arrayUnion(updatedCurrentDay),
+            currentDay: updatedCurrentDay,
+        });
+
+        console.log('Door marked as completed for user:', userId);
+    } catch (error) {
+        console.error('Error updating user document:', error);
+    }
+};
     const [open, setOpen] = React.useState(1);
 
     const handleOpen = (value) => setOpen(open === value ? 0 : value);
@@ -170,7 +224,7 @@ Be aware: this wallet is not hosted by yourself, therefore it is perfect to star
 
 </Link>
 
-
+<button onClick={handleDoorCompletion}>Complete Task</button>
 
 
 
